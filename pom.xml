@@ -24,15 +24,15 @@
 	</repositories>
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.discord4j</groupId>
-			<artifactId>discord4j-core</artifactId>
-			<version>3.0.1</version>
+		    <groupId>net.dv8tion</groupId>
+		    <artifactId>JDA</artifactId>
+    		<version>3.8.3_462</version>
+		    <exclusions>
+		        <exclusion>
+		            <groupId>club.minnced</groupId>
+		            <artifactId>opus-java</artifactId>
+		        </exclusion>
+		    </exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.xerial</groupId>
@@ -43,11 +43,6 @@
 			<groupId>com.patreon</groupId>
 			<artifactId>patreon</artifactId>
 			<version>0.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20160810</version>
 		</dependency>
 		<!--
 		<dependency>
