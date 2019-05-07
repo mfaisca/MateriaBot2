@@ -10,7 +10,7 @@ public enum EquipmentType{
 	
 	public String getEmote() { return getEmoteClass().getAsMention(); }
 	public Emote getEmoteClass() { return EmoteUtils.getEmoteClassByName(name() + "Equip"); }
-	public String getTrashEmote() { return EmoteUtils.getEmoteByName("Trash" + name()); }
+	public String getTrashEmote() { return EmoteUtils.getEmoteText("Trash" + name()); }
 	
 
 	public static EquipmentType random3Star() {

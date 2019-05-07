@@ -6,6 +6,22 @@ import net.dv8tion.jda.core.entities.MessageChannel;
 import net.dv8tion.jda.core.entities.User;
 
 public abstract class MessageUtils {
+	public static enum DefaultMessages{
+		CHAR_NOT_FOUND("Character Not Found Error"),
+		EQUIP_NOT_FOUND("Equipment Not Found Error"),
+		SKILL_NOT_FOUND("Skill Not Found Error"),
+		PASSIVE_NOT_FOUND("Passive Not Found Error"),
+		SKILL_SETUP_ERROR("Skill Setup Error"),
+		SYNTAX_ERROR("Syntax Error"),
+		UNKNOWN_ERROR("Unknown Error - Please contact Quetz!"),
+		;
+		
+		private String msg;
+		
+		private DefaultMessages(String msg) { this.msg = msg; }
+		public String getMessage() { return msg; }
+	}
+	
 	public static final String S = " ︀︀";
     public static final int DISCORD_MESSAGE_LIMIT = 1800;
     public static final int DISCORD_EMBED_FIELD_LIMIT = 1024;

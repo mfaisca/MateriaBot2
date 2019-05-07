@@ -3,9 +3,9 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
 import com.materia.materiabot.IO.SQL.ConfigsDB;
 import com.materia.materiabot.Utils.Constants.Dual;
+import com.materia.materiabot.Utils.MessageUtils;
 import com.materia.materiabot.commands.PingPong;
 import com.materia.materiabot.commands._BaseCommand;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
@@ -15,6 +15,7 @@ import net.dv8tion.jda.core.events.message.react.MessageReactionAddEvent;
 
 public class Listener extends ListenerAdapter{
 	public static String COMMAND_PREFIX = "!!";
+	public static boolean SHUTDOWN;
 	private static List<_BaseCommand> commands = new LinkedList<_BaseCommand>();
 	
 	static {
@@ -26,6 +27,10 @@ public class Listener extends ListenerAdapter{
     	for(_BaseCommand c : commands)
     		if(c.validateCommand(event.getMessage()))
     			if(c.validatePermission(event.getMessage())) {
+    	        	if(SHUTDOWN) {
+    	        		MessageUtils.sendMessage(event.getChannel(), "The bot is restarting, no further commands are being processed.");
+    	        		return;
+    	        	}
             		new Thread(() -> c.doStuff(event.getMessage())).start();
             		ConfigsDB.addStatistic(event.getGuild().getIdLong(), event.getAuthor().getIdLong(), c.getCommand());
     				return;
