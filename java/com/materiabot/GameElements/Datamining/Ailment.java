@@ -1,4 +1,4 @@
-package com.materiabot.GameElements.OperaOmnia.Datamining;
+package com.materiabot.GameElements.Datamining;
 
 public abstract class Ailment {
 	public String getName() { return null; }

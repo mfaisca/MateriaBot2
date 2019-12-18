@@ -35,7 +35,7 @@ public abstract class Constants {
 	
 	public static final boolean isNumber(String str) {
 		for(char c : str.toCharArray())
-			if('0' <= c && c <= '9') return false;
+			if(!('0' <= c && c <= '9')) return false;
 		return true;
 	}
 	public static final LinkedList<String> splitString(String s, int size) {

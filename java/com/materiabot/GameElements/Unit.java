@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.materiabot.GameElements.OperaOmnia.Datamining.Ability;
-import com.materiabot.GameElements.OperaOmnia.Datamining.Passive;
+import com.materiabot.GameElements.Datamining.Ability;
+import com.materiabot.GameElements.Datamining.Passive;
 import com.materiabot.GameElements.Sphere.SphereType;
 
 public class Unit {	

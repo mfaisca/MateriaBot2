@@ -20,7 +20,7 @@ public class Main {
 		}
         client = new JDABuilder(privateToken).setAutoReconnect(true)
 				.setStatus(OnlineStatus.ONLINE)
-				.setActivity(Activity.playing("DFFOO")).addEventListeners(new _Listener()).build();
+				.setActivity(Activity.playing("Opera Omnia")).addEventListeners(new _Listener()).build();
 		client.awaitReady();
 		System.out.println("Bot is ready!!");
 	}

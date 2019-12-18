@@ -1,10 +1,11 @@
-package com.materiabot.GameElements.OperaOmnia.Datamining;
+package com.materiabot.GameElements.Datamining;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import com.materiabot.GameElements._Library;
+import com.materiabot.IO.JSON.JSONParser;
 import com.materiabot.Utils.BotException;
 import com.materiabot.Utils.Constants;
 import com.materiabot.Utils.Constants.Dual;
@@ -295,28 +296,13 @@ public class Passive {
 		}
 	}
 	
-	public static class ValueGrouping<R>{
-		public R type;
-		public int id;
-		public Integer[] values = new Integer[3];
-		
-		public ValueGrouping(R t, Integer... vals) {
-			type = t;
-			values = vals;
-		}
-		public ValueGrouping(int i, Integer... vals) {
-			id = i;
-			values = vals;
-		}
-	}
-	
 	private int id;
 	private String name;
 	private String unit;
 	private String desc, shortDesc;
 	private int cp, level;
 	private Target target;
-	private List<Dual<ValueGrouping<Effect>, ValueGrouping<Required>>> effects = new LinkedList<Dual<ValueGrouping<Effect>, ValueGrouping<Required>>>();
+	private List<Dual<JSONParser.ValueGrouping<Effect>, JSONParser.ValueGrouping<Required>>> effects = new LinkedList<Dual<JSONParser.ValueGrouping<Effect>, JSONParser.ValueGrouping<Required>>>();
 	
 	public Passive() {}
 
@@ -368,17 +354,17 @@ public class Passive {
 	public void setTarget(Target target) {
 		this.target = target;
 	}
-	public List<Dual<ValueGrouping<Effect>, ValueGrouping<Required>>> getEffects() {
+	public List<Dual<JSONParser.ValueGrouping<Effect>, JSONParser.ValueGrouping<Required>>> getEffects() {
 		return effects;
 	}
 	
 	public String generateDescription() throws BotException {
 		List<String> results = new LinkedList<String>();
-		ValueGrouping<Effect> previousEff = null;
-		ValueGrouping<Required> previous = null;
-		for(Dual<ValueGrouping<Effect>, ValueGrouping<Required>> effReq : getEffects()) {
-			ValueGrouping<Effect> eff = effReq.getValue1();
-			ValueGrouping<Required> req = effReq.getValue2();
+		JSONParser.ValueGrouping<Effect> previousEff = null;
+		JSONParser.ValueGrouping<Required> previous = null;
+		for(Dual<JSONParser.ValueGrouping<Effect>, JSONParser.ValueGrouping<Required>> effReq : getEffects()) {
+			JSONParser.ValueGrouping<Effect> eff = effReq.getValue1();
+			JSONParser.ValueGrouping<Required> req = effReq.getValue2();
 			if(req.type == null || eff.type == null) {
 				results.add("E" + eff.id + "(" + eff.values.toString() + ") when R" + req.id + "(" + req.values.toString() + ")");
 				continue;

@@ -16,7 +16,7 @@ import org.json.JSONObject;
 public class JSONParser {
 	public static abstract class JSON_PATH{
 		public static final String ARTIFACT_PATH = "https://pastebin.com/raw/KhaefxA4";
-		public static final String CHARACTERS_PATH = "D:\\Workspace\\_files\\gl";
+		public static final String CHARACTERS_PATH = "D:\\Workspace\\_files\\gl\\raw_data_{1}.json";
 	}
 	
 	public static class MyJSONObject{
@@ -64,6 +64,21 @@ public class JSONParser {
 		public JSONObject obtainJSON() { return json; }
 	}
 	
+	public static class ValueGrouping<R>{
+		public R type;
+		public int id;
+		public Integer[] values = new Integer[3];
+		
+		public ValueGrouping(R t, Integer... vals) {
+			type = t;
+			values = vals;
+		}
+		public ValueGrouping(int i, Integer... vals) {
+			id = i;
+			values = vals;
+		}
+	}
+
 	private static final JSONObject parse(InputStream is) throws IOException{
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 		StringBuilder sb = new StringBuilder();

@@ -2,8 +2,8 @@ package com.materiabot.GameElements;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.materiabot.GameElements.OperaOmnia.Datamining.Ability;
-import com.materiabot.GameElements.OperaOmnia.Datamining.Ailment;
+import com.materiabot.GameElements.Datamining.Ability;
+import com.materiabot.GameElements.Datamining.Ailment;
 
 public class _Library {
 	public static final _Library GL = new _Library();

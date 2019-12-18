@@ -3,12 +3,9 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
-
 import com.materiabot.GameElements.Summon;
 import com.materiabot.GameElements._Library;
 import com.materiabot.GameElements.Summon.SummonPassive;
@@ -19,11 +16,8 @@ import com.materiabot.Utils.MessageUtils;
 import com.materiabot.commands._BaseCommand;
 import com.materiabot.commands._Listener;
 import com.materiabot.commands.general.HelpCommand;
-import com.materiabot.commands.general.HelpCommand.HELP_TYPE;
-
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
 public class SummonCommand extends _BaseCommand{
 	private static int[][] normalMaterials = new int[30][8];
@@ -208,8 +202,10 @@ public class SummonCommand extends _BaseCommand{
 			Message msg = null;
 			if(embed == null)
 				MessageUtils.sendEmbed(event.getChannel(), "There's no summon with that name.", EmoteUtils.Emotes.SORRY_MOOGLE_URL);
-			else
+			else {
 				msg = MessageUtils.sendEmbed(event.getChannel(), embed);
+				//TODO Add reaction stuff
+			}
 		} catch (BotException e) {
 			if(e.getErrorCode() == 201)
 				MessageUtils.sendStatusMessageWarn(event.getChannel(), e.getMessage());
