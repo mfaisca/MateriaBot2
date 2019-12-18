@@ -113,7 +113,7 @@ public class Ability {
 	
 	public static abstract class Hit_Data {
 		public static enum Type{
-			BRV(1), HP(2), Ailment(6), HPSplash(7), BRVIgnoreDEF(14), SketchSummon(15);
+			BRV(1), HP(2), Other(6), HPSplash(7), BRVIgnoreDEF(14), SketchSummon(15);
 			
 			private int id;
 			
@@ -156,11 +156,57 @@ public class Ability {
 				return desc;
 			}
 		}
-		public static enum Effect{
+		public static enum EffectType{ //EffectValueType irrelevant if not mentioned
+			E1(1, "BRV Attack"), 
+			E7(7, "Dispel debuffs"),//(#ofRemovedDebuffs[, ?]) First can be -1 for all
+			E8(8, "Remove buffs"),//(#ofRemovedBuffs[, ?, ?])  First can be -1 for all
+			E25(25, "100% Accuracy BRV Attack"),
+			E41(41, "Battery"),     //(Potency[, ?]) //TODO EffectValueType might represent stat its based on, needs further checking
+			;
+			private int id;
+			private String description;
 			
+			private EffectType(int id, String desc) { this.id = id; description = desc; }
+
+			public int getId() {
+				return id;
+			}
+			public void setId(int id) {
+				this.id = id;
+			}
+			public String getDescription() {
+				return description;
+			}
+			public void setDescription(String description) {
+				this.description = description;
+			}
 		}
 		public static class Effect{
+			private EffectType effect;
 			private int effectValueType;
+
+			public Effect() {}
+			public Effect(EffectType effect, int effectValueType, int brvRate) {
+				this.effect = effect;
+				this.effectValueType = effectValueType;
+				this.brvRate = brvRate;
+			}
+
+			public EffectType getEffect() {
+				return effect;
+			}
+
+			public void setEffect(EffectType effect) {
+				this.effect = effect;
+			}
+
+			public int getEffectValueType() {
+				return effectValueType;
+			}
+
+			public void setEffectValueType(int effectValueType) {
+				this.effectValueType = effectValueType;
+			}
 		}
 		
 		private int id;
@@ -170,6 +216,10 @@ public class Ability {
 		private Target target;
 		private Element element;
 		private Effect effect;
+		private int brvRate;
+		private int maxBrvOverflow = 100;
+		private int maxBrvOverflowOnBreak = 0;
+		private int singleTargetBrvRate = 0;
 		
 		public int getId() {
 			return id;
@@ -212,6 +262,30 @@ public class Ability {
 		}
 		public void setEffect(Effect effect) {
 			this.effect = effect;
+		}
+		public int getBrvRate() {
+			return brvRate;
+		}
+		public void setBrvRate(int brvRate) {
+			this.brvRate = brvRate;
+		}
+		public int getMaxBrvOverflow() {
+			return maxBrvOverflow;
+		}
+		public void setMaxBrvOverflow(int maxBrvOverflow) {
+			this.maxBrvOverflow = maxBrvOverflow;
+		}
+		public int getMaxBrvOverflowOnBreak() {
+			return maxBrvOverflowOnBreak;
+		}
+		public void setMaxBrvOverflowOnBreak(int maxBrvOverflowOnBreak) {
+			this.maxBrvOverflowOnBreak = maxBrvOverflowOnBreak;
+		}
+		public int getSingleTargetBrvRate() {
+			return singleTargetBrvRate;
+		}
+		public void setSingleTargetBrvRate(int singleTargetBrvRate) {
+			this.singleTargetBrvRate = singleTargetBrvRate;
 		}
 	}
 	
