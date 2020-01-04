@@ -1,0 +1,5515 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 3,
+            "name": "BRV Attack",
+            "desc": "Magic attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 318,
+            "name": "Dark Magic: Bio",
+            "desc": "\\bPP magic \\bPG attack\\nTarget: Fair chance Poison for 3 turns\\nBecomes Rage Bio for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1337,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 130.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 40,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 617,
+            "name": "Elemental Magic: Aero",
+            "desc": "3-hit \\bPN magic \\bPG attack\\nSelf: 5 turns MAX BRV Up II\\nBecomes Rage Aero for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 514,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 514,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 514,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 322,
+            "name": "Divine Malison",
+            "desc": "2-hit \\bPO magic \\bPG attack + \\bPF attack\\nTarget: 2 turns Divine Malison",
+            "movement_cost": 30,
+            "use_count": 12000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 296,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        9
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 296,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        9
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 460,
+                    "cast_id": 472,
+                    "name": "Divine Malison",
+                    "desc": "Divine Malison: Lowers \u001bPI\u001bPK\u001bPN\u001bPO resistance (does not stack)",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            10,
+                            12,
+                            13,
+                            16
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            460,
+                            460,
+                            460,
+                            460
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            1,
+                            1,
+                            1,
+                            1
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 319,
+            "name": "Rage Bio",
+            "desc": "\\bPP magic \\bPG attack\\nHigh turn rate\\nTarget: Fair chance 3 turns Poison",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1349,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 200.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 60,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 618,
+            "name": "Rage Aero",
+            "desc": "5-hit \\bPN magic \\bPG attack\\nHigh turn rate\\nSelf: 5 turns MAX BRV Up II",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 515,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 32.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 515,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 32.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 515,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 32.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 515,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 32.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 515,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 32.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 619,
+            "name": "Elemental Magic: Aero",
+            "desc": "3-hit \\bPN magic \\bPG attack\\nSelf: 5 turns MAX BRV Up II\\nBecomes Rage Aero for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 516,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 46.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 516,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 46.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 516,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 46.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 620,
+            "name": "Rage Aero",
+            "desc": "5-hit \\bPN magic \\bPG attack\\nHigh turn rate\\nSelf: 5 turns MAX BRV Up II",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 517,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 517,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 517,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 517,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 517,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1278,
+            "name": "Dark Magic: Bio",
+            "desc": "\\bPP magic \\bPG attack\\nHigh turn rate\\nTarget: 6 turns Poison\\nSelf: 5 turns ATK Up I\\nBecomes Rage Bio for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 18,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1338,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            25
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1279,
+            "name": "Rage Bio",
+            "desc": "\\bPP magic \\bPG attack\\nHigh turn rate\\nTarget: 6 turns Poison\\nSelf: 5 turns ATK Up I",
+            "movement_cost": 16,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1339,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 220.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            25
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1671,
+            "name": "Elemental Magic: Aero",
+            "desc": "3-hit \\bPN magic \\bPG attack\\nSelf: 5 turns MAX BRV Up II\\nBecomes 5-hit Rage Aero for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1761,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 38.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1761,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 38.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1761,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 38.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1672,
+            "name": "Rage Aero",
+            "desc": "5-hit \\bPN magic \\bPG attack\\nHigh turn rate\\nSelf: 5 turns MAX BRV Up III",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1762,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1762,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1762,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1762,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1762,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 10,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1673,
+            "name": "Elemental Magic: Aero",
+            "desc": "3-hit \\bPN magic \\bPG attack\\nSelf: 5 turns MAX BRV Up II\\nBecomes 5-hit Rage Aero for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1763,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 49.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1763,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 49.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1763,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 49.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1674,
+            "name": "Rage Aero",
+            "desc": "5-hit \\bPN magic \\bPG attack\\nHigh turn rate\\nSelf: 5 turns MAX BRV Up III",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1764,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1764,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1764,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1764,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1764,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 10,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1675,
+            "name": "Dark Magic: Bio",
+            "desc": "\\bPP magic \\bPG attack\\nFair chance of inflicting Poison for 3 turns\\nBecomes \\bPG attack + \\bPF attack Rage Bio for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1765,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 140.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 40,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1676,
+            "name": "Rage Bio",
+            "desc": "\\bPP magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nFair chance of inflicting Poison for 3 turns",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1766,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 210.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 60,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1677,
+            "name": "Dark Magic: Bio",
+            "desc": "\\bPP magic \\bPG attack\\nHigh turn rate\\nTarget: 6 turns Poison\\nSelf: 5 turns ATK Up I\\nBecomes \\bPG attack + \\bPF attack Rage Bio for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 18,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1767,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 190.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            25
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1678,
+            "name": "Rage Bio",
+            "desc": "\\bPP magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nTarget: 6 turns Poison\\nSelf: 5 turns ATK Up I",
+            "movement_cost": 16,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1768,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 230.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            25
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2279,
+            "name": "Divine Malison",
+            "desc": "2-hit \\bPO magic \\bPG attack + \\bPF attack\\nTarget: 4 turns Divine Malison",
+            "movement_cost": 30,
+            "use_count": 12000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 296,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        9
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 296,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        9
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 460,
+                    "cast_id": 472,
+                    "name": "Divine Malison",
+                    "desc": "Divine Malison: Lowers \u001bPI\u001bPK\u001bPN\u001bPO resistance (does not stack)",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            10,
+                            12,
+                            13,
+                            16
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            460,
+                            460,
+                            460,
+                            460
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            1,
+                            1,
+                            1,
+                            1
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4036,
+            "name": "Weak Damage Up",
+            "desc": "Slightly increases BRV damage dealt when attacking target's weakness for 2 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 913,
+                    "cast_id": 838,
+                    "name": "Weak Damage Up",
+                    "desc": "Effect from additional ability Weak Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            97,
+                            67
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            913,
+                            913
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20000,
+                            20000
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4037,
+            "name": "Weak Damage Up",
+            "desc": "Slightly increases BRV damage dealt when attacking target's weakness for 4 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 913,
+                    "cast_id": 838,
+                    "name": "Weak Damage Up",
+                    "desc": "Effect from additional ability Weak Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            97,
+                            67
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            913,
+                            913
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20000,
+                            20000
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4038,
+            "name": "Weak Damage Up",
+            "desc": "Slightly increases BRV damage dealt when attacking target's weaknessã€? slightly increases amount stolen BRV may exceed MAX BRV for 2 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 913,
+                    "cast_id": 838,
+                    "name": "Weak Damage Up",
+                    "desc": "Effect from additional ability Weak Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            97,
+                            67
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            913,
+                            913
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20020,
+                            20020
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4039,
+            "name": "Weak Damage Up",
+            "desc": "Slightly increases BRV damage dealt when attacking target's weaknessã€? slightly increases amount stolen BRV may exceed MAX BRV for 4 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 913,
+                    "cast_id": 838,
+                    "name": "Weak Damage Up",
+                    "desc": "Effect from additional ability Weak Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            97,
+                            67
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            913,
+                            913
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20020,
+                            20020
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4057,
+            "name": "Elemental Magic: Aero",
+            "desc": "3-hit \\bPN magic \\bPG attack + \\bPF attack\\nTarget: 3 turns Accursed Gaze\\nSelf: 6 turns MAX BRV Up II\\nBecomes Rage Aero for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4702,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4702,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4702,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4058,
+            "name": "Rage Aero",
+            "desc": "5-hit \\bPN magic \\bPG attack + \\bPF attack delivered 2 times\\nDeals extra BRV damage to targets afflicted with Accursed Gaze \\nHigh turn rate\\nTarget: 3 turns Accursed Gaze\\nSelf: 6 turns MAX BRV Up III",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4703,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 35.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 10,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4059,
+            "name": "Elemental Magic: Aero",
+            "desc": "3-hit \\bPN magic \\bPG attack + \\bPF attack\\nTarget: 3 turns Accursed Gaze\\nSelf: 6 turns MAX BRV Up II\\nBecomes Rage Aero for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4707,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 51.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4707,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 51.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4707,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 51.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4060,
+            "name": "Rage Aero",
+            "desc": "5-hit \\bPN magic \\bPG attack + \\bPF attack delivered 2 times\\nDeals extra BRV damage to targets afflicted with Accursed Gaze \\nHigh turn rate\\nTarget: 3 turns Accursed Gaze\\nSelf: 6 turns MAX BRV Up III",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4708,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 43.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 10,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4061,
+            "name": "Dark Magic: Bio",
+            "desc": "5-hit \\bPP magic \\bPG attack + \\bPF attack\\nTarget: 3 turns Accursed Gaze; fair chance 3 turns Poison\\nBecomes Rage Bioã€? BRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4705,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 48.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4705,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 48.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4705,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 48.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4705,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 48.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4705,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 48.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 40,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4062,
+            "name": "Rage Bio",
+            "desc": "5-hit \\bPP magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to targets afflicted with Accursed Gaze \\nStolen BRV may exceed MAX BRV up to 150%\\nHigh turn rate\\nTarget: 3 turns Accursed Gaze; fair chance 3 turns Poison",
+            "movement_cost": 22,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4706,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 62.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4706,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 62.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4706,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 62.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4706,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 62.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4706,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 62.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 60,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4063,
+            "name": "Dark Magic: Bio",
+            "desc": "5-hit \\bPP magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nTarget: 3 turns Accursed Gaze; 6 turns Poison\\nSelf: 5 turns ATK Up I\\nBecomes Rage Bioã€? BRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ for 3 turns upon receiving attack or when HP drops to 50% of MAX HP or below",
+            "movement_cost": 18,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4709,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 58.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4709,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 58.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4709,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 58.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4709,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 58.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4709,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 58.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            25
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4064,
+            "name": "Rage Bio",
+            "desc": "5-hit \\bPP magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to targets afflicted with Accursed Gaze \\nStolen BRV may exceed MAX BRV up to 150%\\nHigh turn rate\\nTarget: 3 turns Accursed Gaze; 6 turns Poison\\nSelf: 5 turns ATK Up I",
+            "movement_cost": 16,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4710,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 66.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4710,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 66.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4710,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 66.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4710,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 66.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4710,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 66.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        8
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 508,
+                    "cast_id": 871,
+                    "name": "Accursed Gaze",
+                    "desc": "Accursed Gaze: Lowers DEF; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            508,
+                            508
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "cast_id": 2,
+                    "name": "Poison",
+                    "desc": "Poison: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            32,
+                            101
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            2
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            25
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4255,
+            "name": "BRV Attack+",
+            "desc": "2-hit \\bPN magic \\bPG attack\\nExtends Rage duration 4 turns (limit 6)",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4938,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4938,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        5
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4271,
+            "name": "HP Attack+",
+            "desc": "Increases BRV based on MAX BRV\\n\\bPF attack\\nExtends Rage duration 4 turns (limit 6)",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4956,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 70,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        }
+    ],
+    "passives": [
+        {
+            "id": 163,
+            "name": "Mighty Critical Hit",
+            "desc": "Slightly increases BRV damage dealt with critical hits",
+            "short_desc": "Mighty Critical Hit: Increases BRV damage dealt with Critical Hit",
+            "meta_data": {
+                "cp": 5,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 38,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 514,
+            "name": "Mighty Aero",
+            "desc": "Slightly increases BRV damage dealt with Elemental Magic: Aero and Rage Aero",
+            "short_desc": "Mighty Aero: Increases BRV damage dealt with Elemental Magic: Aero and Rage Aero",
+            "meta_data": {
+                "cp": 10,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 2
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 77,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        2,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 39,
+                    "required_id": 77,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        3,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 289,
+            "name": "Greater Rejuvenate",
+            "desc": "Slightly recovers more HP with heals",
+            "short_desc": "Greater Rejuvenate: Raises HP recovery amount",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 76,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 370,
+            "name": "Mighty Bio",
+            "desc": "Slightly increases BRV damage dealt with Dark Magic: Bio and Rage Bio",
+            "short_desc": "Mighty Bio: Increases BRV damage dealt with Dark Magic: Bio and Rage Bio",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 2
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 77,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        4,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 39,
+                    "required_id": 77,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        5,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 462,
+            "name": "Devil's Laugh",
+            "desc": "When using Elemental Magic: Aeroã€? Dark Magic: Bioã€? Divine Malison:\\n â€¢ Target: 1 turn Lock",
+            "short_desc": "Devil's Laugh: Draws target's attention",
+            "meta_data": {
+                "cp": 15,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 66,
+                    "required_id": 77,
+                    "required_target": 2,
+                    "effect_values": [
+                        100,
+                        403,
+                        1
+                    ],
+                    "required_values": [
+                        6,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 137,
+            "name": "Rapid Speed",
+            "desc": "Slightly raises SPD for 1 turn upon inflicting Break",
+            "short_desc": "Rapid Speed: Raises SPD",
+            "meta_data": {
+                "cp": 10,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 33,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 515,
+            "name": "Charged Aero",
+            "desc": "Elemental Magic: Aero use +1",
+            "short_desc": "Charged Aero: Raises use count of Elemental Magic: Aero",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        617,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "name": "Charged Bio",
+            "desc": "Dark Magic: Bio use +1",
+            "short_desc": "Charged Bio: Raises use count of Dark Magic: Bio",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        318,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 463,
+            "name": "Hellion",
+            "desc": "With at least 50% HPã€? KO is avoided and HP drops to 1",
+            "short_desc": "Hellion: KO is avoided and HP drops to 1 if HP is over a certain amount",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 62,
+                    "required_id": 30,
+                    "required_target": 2,
+                    "effect_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        50,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1486,
+            "name": "Rage Attack Boost Up",
+            "desc": "While in Rage mode:\\n â€¢ Moderately raises MAX BRVã€? ATK",
+            "short_desc": "Rage Attack Boost Up: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 78,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        907,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 36,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1487,
+            "name": "Elemental Magic: Aero Extension",
+            "desc": "Elemental Magic: Aero use +1\\n\\nWhen using Elemental Magic: Aeroã€? Rage Aero:\\n â€¢ Slight BRV damage boost\\n â€¢ Inflicts 3 turns Accursed Gaze\\n â€¢ MAX BRV Up duration +1\\n â€¢ Triggers additional \\bPF attack after use\\n\\nWhen using Rage Aero:\\n â€¢ Delivers 5-hit \\bPN magic \\bPG attack + \\bPF attack twice\\n â€¢ Deals extra BRV damage to targets afflicted with Accursed Gaze\\n â€¢ Moderate MAX BRV Up boost",
+            "short_desc": "Elemental Magic: Aero Extension: Boost to Elemental Magic: Aero",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": -1,
+                    "required_target": 2,
+                    "effect_values": [
+                        617,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1488,
+            "name": "Buff Attack Speed",
+            "desc": "Moderately raises ATKã€? SPD with active buffs",
+            "short_desc": "Buff Attack Speed: Raises ATKã€? SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 32,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        60,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1489,
+            "name": "Dark Magic: Bio Extension",
+            "desc": "Start quest in Rage mode for 5 turns\\n\\nWhen using Dark Magic: Bioã€? Rage Bio:\\n â€¢ \\bPG attack hit count becomes 5; tremendously increased cumulative BRV damage\\n â€¢ Inflicts 3 turns Accursed Gaze\\n â€¢ Triggers additional \\bPF attack after use\\n\\nWhen using Rage Bio:\\n â€¢ Deals extra BRV damage to targets afflicted with Accursed Gaze\\n â€¢ Stolen BRV may exceed MAX BRV up to 150%\\n â€¢ Slight Poison boost\\n\\nWhile in Rage mode:\\n â€¢ BRV Attack becomes BRV Attack+ (moderate BRV damage boost; 2-hit \\bPN magic \\bPG attack; extends Rage duration 4 turns [limit 6])\\n â€¢ HP Attack becomes HP Attack+ (increases BRV based on MAX BRV; \\bPF attack; extends Rage duration 4 turns [limit 6])",
+            "short_desc": "Dark Magic: Bio Extension: Boost to Dark Magic: Bio",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        },
+        {
+            "id": 1513,
+            "name": "Destruction Brilliance",
+            "desc": "Slightly raises MAX BRVã€? ATK",
+            "short_desc": "Destruction Brilliance: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 68,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1469,
+            "name": "Weak Damage Up Extension",
+            "desc": "When using Weak Damage Up:\\n â€¢ Adds effect that slightly increases stolen BRV limit",
+            "short_desc": "Weak Damage Up Extension: Boost to Weak Damage Up",
+            "meta_data": {
+                "cp": 15,
+                "level": 70,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        }
+    ],
+    "bloom": {
+        "passive": {
+            "id": 1476,
+            "name": "Weak Damage Up Growth",
+            "desc": "Weak Damage Up use +1\\n\\nWeak Damage Up effect duration +2",
+            "short_desc": "Weak Damage Up Growth: Boost to Weak Damage Up",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        4036,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    },
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 105,
+                "name": "Wicked Laugh",
+                "desc": "When using Elemental Magic: Aeroã€? Rage Aero:\\n â€¢ BRV damage boost",
+                "short_desc": "Wicked Laugh: Boost to Elemental Magic: Aero",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 105,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 81,
+                "name": "Lady's Torment",
+                "desc": "When using Dark Magic: Bioã€? Rage Bio:\\n â€¢ BRV damage boost\\n â€¢ Turn rate+\\n â€¢ Poison hit rate+ã€? duration+\\n â€¢ Self: 5 turns ATK Up I",
+                "short_desc": "Lady's Torment: Boost to Dark Magic: Bio",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 81,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 223,
+                "name": "Project: Shantottofication",
+                "desc": "May equip EX ability Divine Malison",
+                "short_desc": "Project: Shantottofication: May equip Divine Malison",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 223,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            792,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 246,
+                    "name": "Mighty Divine Malison",
+                    "desc": "Slightly increases BRV damage dealt with Divine Malison",
+                    "short_desc": "Mighty Divine Malison: Increases BRV damage dealt with Divine Malison",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 246,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                322,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 247,
+                    "name": "Divine Malison Debuff Longer",
+                    "desc": "Divine Malison effect duration +2",
+                    "short_desc": "Divine Malison Debuff Longer: Divine Malison effect duration+",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 247,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                },
+                {
+                    "id": 248,
+                    "name": "Divine Malison Recast Up",
+                    "desc": "Slightly raises recast speed of Divine Malison",
+                    "short_desc": "Divine Malison Recast Up: Raises recast speed of Divine Malison",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 248,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                322,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {
+            "passive": {
+                "id": 780,
+                "name": "Dark Matron's Power",
+                "desc": "Slightly increases BRV damage dealt with Elemental Magic: Aeroã€? Rage Aeroã€? Dark Magic: Bioã€? Rage Bio",
+                "short_desc": "Dark Matron's Power: Increases BRV damage dealt with Elemental Magic: Aeroã€? Rage Aeroã€? Dark Magic: Bioã€? Rage Bio",
+                "meta_data": {
+                    "cp": 5,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 780,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 2
+                },
+                "effects": [
+                    {
+                        "effect_id": 39,
+                        "required_id": 14,
+                        "required_target": 2,
+                        "effect_values": [
+                            10,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            617,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    },
+                    {
+                        "effect_id": 39,
+                        "required_id": 14,
+                        "required_target": 2,
+                        "effect_values": [
+                            10,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            318,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            }
+        }
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

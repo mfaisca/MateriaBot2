@@ -1,0 +1,3616 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 1,
+            "name": "BRV Attack",
+            "desc": "Melee attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3823,
+            "name": "Thunder & Geocrush",
+            "desc": "\\bPK\\bPM magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nSelf: 3 turns Mirage S\\nBecomes Thunder & Geocrush+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4379,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 902,
+                    "cast_id": 827,
+                    "name": "Mirage S",
+                    "desc": "Mirage S: Raises SPD; reduces BRV damage taken",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            58,
+                            3
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            902,
+                            902
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30030,
+                            30030
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3824,
+            "name": "Thunder & Geocrush+",
+            "desc": "3-hit group \\bPK\\bPM magic \\bPG attack + group \\bPF attack\\nDeals proportionate HP damage to each target\\nHigh turn rate",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4380,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4380,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4380,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4324,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3826,
+            "name": "Thunder & Geocrush",
+            "desc": "\\bPK\\bPM magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nSelf: 3 turns Mirage S\\nBecomes Thunder & Geocrush+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4382,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 140.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 902,
+                    "cast_id": 827,
+                    "name": "Mirage S",
+                    "desc": "Mirage S: Raises SPD; reduces BRV damage taken",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            58,
+                            3
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            902,
+                            902
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30030,
+                            30030
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3827,
+            "name": "Thunder & Geocrush+",
+            "desc": "3-hit group \\bPK\\bPM magic \\bPG attack + group \\bPF attack\\nDeals total HP damage to each target\\nHigh turn rate",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4383,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4383,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4383,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4422,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 107,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3829,
+            "name": "Thunder & Geocrush",
+            "desc": "2-hit \\bPK\\bPM magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nSelf: 3 turns Mirage S\\nBecomes Thunder & Geocrush+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4385,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4385,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 902,
+                    "cast_id": 827,
+                    "name": "Mirage S",
+                    "desc": "Mirage S: Raises SPD; reduces BRV damage taken",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            58,
+                            3
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            902,
+                            902
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30030,
+                            30030
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3831,
+            "name": "Thunder & Geocrush+",
+            "desc": "6-hit group \\bPK\\bPM magic \\bPG attack + group \\bPF attack\\nDeals proportionate HP damage to each target\\nHigh turn rate",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4387,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4387,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4387,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4387,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4387,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4387,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4324,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3832,
+            "name": "Thunder & Geocrush",
+            "desc": "2-hit \\bPK\\bPM magic \\bPG attack + \\bPF attack\\nHigh turn rate\\nSelf: 3 turns Mirage S\\nBecomes Thunder & Geocrush+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4388,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4388,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 902,
+                    "cast_id": 827,
+                    "name": "Mirage S",
+                    "desc": "Mirage S: Raises SPD; reduces BRV damage taken",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            58,
+                            3
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            902,
+                            902
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30030,
+                            30030
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3834,
+            "name": "Thunder & Geocrush+",
+            "desc": "6-hit group \\bPK\\bPM magic \\bPG attack + group \\bPF attack\\nDeals total HP damage to each target\\nHigh turn rate",
+            "movement_cost": 24,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4390,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4390,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4390,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4390,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4390,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4390,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        4,
+                        6
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4422,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 107,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3835,
+            "name": "Blizzard & Water",
+            "desc": "\\bPJ\\bPL magic \\bPG attack + \\bPF attack\\nTarget: 2 turns SPD Down I\\nSelf: 4 turns Mirage L\\nBecomes Blizzard & Water+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4391,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 905,
+                    "cast_id": 830,
+                    "name": "Mirage L",
+                    "desc": "Mirage L: Raises MAX BRVã€? ATKã€? DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5,
+                            1,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            904,
+                            904,
+                            904
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40040040,
+                            40040040,
+                            40040040
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3836,
+            "name": "Blizzard & Water+",
+            "desc": "3-hit group \\bPJ\\bPL magic \\bPG attack + group \\bPF attack\\nDeals proportionate HP damage to each target\\nTarget: 2 turns SPD Down I",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4392,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4392,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4392,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4324,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3838,
+            "name": "Blizzard & Water",
+            "desc": "\\bPJ\\bPL magic \\bPG attack + \\bPF attack\\nTarget: 4 turns SPD Down I\\nSelf: 4 turns Mirage L\\nBecomes Blizzard & Water+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4394,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 140.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 905,
+                    "cast_id": 830,
+                    "name": "Mirage L",
+                    "desc": "Mirage L: Raises MAX BRVã€? ATKã€? DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5,
+                            1,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            904,
+                            904,
+                            904
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40040040,
+                            40040040,
+                            40040040
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3839,
+            "name": "Blizzard & Water+",
+            "desc": "3-hit group \\bPJ\\bPL magic \\bPG attack + group \\bPF attack\\nDeals total HP damage to each target\\nTarget: 4 turns SPD Down I",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4395,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4395,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4395,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4422,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 107,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3841,
+            "name": "Blizzard & Water",
+            "desc": "2-hit \\bPJ\\bPL magic \\bPG attack + \\bPF attack\\nTarget: 2 turns SPD Down I\\nSelf: 4 turns Mirage L\\nBecomes Blizzard & Water+ã€? BRV Attack becomes BRV Attack+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4397,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4397,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 905,
+                    "cast_id": 830,
+                    "name": "Mirage L",
+                    "desc": "Mirage L: Raises MAX BRVã€? ATKã€? DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5,
+                            1,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            904,
+                            904,
+                            904
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40040040,
+                            40040040,
+                            40040040
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3843,
+            "name": "Blizzard & Water+",
+            "desc": "6-hit group \\bPJ\\bPL magic \\bPG attack + group \\bPF attack\\nDeals proportionate HP damage to each target\\nTarget: 2 turns SPD Down I\\nBRV Attack becomes BRV Attack+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4399,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4399,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4399,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4399,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4399,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4399,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4324,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3844,
+            "name": "Blizzard & Water",
+            "desc": "2-hit \\bPJ\\bPL magic \\bPG attack + \\bPF attack\\nTarget: 4 turns SPD Down I\\nSelf: 4 turns Mirage L\\nBecomes Blizzard & Water+ã€? BRV Attack becomes BRV Attack+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4400,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4400,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 153,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 905,
+                    "cast_id": 830,
+                    "name": "Mirage L",
+                    "desc": "Mirage L: Raises MAX BRVã€? ATKã€? DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5,
+                            1,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            904,
+                            904,
+                            904
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40040040,
+                            40040040,
+                            40040040
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 3846,
+            "name": "Blizzard & Water+",
+            "desc": "6-hit group \\bPJ\\bPL magic \\bPG attack + group \\bPF attack\\nDeals total HP damage to each target\\nTarget: 4 turns SPD Down I\\nBRV Attack becomes BRV Attack+ while Mirage Sã€? Mirage L active",
+            "movement_cost": 30,
+            "use_count": 6,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4402,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4402,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4402,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4402,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4402,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4402,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        3,
+                        7
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4422,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 107,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3849,
+            "name": "BRV Attack+",
+            "desc": "2-hit melee \\bPG attack\\nExtends Mirage Sã€? Mirage L duration 1 turn",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4407,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4407,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4453,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        902
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4454,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        905
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3851,
+            "name": "Sonic Fangs",
+            "desc": "Inflicts Break on all enemies\\n6-hit group \\bPI melee \\bPG attack + group \\bPF attack\\nDeals total HP damage to each target\\nSelf: 6 turns Stack Enchant\\nExtends Mirage Sã€? Mirage L duration 1 turn",
+            "movement_cost": 30,
+            "use_count": 18000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4423,
+                    "type": 1,
+                    "arguments": [
+                        100
+                    ],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        2
+                    ],
+                    "target": 5,
+                    "effect": 57,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4506,
+                    "type": 6,
+                    "arguments": [
+                        161
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        2
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        2
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        2
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        2
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        2
+                    ],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4412,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 107,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4453,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        902
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4454,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        905
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 874,
+                    "cast_id": 796,
+                    "name": "Stack Enchant",
+                    "desc": "Stack Enchant: Infuses non-elemental \u001bPG attacks with \u001bPI\u001bPJ\u001bPK\u001bPL\u001bPM or boosts BRV damage of same elements",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            23,
+                            24,
+                            25,
+                            27,
+                            28
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            873,
+                            873,
+                            873,
+                            873,
+                            873
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20,
+                            20,
+                            20,
+                            20,
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 161,
+                    "cast_id": 181,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            46
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            161
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            100
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "passives": [
+        {
+            "id": 1395,
+            "name": "Mighty Thunder & Geocrush",
+            "desc": "Slightly increases BRV damage dealt with Thunder & Geocrushã€? Thunder & Geocrush+",
+            "short_desc": "Mighty Thunder & Geocrush: Increases BRV damage dealt with Thunder & Geocrushã€? Thunder & Geocrush+",
+            "meta_data": {
+                "cp": 10,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        3823,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 126,
+            "name": "BRV Guard Up",
+            "desc": "Slightly raises DEF when BRV is at least 50% MAX BRV",
+            "short_desc": "BRV Guard Up: Raises DEF",
+            "meta_data": {
+                "cp": 10,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 30,
+                    "required_id": 26,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        50,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 271,
+            "name": "Buffed Attack",
+            "desc": "Slightly raises ATK with active buffs",
+            "short_desc": "Buffed Attack: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1396,
+            "name": "Mighty Blizzard & Water",
+            "desc": "Slightly increases BRV damage dealt with Blizzard & Waterã€? Blizzard & Water+",
+            "short_desc": "Mighty Blizzard & Water: Increases BRV damage dealt with Blizzard & Waterã€? Blizzard & Water+",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        3835,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 62,
+            "name": "Break Bonus Up",
+            "desc": "Slightly raises Break Bonus upon inflicting Break",
+            "short_desc": "Break Bonus Up: Raises Break Bonus",
+            "meta_data": {
+                "cp": 10,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 64,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1397,
+            "name": "Charged Thunder & Geocrush",
+            "desc": "Thunder & Geocrush use +1",
+            "short_desc": "Charged Thunder & Geocrush: Raises use count of Thunder & Geocrush",
+            "meta_data": {
+                "cp": 10,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        3823,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 748,
+            "name": "Buff Boost",
+            "desc": "Slightly raises MAX BRV with active buffs",
+            "short_desc": "Buff Boost: Raises MAX BRV",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1398,
+            "name": "Charged Blizzard & Water",
+            "desc": "Blizzard & Water use +1",
+            "short_desc": "Charged Blizzard & Water: Raises use count of Blizzard & Water",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        3835,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1399,
+            "name": "Mirage Keepers",
+            "desc": "Slightly raises INT BRVã€? MAX BRVã€? ATKã€? DEF while Mirage Sã€? Mirage L active",
+            "short_desc": "Mirage Keepers: Raises INT BRVã€? MAX BRVã€? ATKã€? DEF",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 89,
+                    "required_id": 32,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        902,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1181,
+            "name": "Buff Attack Speed",
+            "desc": "Slightly raises ATKã€? SPD with active buffs",
+            "short_desc": "Buff Attack Speed: Raises ATKã€? SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 32,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1182,
+            "name": "Thunder & Geocrush Extension",
+            "desc": "Thunder & Geocrush use +1\\n\\n3 turns Mirage S at start of quest\\n\\nWhen using Thunder & Geocrush:\\n â€¢ \\bPG attack hit count becomes 2; slightly increased cumulative BRV damage\\n\\nWhen using Thunder & Geocrush+:\\n â€¢ \\bPG attack hit count becomes 6; moderately increased cumulative BRV damage",
+            "short_desc": "Thunder & Geocrush Extension: Boost to Thunder & Geocrush",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        3823,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1183,
+            "name": "Buffed Attack Boost Up",
+            "desc": "Moderately raises MAX BRVã€? ATK with active buffs",
+            "short_desc": "Buffed Attack Boost Up: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 36,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1184,
+            "name": "Blizzard & Water Extension",
+            "desc": "Blizzard & Water use +1\\n\\n3 turns Mirage L at start of quest\\n\\nWhen using Blizzard & Water:\\n â€¢ \\bPG attack hit count becomes 2; slightly increased cumulative BRV damage\\n\\nWhen using Blizzard & Water+:\\n â€¢ \\bPG attack hit count becomes 6; moderately increased cumulative BRV damage\\n\\nWhile Mirage Sã€? Mirage L active:\\n â€¢ BRV Attack becomes BRV Attack+ (\\bPG attack hit count becomes 2; moderately increased cumulative BRV damage; active Mirage Sã€? Mirage L duration +1)",
+            "short_desc": "Blizzard & Water Extension: Boost to Blizzard & Water",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        3835,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    ],
+    "bloom": {},
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 449,
+                "name": "Prophesied Twins",
+                "desc": "When using Thunder & Geocrushã€? Thunder & Geocrush+:\\n â€¢ BRV damage boost\\n\\nWhen using Thunder & Geocrush+:\\n â€¢ Deals total HP damage to each target",
+                "short_desc": "Prophesied Twins: Boost to Thunder & Geocrush",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 449,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 450,
+                "name": "Dutiful Children",
+                "desc": "When using Blizzard & Waterã€? Blizzard & Water+:\\n â€¢ BRV damage boost\\n â€¢ SPD Down boostã€? duration+\\n\\nWhen using Blizzard & Water+:\\n â€¢ Deals total HP damage to each target",
+                "short_desc": "Dutiful Children: Boost to Blizzard & Water",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 450,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 452,
+                "name": "Hands to Make Happiness",
+                "desc": "May equip EX ability Sonic Fangs",
+                "short_desc": "Hands to Make Happiness: May equip Sonic Fangs",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 452,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            2082,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 453,
+                    "name": "Mighty Sonic Fangs",
+                    "desc": "Slightly increases BRV damage dealt with Sonic Fangs",
+                    "short_desc": "Mighty Sonic Fangs: Increases BRV damage dealt with Sonic Fangs",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 453,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                3851,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 454,
+                    "name": "Sonic Fangs Recast Up",
+                    "desc": "Slightly raises recast speed of Sonic Fangs",
+                    "short_desc": "Sonic Fangs Recast Up: Raises recast speed of Sonic Fangs",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 454,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                3851,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 455,
+                    "name": "Hands to Make Happiness Boost Up",
+                    "desc": "While equipping EX weapon A. Arm & Gadget Knife (WOFF) or passive ability Hands to Make Happiness:\\n â€¢ Moderately increased MAX BRV",
+                    "short_desc": "Hands to Make Happiness Boost Up: Raises MAX BRV",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 455,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 36,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                40,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

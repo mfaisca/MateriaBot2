@@ -1,0 +1,3141 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 3,
+            "name": "BRV Attack",
+            "desc": "Magic attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 1636,
+            "name": "Trine",
+            "desc": "Increases BRV Ã— 1.2\\n\\bPF attack\\nTarget: 1 turn Blindã€? HP Attack Disable",
+            "movement_cost": 30,
+            "use_count": 3,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1863,
+                    "type": 6,
+                    "arguments": [
+                        20,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 33,
+                    "cast_id": 96,
+                    "name": "HP Attack Disable",
+                    "desc": "HP Attack Disable: Prevents use of HP attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            124
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1637,
+            "name": "Trine",
+            "desc": "Increases BRV Ã— 1.5\\n\\bPF attack\\nTarget: 2 turns Blindã€? HP Attack Disable\\nBRV Attack becomes Meteor after use",
+            "movement_cost": 30,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1864,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 33,
+                    "cast_id": 96,
+                    "name": "HP Attack Disable",
+                    "desc": "HP Attack Disable: Prevents use of HP attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            124
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1638,
+            "name": "Light of Judgment",
+            "desc": "2-hit magic \\bPG attack + \\bPF attack\\nTarget: 2 turns ATK Down Iã€? DEF Down Iã€? SPD Down Î²",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1728,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1728,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1729,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            5
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1639,
+            "name": "Light of Judgment",
+            "desc": "2-hit magic \\bPG attack + \\bPF attack\\nTarget: 4 turns ATK Down Iã€? DEF Down Iã€? SPD Down I\\nBRV Attack becomes Meteor after use",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1730,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1730,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1731,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1740,
+            "name": "Meteor",
+            "desc": "6-hit magic \\bPG attack\\nReturns to BRV Attack after use",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1853,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1853,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1853,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1853,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1853,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 504,
+                    "type": 6,
+                    "arguments": [
+                        111
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3580,
+            "name": "Trine",
+            "desc": "Increases BRV Ã— 1.2\\n2-hit group magic \\bPG attack + group \\bPF attack\\nModerately increased BRV damage when attacking single target\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nHigh turn rate\\nTarget: 1 turn Blindã€? HP Attack Disable",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4047,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                },
+                {
+                    "id": 4049,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 45
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4049,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 45
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4050,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 33,
+                    "cast_id": 96,
+                    "name": "HP Attack Disable",
+                    "desc": "HP Attack Disable: Prevents use of HP attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            124
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3581,
+            "name": "Trine",
+            "desc": "Increases BRV Ã— 1.5\\n2-hit group magic \\bPG attack + group \\bPF attack\\nModerately increased BRV damage when attacking single target\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nHigh turn rate\\nTarget: 2 turns Blindã€? HP Attack Disable\\nBRV Attack becomes Meteor after use",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4048,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                },
+                {
+                    "id": 4049,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 45
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4049,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 45
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4050,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 33,
+                    "cast_id": 96,
+                    "name": "HP Attack Disable",
+                    "desc": "HP Attack Disable: Prevents use of HP attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            124
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3582,
+            "name": "Light of Judgment",
+            "desc": "2-hit group magic \\bPG attack + group \\bPF attack\\nModerately increased BRV damage when attacking single target\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nHigh turn rate\\nAll targets: 3 turns ATK Down Iã€? DEF Down Iã€? SPD Down Î²\\nSelf: 6 turns ATK Up II",
+            "movement_cost": 18,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4051,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 36
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4051,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 36
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4053,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            5
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3583,
+            "name": "Light of Judgment",
+            "desc": "2-hit group magic \\bPG attack + group \\bPF attack\\nModerately increased BRV damage when attacking single target\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nHigh turn rate\\nAll targets: 5 turns ATK Down Iã€? DEF Down Iã€? SPD Down I\\nSelf: 6 turns ATK Up II\\nBRV Attack becomes Meteor after use",
+            "movement_cost": 18,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4052,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 60
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4052,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 60
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4053,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3584,
+            "name": "Havoc Wing",
+            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra damage to debuffed targets\\nStolen BRV may exceed MAX BRV up to 150%\\nFair chance of inflicting Break\\nHigh turn rate\\nTarget: 6 turns Sneering Clown\\nExtends own buffs 2 turns\\nBRV Attack or Meteor becomes Meteor+ after use",
+            "movement_cost": 18,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4054,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4054,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4222,
+                    "type": 1,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 57,
+                    "effect_value_type": 16
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4057,
+                    "type": 6,
+                    "arguments": [
+                        2,
+                        2,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 494,
+                    "cast_id": 769,
+                    "name": "Sneering Clown",
+                    "desc": "Sneering Clown: Lowers ATKã€? DEFã€? SPD; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            1,
+                            2,
+                            3
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            494,
+                            494,
+                            494,
+                            494
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020010,
+                            10020010,
+                            10020010,
+                            10020010
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3585,
+            "name": "Havoc Wing",
+            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra damage to debuffed targets\\nStolen BRV may exceed MAX BRV up to 150%\\nFair chance of inflicting Break\\nHigh turn rate\\nTarget: 6 turns Sneering Clown\\nExtends own buffs 2 turns\\nBRV Attack or Meteor becomes Meteor+ after use",
+            "movement_cost": 18,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4054,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4054,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4222,
+                    "type": 1,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 57,
+                    "effect_value_type": 16
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4057,
+                    "type": 6,
+                    "arguments": [
+                        2,
+                        2,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 494,
+                    "cast_id": 769,
+                    "name": "Sneering Clown",
+                    "desc": "Sneering Clown: Lowers ATKã€? DEFã€? SPD; effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49,
+                            1,
+                            2,
+                            3
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            494,
+                            494,
+                            494,
+                            494
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020010,
+                            10020010,
+                            10020010,
+                            10020010
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3586,
+            "name": "Meteor+",
+            "desc": "6-hit magic \\bPG attack\\nReturns to Meteor after use if conditions to become Meteor are met; returns to BRV Attack if not",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4056,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4055,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4055,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4055,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4055,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4055,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 688,
+                    "type": 6,
+                    "arguments": [
+                        105
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3593,
+            "name": "BRV Attack",
+            "desc": "Magic \\bPG attack",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4072,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        }
+    ],
+    "passives": [
+        {
+            "id": 810,
+            "name": "Trine Attack Up",
+            "desc": "Slightly raises ATK for 1 turn upon using Trine",
+            "short_desc": "Trine Attack Up: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 29,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        1636,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 145,
+            "name": "Bravery Critical Hit",
+            "desc": "Slightly raises BRV upon unleashing a critical BRV attack",
+            "short_desc": "Bravery Critical Hit: Gains BRV",
+            "meta_data": {
+                "cp": 5,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 43,
+                    "required_id": 38,
+                    "required_target": 2,
+                    "effect_values": [
+                        12,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 784,
+            "name": "Debuff Boost",
+            "desc": "Slightly raises MAX BRV while an enemy is debuffed",
+            "short_desc": "Debuff Boost: Raises MAX BRV",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 811,
+            "name": "Mighty Light of Judgment",
+            "desc": "Slightly increases BRV damage dealt with Light of Judgment",
+            "short_desc": "Mighty Light of Judgment: Increases BRV damage dealt with Light of Judgment",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1638,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 812,
+            "name": "Jester's Revelry",
+            "desc": "Marginally increases BRV damage dealt when attacking enemy not targeting self",
+            "short_desc": "Jester's Revelry: Increases BRV damage dealt",
+            "meta_data": {
+                "cp": 15,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 47,
+                    "required_target": 2,
+                    "effect_values": [
+                        5,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 813,
+            "name": "Charged Trine",
+            "desc": "Trine use +1",
+            "short_desc": "Charged Trine: Raises use count of Trine",
+            "meta_data": {
+                "cp": 15,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        1636,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 218,
+            "name": "Speed Critical Hit",
+            "desc": "Slightly raises SPD for 1 turn upon unleashing a critical hit",
+            "short_desc": "Speed Critical Hit: Raises SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 33,
+                    "required_id": 38,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 814,
+            "name": "Charged Light of Judgment",
+            "desc": "Light of Judgment use +1",
+            "short_desc": "Charged Light of Judgment: Raises use count of Light of Judgment",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        1638,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 815,
+            "name": "Power of Destruction",
+            "desc": "Slightly raises MAX BRVã€? ATK while an enemy is debuffed",
+            "short_desc": "Power of Destruction: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1356,
+            "name": "Debuff Initiative",
+            "desc": "Moderately raises own SPD while an enemy is debuffed",
+            "short_desc": "Debuff Initiative: Raises SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 32,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1357,
+            "name": "Trine Extension",
+            "desc": "When using Trine:\\n â€¢ Becomes group attack; deals proportionate HP damage to each target\\n â€¢ Adds 2-hit group magic \\bPG attack after multiplying BRV\\n â€¢ Moderately increased BRV damage when attacking single target\\n â€¢ Stolen BRV may exceed MAX BRV up to 150%\\n â€¢ Higher turn rate",
+            "short_desc": "Trine Extension: Boost to Trine",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        },
+        {
+            "id": 1358,
+            "name": "Buffed Attack Boost Up",
+            "desc": "Moderately raises MAX BRVã€? ATK with active buffs",
+            "short_desc": "Buffed Attack Boost Up: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1359,
+            "name": "Light of Judgment Extension",
+            "desc": "Light of Judgment use +1\\n\\nWhen using Light of Judgment:\\n â€¢ Moderate BRV damage boost\\n â€¢ Becomes group attack; deals proportionate HP damage to each target\\n â€¢ Moderately increased BRV damage when attacking single target\\n â€¢ Stolen BRV may exceed MAX BRV up to 150%\\n â€¢ Higher turn rate\\n â€¢ Inflicted debuff duration +1\\n â€¢ Self: 6 turns ATK Up II",
+            "short_desc": "Light of Judgment Extension: Boost to Light of Judgment",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        1638,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    ],
+    "bloom": {},
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 191,
+                "name": "Magitek Power",
+                "desc": "When using Trine:\\n â€¢ Increased BRV multiplier\\n â€¢ Blindã€? HP Attack Disable duration+\\n\\nAfter using Trine:\\n â€¢ BRV Attack becomes Meteor (returns to BRV Attack after use)",
+                "short_desc": "Magitek Power: Boost to Trine",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 191,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 192,
+                "name": "Fallen Angel's Judgment",
+                "desc": "Light of Judgment use +1\\nLight of Judgment BRV boost\\nATK Downã€? DEF Downã€? SPD Down boostã€? duration+\\nAfter useã€? BRV Attack becomes Meteor\\n(Returns to BRV Attack after using Meteor)",
+                "short_desc": "Fallen Angel's Judgment: Boost to Light of Judgment",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 192,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 22,
+                        "required_id": 2,
+                        "required_target": 2,
+                        "effect_values": [
+                            1638,
+                            1,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 566,
+                "name": "Clown Seeking Ruin",
+                "desc": "May equip EX ability Havoc Wing",
+                "short_desc": "Clown Seeking Ruin: May equip Havoc Wing",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 566,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            783,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 567,
+                    "name": "Mighty Havoc Wing",
+                    "desc": "Slightly increases BRV damage dealt with Havoc Wing",
+                    "short_desc": "Mighty Havoc Wing: Increases BRV damage dealt with Havoc Wing",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 567,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                3584,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 568,
+                    "name": "Havoc Wing Recast Up",
+                    "desc": "Slightly raises recast speed of Havoc Wing",
+                    "short_desc": "Havoc Wing Recast Up: Raises recast speed of Havoc Wing",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 568,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                3584,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 569,
+                    "name": "Clown Seeking Ruin Boost Up+",
+                    "desc": "While equipping EX weapon Chic Hair Ornament (VI) or passive ability Clown Seeking Ruin:\\n â€¢ Moderately increased MAX BRV\\n â€¢ BRV Attack BRV damage boost",
+                    "short_desc": "Clown Seeking Ruin Boost Up+: Raises MAX BRV; BRV Attack BRV damage boost",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 569,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 36,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                40,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

@@ -1,0 +1,3677 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 2,
+            "name": "BRV Attack",
+            "desc": "Ranged attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 614,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 155,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 51,
+            "name": "Aim",
+            "desc": "Ranged \\bPG attack\\nGuaranteed hit\\nHigh turn rate\\nSelf: 3 turns ATK Up I when target is debuffed",
+            "movement_cost": 22,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 64,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 25,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Grenade",
+            "desc": "Group ranged \\bPG attack\\nTarget: 3 turns DEF Down I; 4 turns SPD Down I\\nSelf: 4 turns ATK Up I",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 770,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 30.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 400,
+            "name": "Grenade",
+            "desc": "Group ranged \\bPG attack\\nTarget: 4 turns DEF Down Iã€? SPD Down I\\nSelf: 4 turns ATK Up I",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 545,
+            "name": "Shotgun",
+            "desc": "Group ranged \\bPG attack\\nTarget: 3 turns ATK Down I\\nParty: 3 turns MAX BRV Up I",
+            "movement_cost": 30,
+            "use_count": 4,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 758,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 857,
+            "name": "Shotgun+",
+            "desc": "Group ranged \\bPG attack + single-target \\bPF attack\\nTarget: 5 turns ATK Down II\\nSelf: 5 turns PHY ATK Up I\\nParty: 5 turns MAX BRV Up II",
+            "movement_cost": 30,
+            "use_count": 4,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 759,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2234,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 120,
+                    "cast_id": 125,
+                    "name": "PHY ATK Up",
+                    "desc": "PHY ATK Up: Raises ATK for physical attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            51,
+                            52
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            120,
+                            120
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20,
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2211,
+            "name": "Grenade",
+            "desc": "Group ranged \\bPG attack\\nTarget: 5 turns DEF Down II;\\n   6 turns SPD Down II\\nSelf: 6 turns ATK Up II\\nParty: Grants BRV based on own MAX BRV",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2425,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2426,
+                    "type": 6,
+                    "arguments": [
+                        30,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2212,
+            "name": "Grenade",
+            "desc": "Group ranged \\bPG attack\\nTarget: 6 turns DEF Down IIã€? SPD Down II\\nSelf: 6 turns ATK Up II\\nParty: Grants BRV based on own MAX BRV",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2427,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2426,
+                    "type": 6,
+                    "arguments": [
+                        30,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2213,
+            "name": "Shotgun",
+            "desc": "Group ranged \\bPG attack\\nTarget: 5 turns ATK Down II\\nParty: 5 turns MAX BRV Up II",
+            "movement_cost": 30,
+            "use_count": 4,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2428,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2214,
+            "name": "Shotgun+",
+            "desc": "Group ranged \\bPG attack + single-target \\bPF attack\\nTarget: 7 turns ATK Down II\\nSelf: 7 turns PHY ATK Up I\\nParty: 7 turns MAX BRV Up II",
+            "movement_cost": 30,
+            "use_count": 4,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2430,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2234,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 4,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 7
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 7
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 120,
+                    "cast_id": 125,
+                    "name": "PHY ATK Up",
+                    "desc": "PHY ATK Up: Raises ATK for physical attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 7
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            51,
+                            52
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            120,
+                            120
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30,
+                            30
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4032,
+            "name": "Debuff Damage Up",
+            "desc": "Slightly increases BRV damage when attacking debuffed targets for 2 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 933,
+                    "cast_id": 862,
+                    "name": "Debuff Damage Up",
+                    "desc": "Effect from additional ability Debuff Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            65
+                        ],
+                        "effect_val_types": [
+                            7
+                        ],
+                        "effect_rank_tables": [
+                            933
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4033,
+            "name": "Debuff Damage Up",
+            "desc": "Slightly increases BRV damage when attacking debuffed targets for 4 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 933,
+                    "cast_id": 862,
+                    "name": "Debuff Damage Up",
+                    "desc": "Effect from additional ability Debuff Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            65
+                        ],
+                        "effect_val_types": [
+                            7
+                        ],
+                        "effect_rank_tables": [
+                            933
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4034,
+            "name": "Debuff Damage Up",
+            "desc": "Slightly raises party's MAX BRVã€? slightly increases BRV damage when attacking debuffed targets for 2 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 934,
+                    "cast_id": 863,
+                    "name": "Debuff Damage Up",
+                    "desc": "Effect from additional ability Debuff Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            65,
+                            60
+                        ],
+                        "effect_val_types": [
+                            7,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            934
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4035,
+            "name": "Debuff Damage Up",
+            "desc": "Slightly raises party's MAX BRVã€? slightly increases BRV damage when attacking debuffed targets for 4 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4189,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 934,
+                    "cast_id": 863,
+                    "name": "Debuff Damage Up",
+                    "desc": "Effect from additional ability Debuff Damage Up",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            65,
+                            60
+                        ],
+                        "effect_val_types": [
+                            7,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            934
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4115,
+            "name": "Ragnarok Buster",
+            "desc": "8-hit ranged \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 150%\\nSelf: 6 turns Manly Charm",
+            "movement_cost": 30,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4636,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 951,
+                    "cast_id": 885,
+                    "name": "Manly Charm",
+                    "desc": "Manly Charm: Raises MAX BRV; deals greater BRV damage based on number of debuffs afflicting target",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5,
+                            61
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            951,
+                            951
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10020,
+                            10020
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4118,
+            "name": "BRV Attack+",
+            "desc": "2-hit ranged \\bPG attack\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 4223,
+            "name": "Grenade",
+            "desc": "3-hit group ranged \\bPG attack\\nGrants party BRV based on own MAX BRV\\nGroup \\bPF attack\\nDeals proportionate HP damage to each target\\nTarget: 5 turns DEF Down II; 6 turns SPD Down II\\nSelf: 6 turns ATK Up II",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4896,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 20.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4896,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 20.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4897,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2426,
+                    "type": 6,
+                    "arguments": [
+                        30,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 4640,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4224,
+            "name": "Grenade",
+            "desc": "3-hit group ranged \\bPG attack\\nGrants party BRV based on own MAX BRV\\nGroup \\bPF attack\\nDeals proportionate HP damage to each target\\nTarget: 6 turns DEF Down IIã€? SPD Down II\\nSelf: 6 turns ATK Up II",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4898,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4898,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4898,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 25.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2426,
+                    "type": 6,
+                    "arguments": [
+                        30,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 4640,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 7,
+                    "cast_id": 13,
+                    "name": "DEF Down",
+                    "desc": "DEF Down: Lowers DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            2
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            7
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4225,
+            "name": "Shotgun",
+            "desc": "2-hit group ranged \\bPG attack\\nStolen BRV may exceed MAX BRV up to 120%\\nTarget: 5 turns ATK Down II\\nParty: 5 turns MAX BRV Up II\\nBRV Attack becomes BRV Attack+ with active buffs",
+            "movement_cost": 30,
+            "use_count": 4,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4899,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 85.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4899,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 85.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4226,
+            "name": "Shotgun+",
+            "desc": "2-hit group ranged \\bPG attack + single-target \\bPF attack\\nStolen BRV may exceed MAX BRV up to 120%\\nTarget: 7 turns ATK Down II\\nSelf: 7 turns PHY ATK Up I\\nParty: 7 turns MAX BRV Up II\\nBRV Attack becomes BRV Attack+ with active buffs",
+            "movement_cost": 30,
+            "use_count": 4,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4900,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4900,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2234,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 4,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 7
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 7
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 120,
+                    "cast_id": 125,
+                    "name": "PHY ATK Up",
+                    "desc": "PHY ATK Up: Raises ATK for physical attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 7
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            51,
+                            52
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            120,
+                            120
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30,
+                            30
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4268,
+            "name": "HP Attack+",
+            "desc": "Ranged \\bPG attack + \\bPF attack\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 155,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        }
+    ],
+    "passives": [
+        {
+            "id": 89,
+            "name": "Vigor",
+            "desc": "Slightly raises ATK for 3 turns upon start of each wave",
+            "short_desc": "Vigor: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 29,
+                    "required_id": 65,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        3,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 292,
+            "name": "Mighty Grenade",
+            "desc": "Tremendously increases BRV damage dealt with Grenade",
+            "short_desc": "Mighty Grenade: Increases BRV damage dealt with Mighty Grenade",
+            "meta_data": {
+                "cp": 10,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        170,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        49,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 134,
+            "name": "BRV Attack Up",
+            "desc": "Slightly raises ATK when BRV is at least 50% MAX BRV",
+            "short_desc": "BRV Attack Up: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 26,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        50,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 429,
+            "name": "Mighty Shotgun",
+            "desc": "Slightly increases BRV damage dealt with Shotgunã€? Shotgun+",
+            "short_desc": "Mighty Shotgun: Increases BRV damage dealt with Shotgun",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        545,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 294,
+            "name": "Charged Grenade",
+            "desc": "Grenade use +1",
+            "short_desc": "Charged Grenade: Raises use count of Grenade",
+            "meta_data": {
+                "cp": 10,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        49,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 430,
+            "name": "Charged Shotgun",
+            "desc": "Shotgun use +1",
+            "short_desc": "Charged Shotgun: Raises use count of Shotgun",
+            "meta_data": {
+                "cp": 15,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        545,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 62,
+            "name": "Break Bonus Up",
+            "desc": "Slightly raises Break Bonus upon inflicting Break",
+            "short_desc": "Break Bonus Up: Raises Break Bonus",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 64,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 297,
+            "name": "Focused Attack",
+            "desc": "Deals 1.6x BRV damage when using group attacks on 1 target",
+            "short_desc": "Focused Attack: Increases BRV damage dealt",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 59,
+                    "required_target": 2,
+                    "effect_values": [
+                        60,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 296,
+            "name": "Charismatic Aura",
+            "desc": "Slightly increases BRV damage dealt when using group attacks",
+            "short_desc": "Charismatic Aura: Increases BRV damage dealt with Charismatic Aura",
+            "meta_data": {
+                "cp": 15,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 59,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1580,
+            "name": "Buff Boost Speed",
+            "desc": "Slightly raises MAX BRVã€? moderately raises SPD with active buffs",
+            "short_desc": "Buff Boost Speed: Raises MAX BRVã€? SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 32,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        60,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1581,
+            "name": "Grenade Extension",
+            "desc": "When using Grenade:\\n â€¢ \\bPG attack hit count becomes 3; slightly increased cumulative BRV damage\\n â€¢ Slight boost to effects granted/inflictedã€? duration +2\\n â€¢ Grants party BRV based on own MAX BRV\\n â€¢ Triggers additional group \\bPF attack after use; deals proportionate HP damage to each target",
+            "short_desc": "Grenade Extension: Boost to Grenade",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        },
+        {
+            "id": 957,
+            "name": "Debuffed Attack Boost Up",
+            "desc": "Moderately raises MAX BRVã€? ATK while an enemy is debuffed",
+            "short_desc": "Debuffed Attack Boost Up: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1582,
+            "name": "Shotgun Extension",
+            "desc": "When using Shotgunã€? Shotgun+:\\n â€¢ \\bPG attack hit count becomes 2; tremendously increased cumulative BRV damage\\n â€¢ Stolen BRV may exceed MAX BRV up to 120%\\n â€¢ Slight boost to effects granted/inflictedã€? duration +2\\n\\nWith active buffs:\\n â€¢ BRV Attack becomes BRV Attack+ (\\bPG attack hit count becomes 2; largely increased cumulative BRV damage; higher turn rate)",
+            "short_desc": "Shotgun Extension: Boost to Shotgun",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        },
+        {
+            "id": 1512,
+            "name": "Destruction Resonance",
+            "desc": "Slightly raises party's MAX BRVã€? ATK",
+            "short_desc": "Destruction Resonance: Raises party's MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 68,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1471,
+            "name": "Debuff Damage Up Extension",
+            "desc": "When using Debuff Damage Up:\\n â€¢ Adds effect that slightly raises party's MAX BRV",
+            "short_desc": "Debuff Damage Up Extension: Boost to Debuff Damage Up",
+            "meta_data": {
+                "cp": 15,
+                "level": 70,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        }
+    ],
+    "bloom": {
+        "passive": {
+            "id": 1475,
+            "name": "Debuff Damage Up Growth",
+            "desc": "Debuff Damage Up use +1\\n\\nDebuff Damage Up effect duration +2",
+            "short_desc": "Debuff Damage Up Growth: Boost to Debuff Damage Up",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        4032,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    },
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 54,
+                "name": "Galbadia Grenade",
+                "desc": "When using Grenade:\\n â€¢ BRV damage boost\\n â€¢ DEF Down duration+",
+                "short_desc": "Galbadia Grenade: Boost to Grenade",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 54,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 122,
+                "name": "Silly Musketeer",
+                "desc": "Shotgun use +1\\nShotgun becomes Shotgun+ (group ranged \\bPG attack + single-target \\bPF attack with boosted BRV damage)\\n\\nWhen using Shotgun+:\\n â€¢ ATK Down boostã€? duration+\\n â€¢ MAX BRV Up boostã€? duration+\\n â€¢ Self: 5 turns PHY ATK Up I",
+                "short_desc": "Silly Musketeer: Boost to Shotgun",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 122,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 22,
+                        "required_id": 2,
+                        "required_target": 2,
+                        "effect_values": [
+                            545,
+                            1,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 680,
+                "name": "Tactical Gunner",
+                "desc": "May equip EX ability Ragnarok Buster",
+                "short_desc": "Tactical Gunner: May equip Ragnarok Buster",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 680,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            2060,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 681,
+                    "name": "Mighty Ragnarok Buster",
+                    "desc": "Slightly increases BRV damage dealt with Ragnarok Buster",
+                    "short_desc": "Mighty Ragnarok Buster: Increases BRV damage dealt with Ragnarok Buster",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 681,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                4115,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 682,
+                    "name": "Ragnarok Buster Recast Up",
+                    "desc": "Slightly raises recast speed of Ragnarok Buster",
+                    "short_desc": "Ragnarok Buster Recast Up: Raises recast speed of Ragnarok Buster",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 682,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                4115,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 683,
+                    "name": "Tactical Gunner HP+",
+                    "desc": "While equipping EX weapon Leopard (VIII) or passive ability Tactical Gunner:\\n â€¢ HP Attack becomes HP Attack+ (ranged \\bPG attack + \\bPF attack; higher turn rate)",
+                    "short_desc": "Tactical Gunner HP+: HP Attack becomes HP Attack+",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 683,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

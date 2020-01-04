@@ -1,0 +1,4568 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 3,
+            "name": "BRV Attack",
+            "desc": "Magic attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 2444,
+            "name": "Sketch",
+            "desc": "Magic \\bPG attack\\nTarget: 1 turn Sketch debuff\\nSelf: 5 turns ATK Up I\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2771,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2445,
+            "name": "Sketch",
+            "desc": "Magic \\bPG attack\\nTarget: 2 turns Sketch debuff\\nSelf: 5 turns ATK Up II\\nHigh turn rate\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn",
+            "movement_cost": 26,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2772,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2657,
+            "name": "Sketch",
+            "desc": "Magic \\bPG attack\\nTarget: 1 turn Sketch\\nSelf: 5 turns ATK Up II\\nGrants additional turn after target's turn while Sketch is active; does not add to turn count\\nBecomes Sketch+ after use",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2870,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2658,
+            "name": "Sketch+",
+            "desc": "Magic \\bPG attack\\nTarget: 1 turn Sketchã€? Blind\\nSelf: 5 turns ATK Up II\\nGrants additional turn after target's turn while Sketch is active; does not add to turn count\\nMoves next turn to before target on hit (except during summoning)\\nReturns to Sketch after use",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 688,
+                    "type": 6,
+                    "arguments": [
+                        105
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2871,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2203,
+                    "type": 6,
+                    "arguments": [
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 90,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2659,
+            "name": "Sketch",
+            "desc": "Magic \\bPG attack\\nHigh turn rate\\nTarget: 2 turns Sketch\\nSelf: 5 turns ATK Up II\\nGrants additional turn after target's turn while Sketch is active; does not add to turn count\\nBecomes Sketch+ after use",
+            "movement_cost": 26,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2872,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 210.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2660,
+            "name": "Sketch+",
+            "desc": "Magic \\bPG attack\\nHigh turn rate\\nTarget: 2 turns Sketch; 1 turn Blind\\nSelf: 5 turns ATK Up II\\nGrants additional turn after target's turn while Sketch is active; does not add to turn count\\nMoves next turn to before target on hit (except during summoning)\\nReturns to Sketch after use",
+            "movement_cost": 26,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 688,
+                    "type": 6,
+                    "arguments": [
+                        105
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2873,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 210.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2203,
+                    "type": 6,
+                    "arguments": [
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 90,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2446,
+            "name": "Sketch Summon",
+            "desc": "Self: 3 turns MAX BRV Up I\\nGroup \\bPG attack of element of equipped summon (other than Sylph)\\nGroup \\bPF attack after summon's effect\\nDeals proportionate HP damage to each target\\nEquipping following summons triggers special effect:\\n â€¢ Sylph: Grants BRV and restores party's HP based on own ATK (no group \\bPG attack)\\n â€¢ Odin: Moderate chance of inflicting Break\\n â€¢ Pandemonium: Easier knock back",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2773,
+                    "type": 15,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2447,
+            "name": "Sketch Summon",
+            "desc": "Self: 6 turns MAX BRV Up I\\nGroup \\bPG attack (except Sylph)\\nGroup \\bPF attack after summon\\nDeals proportionate HP damage to each target\\n\\nGroup melee \\bPG attacks:\\n â€¢ Chocoboã€? Odinã€? \\bPMThe Brothers\\nGroup magic \\bPG attacks:\\n â€¢ \\bPJShivaã€? \\bPIIfritã€? \\bPKRamuhã€? \\bPLLeviathanã€? \\bPOAlexanderã€? \\bPNPandemoniumã€? \\bPPDiabolosã€? Bahamut\\n\\nSpecial effects:\\n â€¢ Sylph: Grants BRV and restores party's HP based on own ATK\\n â€¢ Odin: Moderate chance of inflicting Break\\n â€¢ Pandemonium: Easier knock back",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2773,
+                    "type": 15,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 136,
+                    "cast_id": 151,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            136
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2661,
+            "name": "Sketch Summon",
+            "desc": "Self: 3 turns MAX BRV Up II; 6 turns SPD Up II\\nGroup \\bPG attack (except Sylph)\\nGroup \\bPF attack after summon\\nDeals proportionate HP damage to each target\\nBRV Attack becomes BRV Attack+ for 6 turns after use\\n\\nGroup melee \\bPG attacks:\\n â€¢ Chocoboã€? Odinã€? \\bPMThe Brothers\\nGroup magic \\bPG attacks:\\n â€¢ \\bPJShivaã€? \\bPIIfritã€? \\bPKRamuhã€? \\bPLLeviathanã€? \\bPOAlexanderã€? \\bPNPandemoniumã€? \\bPPDiabolosã€? Bahamut\\n\\nSpecial effects:\\n â€¢ Sylph: Grants BRV and restores party's HP based on own ATK\\n â€¢ Odin: Moderate chance of inflicting Break\\n â€¢ Pandemonium: Easier knock back",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2773,
+                    "type": 15,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 136,
+                    "cast_id": 151,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            136
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": -1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2662,
+            "name": "Sketch Summon",
+            "desc": "Self: 6 turns MAX BRV Up IIã€? SPD Up II\\nGroup \\bPG attack (except Sylph)\\nGroup \\bPF attack after summon\\nDeals proportionate HP damage to each target\\nBRV Attack becomes BRV Attack+ for 6 turns after use\\n\\nGroup melee \\bPG attacks:\\n â€¢ Chocoboã€? Odinã€? \\bPMThe Brothers\\nGroup magic \\bPG attacks:\\n â€¢ \\bPJShivaã€? \\bPIIfritã€? \\bPKRamuhã€? \\bPLLeviathanã€? \\bPOAlexanderã€? \\bPNPandemoniumã€? \\bPPDiabolosã€? Bahamut\\n\\nSpecial effects:\\n â€¢ Sylph: Grants BRV and restores party's HP based on own ATK\\n â€¢ Odin: Moderate chance of inflicting Break\\n â€¢ Pandemonium: Easier knock back",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2773,
+                    "type": 15,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 136,
+                    "cast_id": 151,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 4,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            136
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": -1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2448,
+            "name": "Star Prism",
+            "desc": "6-hit group magic \\bPG attack + group \\bPF attack\\n\\bPG attacks distributed based on number of enemies\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nTarget: 2 turns Sketch debuff\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn",
+            "movement_cost": 30,
+            "use_count": 18000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 11,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 11,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 11,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 11,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 11,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2774,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 11,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2776,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 5,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2663,
+            "name": "BRV Attack+",
+            "desc": "Magic \\bPG attack",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2874,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 2288,
+            "name": "0",
+            "desc": "0",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2984,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4788,
+            "name": "Sketch Longer",
+            "desc": "Target: 2 turns Sap; extends inflicted Sketch debuff 1 turn",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 7,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5416,
+                    "type": 7,
+                    "arguments": [
+                        1,
+                        466
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 455,
+                    "cast_id": 434,
+                    "name": "Sap",
+                    "desc": "Sap: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            455
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4789,
+            "name": "Sketch Longer",
+            "desc": "Target: 3 turns Sap; extends inflicted Sketch debuff 2 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 7,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5417,
+                    "type": 7,
+                    "arguments": [
+                        2,
+                        466
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 455,
+                    "cast_id": 434,
+                    "name": "Sap",
+                    "desc": "Sap: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            455
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4790,
+            "name": "Sketch Longer",
+            "desc": "Slightly raises own MAX BRV for 2 turns\\nTarget: 2 turns Sap; extends inflicted Sketch debuff 1 turn",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 7,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5416,
+                    "type": 7,
+                    "arguments": [
+                        1,
+                        466
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 530,
+                    "cast_id": 968,
+                    "name": "Sketch Longer",
+                    "desc": "Effect from additional ability Sketch Longer",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            530
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 455,
+                    "cast_id": 434,
+                    "name": "Sap",
+                    "desc": "Sap: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            455
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4791,
+            "name": "Sketch Longer",
+            "desc": "Slightly raises own MAX BRV for 2 turns\\nTarget: 3 turns Sap; extends inflicted Sketch debuff 2 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 7,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5417,
+                    "type": 7,
+                    "arguments": [
+                        2,
+                        466
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 530,
+                    "cast_id": 968,
+                    "name": "Sketch Longer",
+                    "desc": "Effect from additional ability Sketch Longer",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            530
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 455,
+                    "cast_id": 434,
+                    "name": "Sap",
+                    "desc": "Sap: Effects a certain amount of BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            49
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            455
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4780,
+            "name": "Sketch Summon",
+            "desc": "Self: 5 turns MAX BRV Up II; 8 turns SPD Up II\\nGrants party BRV based on own MAX BRV\\nGroup \\bPG attack (except Sylph)\\nGroup \\bPF attack after summon\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nBRV Attack becomes BRV Attack+ with active buffs\\n\\nGroup melee \\bPG attacks:\\n â€¢ Chocoboã€? Odinã€? \\bPMThe Brothers\\nGroup magic \\bPG attacks:\\n â€¢ \\bPJShivaã€? \\bPIIfritã€? \\bPKRamuhã€? \\bPLLeviathanã€? \\bPOAlexanderã€? \\bPNPandemoniumã€? \\bPPDiabolosã€? Bahamut\\n\\nSpecial effects:\\n â€¢ Sylph: Grants BRV and restores party's HP based on own ATK\\n â€¢ Odin: Moderate chance of inflicting Break\\n â€¢ Pandemonium: Easier knock back",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5409,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 5634,
+                    "type": 15,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5635,
+                    "type": 6,
+                    "arguments": [
+                        533
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 136,
+                    "cast_id": 151,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            136
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 533,
+                    "cast_id": 994,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            67
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            533
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4781,
+            "name": "Sketch Summon",
+            "desc": "Self: 8 turns MAX BRV Up IIã€? SPD Up II\\nGrants party BRV based on own MAX BRV\\nGroup \\bPG attack (except Sylph)\\nGroup \\bPF attack after summon\\nStolen BRV may exceed MAX BRV up to 150%\\nDeals proportionate HP damage to each target\\nBRV Attack becomes BRV Attack+ with active buffs\\n\\nGroup melee \\bPG attacks:\\n â€¢ Chocoboã€? Odinã€? \\bPMThe Brothers\\nGroup magic \\bPG attacks:\\n â€¢ \\bPJShivaã€? \\bPIIfritã€? \\bPKRamuhã€? \\bPLLeviathanã€? \\bPOAlexanderã€? \\bPNPandemoniumã€? \\bPPDiabolosã€? Bahamut\\n\\nSpecial effects:\\n â€¢ Sylph: Grants BRV and restores party's HP based on own ATK\\n â€¢ Odin: Moderate chance of inflicting Break\\n â€¢ Pandemonium: Easier knock back",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5409,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 5634,
+                    "type": 15,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5635,
+                    "type": 6,
+                    "arguments": [
+                        533
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 136,
+                    "cast_id": 151,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            136
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            100
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 533,
+                    "cast_id": 994,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            67
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            533
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4782,
+            "name": "BRV Attack+",
+            "desc": "2-hit magic \\bPG attack\\nDeals extra BRV damage to targets afflicted with Sketch debuff",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5410,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5410,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4783,
+            "name": "Sketch",
+            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to targets afflicted with Sketch debuff\\nStolen BRV may exceed MAX BRV up to 120%\\nTarget: 1 turn Sketch debuff\\nSelf: 8 turns ATK Up II\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn\\nBecomes Sketch+ after use",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5411,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4784,
+            "name": "Sketch+",
+            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to targets afflicted with Sketch debuff\\nStolen BRV may exceed MAX BRV up to 120%\\nTarget: 1 turn Sketch debuffã€? Blind\\nSelf: 8 turns ATK Up II\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn\\nMoves next turn to before target on hit (except during summoning)\\nReturns to Sketch after use",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 688,
+                    "type": 6,
+                    "arguments": [
+                        105
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5412,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5412,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5412,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2203,
+                    "type": 6,
+                    "arguments": [
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 90,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4785,
+            "name": "Sketch",
+            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to targets afflicted with Sketch debuff\\nStolen BRV may exceed MAX BRV up to 120%\\nTarget: 2 turns Sketch debuff\\nSelf: 8 turns ATK Up II\\nHigh turn rate\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn\\nBecomes Sketch+ after use",
+            "movement_cost": 26,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5413,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5413,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5413,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4786,
+            "name": "Sketch+",
+            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to targets afflicted with Sketch debuff\\nStolen BRV may exceed MAX BRV up to 120%\\nTarget: 2 turns Sketch debuff; 1 turn Blind\\nSelf: 8 turns ATK Up II\\nHigh turn rate\\nGrants additional turn after target's turn while Sketch debuff is active; does not add to turn count; returns to original turn order after additional turn\\nMoves next turn to before target on hit (except during summoning)\\nReturns to Sketch after use",
+            "movement_cost": 26,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 688,
+                    "type": 6,
+                    "arguments": [
+                        105
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5414,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5414,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5414,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2203,
+                    "type": 6,
+                    "arguments": [
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 90,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 466,
+                    "cast_id": 521,
+                    "name": "Sketch",
+                    "desc": "Sketch: Lowers ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            480
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "cast_id": 20,
+                    "name": "Blind",
+                    "desc": "Blind: Lowers hit rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 1
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            48
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            3
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4787,
+            "name": "HP Attack+",
+            "desc": "Grants party BRV based on own MAX BRV\\n\\bPF attack\\nExtends own buffs 1 turn\\nHigh turn rate",
+            "movement_cost": 26,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5415,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5680,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        2,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        }
+    ],
+    "passives": [
+        {
+            "id": 1085,
+            "name": "Mighty Sketch Summon",
+            "desc": "Slightly increases BRV damage dealt with Sketch Summon",
+            "short_desc": "Mighty Sketch Summon: Increases BRV damage dealt with Sketch Summon",
+            "meta_data": {
+                "cp": 10,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        2446,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 137,
+            "name": "Rapid Speed",
+            "desc": "Slightly raises SPD for 1 turn upon inflicting Break",
+            "short_desc": "Rapid Speed: Raises SPD",
+            "meta_data": {
+                "cp": 10,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 33,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1086,
+            "name": "Tachygrapher Lore",
+            "desc": "Slightly raises party's SPD with active buffs",
+            "short_desc": "Tachygrapher Lore: Raises party's SPD",
+            "meta_data": {
+                "cp": 15,
+                "level": 15,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 32,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1087,
+            "name": "Mighty Sketch",
+            "desc": "Slightly increases BRV damage dealt with Sketchã€? Sketch+",
+            "short_desc": "Mighty Sketch: Increases damage dealt with Sketchã€? Sketch+",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        2444,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 148,
+            "name": "All Break Boost Up",
+            "desc": "Marginally raises party's Break Bonus upon inflicting Break",
+            "short_desc": "All Break Boost Up: Raises party's Break Bonus",
+            "meta_data": {
+                "cp": 5,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 64,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        5,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1088,
+            "name": "Charged Sketch Summon",
+            "desc": "Sketch Summon use +1",
+            "short_desc": "Charged Sketch Summon: Raises use count of Sketch Summon",
+            "meta_data": {
+                "cp": 10,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        2446,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 271,
+            "name": "Buffed Attack",
+            "desc": "Slightly raises ATK with active buffs",
+            "short_desc": "Buffed Attack: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1089,
+            "name": "Charged Sketch",
+            "desc": "Sketch use +1",
+            "short_desc": "Charged Sketch: Raises use count of Sketch",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        2444,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1090,
+            "name": "Future Master Artist",
+            "desc": "Slightly raises party's MAX BRVã€? ATK if HP is MAX at start of last wave",
+            "short_desc": "Future Master Artist: BRV Raises party's MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 37,
+                    "required_id": 35,
+                    "required_target": 2,
+                    "effect_values": [
+                        15,
+                        -1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 29,
+                    "required_id": 30,
+                    "required_target": 2,
+                    "effect_values": [
+                        15,
+                        -1,
+                        0
+                    ],
+                    "required_values": [
+                        100,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1052,
+            "name": "Sketch Summon Focused Attack",
+            "desc": "Largely increases BRV damage when attacking single target with Sketch Summon group \\bPG attack",
+            "short_desc": "Sketch Summon Focused Attack: Increases BRV damage",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        80,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        2446,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1751,
+            "name": "Sketch Summon Extension",
+            "desc": "When using Sketch Summon:\\n â€¢ Grants party BRV based on own MAX BRV before summon\\n â€¢ Moderately increases BRV damage dealt with Sketch Summon\\n â€¢ Stolen BRV may exceed MAX BRV up to 150%\\n â€¢ Slight MAX BRV Up boostã€? duration +2\\n â€¢ Self: 8 turns SPD Up II\\n\\nWith active buffs:\\n â€¢ BRV Attack becomes BRV Attack+ (\\bPG attack hit count becomes 2; moderately increased cumulative BRV damage; deals extra BRV damage to targets afflicted with Sketch debuff)",
+            "short_desc": "Sketch Summon Extension: Boost to Sketch Summon",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        },
+        {
+            "id": 1054,
+            "name": "All Buffed Attack Boost",
+            "desc": "Slightly raises party's MAX BRVã€? ATK with active buffs",
+            "short_desc": "All Buffed Attack Boost: Raises party's MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1752,
+            "name": "Sketch Extension",
+            "desc": "Sketch use +2\\n\\nWhen using Sketch:\\n â€¢ \\bPG attack hit count becomes 3; tremendously increased cumulative BRV damage\\n â€¢ Deals extra BRV damage to targets afflicted with Sketch debuff\\n â€¢ Stolen BRV may exceed MAX BRV up to 120%\\n â€¢ Slight ATK Up boostã€? duration +3\\n â€¢ Triggers additional \\bPF attack after use\\n\\nAfter using Sketch:\\n â€¢ Sketch becomes Sketch+ (moves own next turn to just before target's next turn on hit [except during summoning]; target: 1 turn Blind; returns to Sketch after use)",
+            "short_desc": "Sketch Extension: Boost to Sketch",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        2444,
+                        2,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1753,
+            "name": "Destruction Resonance",
+            "desc": "Slightly raises party's MAX BRVã€? ATK",
+            "short_desc": "Destruction Resonance: Raises party's MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 68,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1754,
+            "name": "Sketch Longer Extension",
+            "desc": "When using Sketch Longer:\\n â€¢ Adds effect that slightly raises own MAX BRV for 2 turns",
+            "short_desc": "Sketch Longer Extension: Boost to Sketch Longer",
+            "meta_data": {
+                "cp": 15,
+                "level": 70,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        }
+    ],
+    "bloom": {
+        "passive": {
+            "id": 1755,
+            "name": "Sketch Longer Growth",
+            "desc": "Sketch Longer use +1\\n\\nWhen using Sketch Longer:\\n â€¢ Sap duration +1\\n â€¢ Sketch debuff duration +1",
+            "short_desc": "Sketch Longer Growth: Boost to Sketch Longer",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        4788,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    },
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 323,
+                "name": "Wonderworking Artwork",
+                "desc": "Moderately increases BRV damage dealt with Sketch Summon\\nMAX BRV Up boostã€? duration+",
+                "short_desc": "Wonderworking Artwork: Boost to Sketch Summon",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 323,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 322,
+                "name": "Touch of Genius",
+                "desc": "When using Sketchã€? Sketch+:\\n â€¢ BRV damage boost\\n â€¢ Turn rate+\\n â€¢ Sketch debuff duration+\\n â€¢ ATK Up boost",
+                "short_desc": "Touch of Genius: Boost to Sketch",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 322,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 325,
+                "name": "Painting Stars",
+                "desc": "May equip EX ability Star Prism",
+                "short_desc": "Painting Stars: May equip Star Prism",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 325,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            2010,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 326,
+                    "name": "Mighty Star Prism",
+                    "desc": "Slightly increases BRV damage dealt with Star Prism",
+                    "short_desc": "Mighty Star Prism: Increases BRV damage dealt with Star Prism",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 326,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                2448,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 327,
+                    "name": "Star Prism Recast Up",
+                    "desc": "Slightly raises recast speed of Star Prism",
+                    "short_desc": "Star Prism Recast Up: Raises recast speed of Star Prism",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 327,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                2448,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 328,
+                    "name": "Painting Stars Attack Boost Up+",
+                    "desc": "While equipping EX weapon Magical Brush (VI) or passive ability Painting Stars:\\n â€¢ Slightly raises MAX BRVã€? ATK\\n â€¢ HP Attack becomes HP Attack+ (grants party BRV based on own MAX BRVã€? before \\bPF attack; extends own buffs 1 turn; turn rate+)",
+                    "short_desc": "Painting Stars Attack Boost Up+: Raises MAX BRVã€? ATK; enables HP Attack+",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 328,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 28,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        },
+                        {
+                            "effect_id": 36,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

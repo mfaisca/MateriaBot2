@@ -1,0 +1,2876 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 1,
+            "name": "BRV Attack",
+            "desc": "Melee attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 1517,
+            "name": "Laser Whip",
+            "desc": "Melee \\bPG attack\\nTarget: 2 turns Turn Rate Down",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1571,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 9,
+                    "cast_id": 21,
+                    "name": "Turn Rate Down",
+                    "desc": "Turn Rate Down: Lowers turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            45
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            9
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1518,
+            "name": "Laser Whip",
+            "desc": "Melee \\bPG attack\\nTarget: 3 turns Turn Rate Down\\nSelf: 6 turns ATK Up I\\nBRV Attack becomes BRV Attack+ for 6 turns",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1572,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 9,
+                    "cast_id": 21,
+                    "name": "Turn Rate Down",
+                    "desc": "Turn Rate Down: Lowers turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            45
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            9
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1519,
+            "name": "Degenerator Whip",
+            "desc": "Melee \\bPG attack + \\bPF attack\\nDelays target 1 turn",
+            "movement_cost": 30,
+            "use_count": 2,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1573,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5126,
+                    "type": 7,
+                    "arguments": [
+                        1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 46,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1574,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 1520,
+            "name": "Degenerator Whip",
+            "desc": "Melee \\bPG attack + \\bPF attack\\nDelays target 3 turns\\nTarget: 3 turns SPD Down I",
+            "movement_cost": 30,
+            "use_count": 2,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1575,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 130.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5841,
+                    "type": 7,
+                    "arguments": [
+                        3
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 46,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1576,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1635,
+            "name": "BRV Attack+",
+            "desc": "Melee \\bPG attack\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1723,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 120.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3399,
+            "name": "Laser Whip",
+            "desc": "3-hit melee \\bPG attack\\nTarget: 3 turns Turn Rate Down\\nTriggers additional \\bPF attack if BRV is at least 80% of MAX after last hit\\nHP Attack becomes HP Attack+ for 6 turns after use",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3848,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3848,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3848,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 9,
+                    "cast_id": 21,
+                    "name": "Turn Rate Down",
+                    "desc": "Turn Rate Down: Lowers turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            45
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            9
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3400,
+            "name": "Laser Whip",
+            "desc": "3-hit melee \\bPG attack\\nTarget: 4 turns Turn Rate Down\\nSelf: 6 turns ATK Up I\\nTriggers additional \\bPF attack if BRV is at least 80% of MAX after last hit\\nBRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ for 6 turns after use",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3849,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3849,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3849,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 9,
+                    "cast_id": 21,
+                    "name": "Turn Rate Down",
+                    "desc": "Turn Rate Down: Lowers turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            45
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            9
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 105,
+                    "cast_id": 102,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3401,
+            "name": "Degenerator Whip",
+            "desc": "Grants party BRV based on own MAX BRV\\n2-hit melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 200%\\nDelays target 1 turn",
+            "movement_cost": 30,
+            "use_count": 2,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3883,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 3850,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3850,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5126,
+                    "type": 7,
+                    "arguments": [
+                        1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 46,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1574,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3402,
+            "name": "Degenerator Whip",
+            "desc": "Grants party BRV based on own MAX BRV\\n2-hit melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 200%\\nDelays target 3 turns\\nTarget: 3 turns SPD Down I",
+            "movement_cost": 30,
+            "use_count": 2,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3884,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 3851,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3851,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5841,
+                    "type": 7,
+                    "arguments": [
+                        3
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 46,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1576,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3403,
+            "name": "HP Attack+",
+            "desc": "Melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 120%\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3882,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 2562,
+            "name": "0",
+            "desc": "0",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 2976,
+            "name": "Homing Whip",
+            "desc": "7-hit melee \\bPG attack\\nModerately increased BRV damage when attacking target afflicted with Turn Rate Down or SPD Down\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: 4 turns SPD Down II\\nSelf: 6 turns Instructor's Whip\\nTriggers additional \\bPF attack if BRV is at least 100% of MAX after last hit",
+            "movement_cost": 30,
+            "use_count": 9000,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3341,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 823,
+                    "cast_id": 740,
+                    "name": "Instructor's Whip",
+                    "desc": "Instructor's Whip: Raises MAX BRVã€? ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            5
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            823,
+                            823
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10010,
+                            10010
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2977,
+            "name": "Homing Whip",
+            "desc": "7-hit melee \\bPG attack\\nModerately increased BRV damage when attacking target afflicted with Turn Rate Down or SPD Down\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: 4 turns SPD Down II\\nSelf: 6 turns Instructor's Whip\\nTriggers additional \\bPF attack if BRV is at least 100% of MAX after last hit",
+            "movement_cost": 30,
+            "use_count": 9000,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3342,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 823,
+                    "cast_id": 740,
+                    "name": "Instructor's Whip",
+                    "desc": "Instructor's Whip: Raises MAX BRVã€? ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            5
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            823,
+                            823
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40040,
+                            40040
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "cast_id": 15,
+                    "name": "SPD Down",
+                    "desc": "SPD Down: Lowers SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            8
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3134,
+            "name": "3rd Quistis Counter",
+            "desc": "3rd Quistis Counter",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3536,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 3404,
+            "name": "Homing Whip+ (temp)",
+            "desc": "7-hit melee \\bPG attack\\nModerately increased BRV damage when attacking target afflicted with Turn Rate Down or SPD Down\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: 4 turns SPD Down I\\nSelf: 6 turns Instructor's Whip\\nTriggers additional \\bPF attack if BRV is at least 100% of MAX after last hit",
+            "movement_cost": 30,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3855,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3855,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3855,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3855,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3855,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3855,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 823,
+                    "cast_id": 740,
+                    "name": "Instructor's Whip",
+                    "desc": "Instructor's Whip: Raises MAX BRVã€? ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            5
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            823,
+                            823
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10010,
+                            10010
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3405,
+            "name": "Homing Whip+ (temp)",
+            "desc": "7-hit melee \\bPG attack\\nModerately increased BRV damage when attacking target afflicted with Turn Rate Down or SPD Down\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: 4 turns SPD Down I\\nSelf: 6 turns Instructor's Whip\\nTriggers additional \\bPF attack if BRV is at least 100% of MAX after last hit",
+            "movement_cost": 30,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3856,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3856,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3856,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3856,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3856,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3856,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 120,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 823,
+                    "cast_id": 740,
+                    "name": "Instructor's Whip",
+                    "desc": "Instructor's Whip: Raises MAX BRVã€? ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            5
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            823,
+                            823
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40040,
+                            40040
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        }
+    ],
+    "passives": [
+        {
+            "id": 772,
+            "name": "Mighty Laser Whip",
+            "desc": "Slightly increases BRV damage dealt with Laser Whip",
+            "short_desc": "Mighty Laser Whip: Increases BRV damage dealt with Laser Whip",
+            "meta_data": {
+                "cp": 10,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1517,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 218,
+            "name": "Speed Critical Hit",
+            "desc": "Slightly raises SPD for 1 turn upon unleashing a critical hit",
+            "short_desc": "Speed Critical Hit: Raises SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 33,
+                    "required_id": 38,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 671,
+            "name": "Break Boost",
+            "desc": "Slightly raises MAX BRV for 1 turn upon inflicting Break",
+            "short_desc": "Break Boost: Raises MAX BRV",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 37,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 773,
+            "name": "Degenerator Whip Attack Up",
+            "desc": "Slightly raises ATK for 1 turn upon using Degenerator Whip",
+            "short_desc": "Degenerator Whip Attack Up: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 29,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        1519,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 434,
+            "name": "Low BRV Attack Up",
+            "desc": "Slightly raises ATK when BRV is less than INT BRV",
+            "short_desc": "Low BRV Attack Up: Raises ATK",
+            "meta_data": {
+                "cp": 15,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 29,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        100,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 775,
+            "name": "Charged Laser Whip",
+            "desc": "Laser Whip use +1",
+            "short_desc": "Charged Laser Whip: Raises use count",
+            "meta_data": {
+                "cp": 10,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        1517,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 682,
+            "name": "Debuff Initiative",
+            "desc": "Slightly raises SPD when an enemy is debuffed",
+            "short_desc": "Debuff Initiative: Raises SPD",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 32,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 776,
+            "name": "Mighty Degenerator Whip",
+            "desc": "Slightly increases BRV damage dealt with Degenerator Whip",
+            "short_desc": "Mighty Degenerator Whip: Increases BRV damage dealt with Degenerator Whip",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1519,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 777,
+            "name": "Instructor's Discipline",
+            "desc": "Slightly raises party's MAX BRV for 2 turns upon inflicting debuff",
+            "short_desc": "Instructor's Discipline: Raises party's MAX BRV",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 37,
+                    "required_id": 76,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        2,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1316,
+            "name": "Debuff Initiative II",
+            "desc": "Moderately raises own SPD while an enemy is debuffed",
+            "short_desc": "Debuff Initiative II: Raises SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 32,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1317,
+            "name": "Laser Whip Extension",
+            "desc": "Laser Whip use +4\\n\\nWhen using Laser Whip:\\n â€¢ \\bPG attack hit count becomes 3; moderately increased cumulative BRV damage\\n â€¢ Slight Turn Rate Down boost; duration +1\\n â€¢ Triggers additional \\bPF attack if BRV is at least 80% of MAX after last hit\\n\\nAfter using Laser Whip:\\n â€¢ HP Attack becomes HP Attack+ (melee \\bPG attack + \\bPF attack; stolen BRV may exceed MAX BRV up to 120%; high turn rate) for 6 turns",
+            "short_desc": "Laser Whip Extension: Boost to Laser Whip",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        1517,
+                        4,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1318,
+            "name": "All Debuff Attack Boost",
+            "desc": "Moderately raises party's MAX BRVã€? ATK while an enemy is debuffed",
+            "short_desc": "All Debuff Attack Boost: Raises party's MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 63,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1319,
+            "name": "Degenerator Whip Extension",
+            "desc": "When using Degenerator Whip:\\n â€¢ Grants party BRV based on own MAX BRV before \\bPG attack\\n â€¢ \\bPG attack hit count becomes 2; tremendously increased cumulative BRV damage\\n â€¢ Stolen BRV may exceed MAX BRV up to 200%",
+            "short_desc": "Degenerator Whip Extension: Boost to Degenerator Whip",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        1519,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    ],
+    "bloom": {},
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 178,
+                "name": "Lovely Lasher",
+                "desc": "When using Laser Whip:\\n â€¢ BRV damage boost\\n â€¢ Turn Rate Down duration+\\n â€¢ Self: 6 turns ATK Up I\\n â€¢ BRV Attack becomes BRV Attack+ for 6 turns",
+                "short_desc": "Lovely Lasher: Boost to Laser Whip",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 178,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 179,
+                "name": "Gifted Leader",
+                "desc": "Degenerator Whip boostã€? use +1\\nTarget: Delay +2; 3 turns SPD Down I",
+                "short_desc": "Gifted Leader: Boost to Degenerator Whip",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 179,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 22,
+                        "required_id": 2,
+                        "required_target": 2,
+                        "effect_values": [
+                            1519,
+                            1,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 467,
+                "name": "Traces of Light Pursued",
+                "desc": "May equip EX ability Homing Whip",
+                "short_desc": "Traces of Light Pursued: May equip Homing Whip",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 467,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            2084,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 468,
+                    "name": "Mighty Homing Whip",
+                    "desc": "Slightly increases BRV damage dealt with Homing Whip",
+                    "short_desc": "Mighty Homing Whip: Increases BRV damage dealt with Homing Whip",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 468,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                2976,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 469,
+                    "name": "Homing Whip Buff Up",
+                    "desc": "Slight Instructor's Whip boost",
+                    "short_desc": "Homing Whip Buff Up: Instructor's Whip boost",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 469,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                },
+                {
+                    "id": 470,
+                    "name": "Homing Whip Recast Up",
+                    "desc": "Slightly raises recast speed of Homing Whip",
+                    "short_desc": "Homing Whip Recast Up: Raises recast speed of Homing Whip",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 470,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                2976,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

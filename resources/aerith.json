@@ -1,0 +1,3520 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 3,
+            "name": "BRV Attack",
+            "desc": "Magic attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 703,
+            "name": "Healing Wind",
+            "desc": "Party: Grants BRVã€? recovers HP based on own ATK; 5 turns INT BRV Up I",
+            "movement_cost": 30,
+            "use_count": 3,
+            "is_default": 1,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 890,
+                    "type": 6,
+                    "arguments": [
+                        70,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 43,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 1057,
+                    "type": 6,
+                    "arguments": [
+                        70,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 168,
+                    "cast_id": 188,
+                    "name": "INT BRV Up",
+                    "desc": "INT BRV Up: Raises INT BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            4
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            168
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 704,
+            "name": "Prayer of the Cetra",
+            "desc": "Target: Slightly restores HPã€? revives fallen ally\\nSelf: 8 turns Cetra's Favor\\nHigh turn rate\\nBRV Attack becomes BRV Attack+ while Cetra's Favor active",
+            "movement_cost": 22,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 7
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1066,
+                    "type": 6,
+                    "arguments": [
+                        25,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 43,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 388,
+                    "type": 6,
+                    "arguments": [
+                        25,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 54,
+                    "effect_value_type": 6
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 187,
+                    "cast_id": 208,
+                    "name": "Cetra's Favor",
+                    "desc": "Cetra's Favor: Restores BRV and raises DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 2,
+                        "arguments": [
+                            3
+                        ],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            8,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            143,
+                            56
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20,
+                            30
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1067,
+            "name": "Healing Wind",
+            "desc": "Party: Grants BRVã€? recovers HP based on own ATK; 10 turns INT BRV Up I",
+            "movement_cost": 30,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1054,
+                    "type": 6,
+                    "arguments": [
+                        120,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 43,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 1058,
+                    "type": 6,
+                    "arguments": [
+                        120,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 168,
+                    "cast_id": 188,
+                    "name": "INT BRV Up",
+                    "desc": "INT BRV Up: Raises INT BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 10
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            4
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            168
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1068,
+            "name": "Prayer of the Cetra",
+            "desc": "Target: Slightly restores HPã€? revives fallen ally\\nSelf: 8 turns Cetra's Favor; 4 turns ATK Up II\\nHigh turn rate\\nBRV Attack becomes BRV Attack+ while Cetra's Favor active",
+            "movement_cost": 22,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 7
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1060,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 43,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1059,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 54,
+                    "effect_value_type": 6
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 187,
+                    "cast_id": 208,
+                    "name": "Cetra's Favor",
+                    "desc": "Cetra's Favor: Restores BRV and raises DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [
+                            6
+                        ],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            8,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            143,
+                            56
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30,
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1069,
+            "name": "BRV Attack+",
+            "desc": "Magic \\bPG attack\\nGrants allies BRV based on own INT BRV\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1055,
+                    "type": 1,
+                    "arguments": [
+                        1,
+                        1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1056,
+                    "type": 6,
+                    "arguments": [
+                        120,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 7,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 2245,
+            "name": "Healing Wind",
+            "desc": "Party: Grants BRVã€? recovers HP based on own ATK; 5 turns INT BRV Up I\\nHigh turn rate",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2472,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 43,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 2471,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 168,
+                    "cast_id": 188,
+                    "name": "INT BRV Up",
+                    "desc": "INT BRV Up: Raises INT BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            4
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            168
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2246,
+            "name": "Healing Wind",
+            "desc": "Party: Grants BRVã€? recovers HP based on own ATK; 10 turns INT BRV Up I\\nHigh turn rate",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2474,
+                    "type": 6,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 43,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 2473,
+                    "type": 6,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 168,
+                    "cast_id": 188,
+                    "name": "INT BRV Up",
+                    "desc": "INT BRV Up: Raises INT BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 10
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            4
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            168
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2247,
+            "name": "Prayer of the Cetra",
+            "desc": "Target: Moderately restores HPã€? revives fallen ally; grants BRV based on own INT BRV\\nSelf: Increases BRV based on own INT BRV; 8 turns Cetra's Favorã€? Magic ATK Up III\\nHigh turn rate\\nBRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ while Cetra's Favor is active",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 7
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2475,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 43,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2476,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 54,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 2556,
+                    "type": 6,
+                    "arguments": [
+                        200,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 13,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 187,
+                    "cast_id": 208,
+                    "name": "Cetra's Favor",
+                    "desc": "Cetra's Favor: Restores BRV and raises DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [
+                            6
+                        ],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            8,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            143,
+                            56
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30,
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 119,
+                    "cast_id": 124,
+                    "name": "MAG ATK Up",
+                    "desc": "MAG ATK Up: Raises ATK for magic attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            50
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            119
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2248,
+            "name": "Prayer of the Cetra",
+            "desc": "Target: Greatly restores HPã€? revives fallen ally; grants BRV based on own INT BRV\\nSelf: Increases BRV based on own INT BRV; 8 turns Cetra's Favorã€? Magic ATK Up III; 4 turns ATK Up II\\nHigh turn rate\\nBRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ while Cetra's Favor is active",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 7
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2477,
+                    "type": 6,
+                    "arguments": [
+                        75,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 43,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2478,
+                    "type": 6,
+                    "arguments": [
+                        75,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 54,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 2556,
+                    "type": 6,
+                    "arguments": [
+                        200,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 13,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 187,
+                    "cast_id": 208,
+                    "name": "Cetra's Favor",
+                    "desc": "Cetra's Favor: Restores BRV and raises DEF",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 2,
+                        "arguments": [
+                            4
+                        ],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            8,
+                            2
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            143,
+                            56
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40,
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 119,
+                    "cast_id": 124,
+                    "name": "MAG ATK Up",
+                    "desc": "MAG ATK Up: Raises ATK for magic attacks",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            50
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            119
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2384,
+            "name": "HP Attack+",
+            "desc": "Increases BRV based on MAX BRV + \\bPF attack\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2604,
+                    "type": 6,
+                    "arguments": [
+                        20,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4694,
+            "name": "All BRV Regen Attack",
+            "desc": "Marginally raises party's ATKã€? grants party BRV Regen effect 3 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 523,
+                    "cast_id": 958,
+                    "name": "All BRV Regen Attack",
+                    "desc": "Effect from additional ability All BRV Regen Attack",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4695,
+            "name": "All BRV Regen Attack",
+            "desc": "Marginally raises party's ATKã€? grants party BRV Regen effect 5 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 523,
+                    "cast_id": 958,
+                    "name": "All BRV Regen Attack",
+                    "desc": "Effect from additional ability All BRV Regen Attack",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4696,
+            "name": "All BRV Regen Attack",
+            "desc": "Slightly raises party's ATKã€? grants party BRV Regen effect 3 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 523,
+                    "cast_id": 958,
+                    "name": "All BRV Regen Attack",
+                    "desc": "Effect from additional ability All BRV Regen Attack",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4697,
+            "name": "All BRV Regen Attack",
+            "desc": "Slightly raises party's ATKã€? grants party BRV Regen effect 5 turns",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 523,
+                    "cast_id": 958,
+                    "name": "All BRV Regen Attack",
+                    "desc": "Effect from additional ability All BRV Regen Attack",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4794,
+            "name": "Healing Wind",
+            "desc": "Grants party BRVã€? restores party's HP based on own ATK\\nParty: 5 turns INT BRV Up II\\nHigh turn rate",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2472,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 43,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 2471,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 168,
+                    "cast_id": 188,
+                    "name": "INT BRV Up",
+                    "desc": "INT BRV Up: Raises INT BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 4,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            4
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            168
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4795,
+            "name": "Healing Wind",
+            "desc": "Grants party BRVã€? restores party's HP based on own ATK\\nParty: 10 turns INT BRV Up II\\nHigh turn rate",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2474,
+                    "type": 6,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 43,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 2473,
+                    "type": 6,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 168,
+                    "cast_id": 188,
+                    "name": "INT BRV Up",
+                    "desc": "INT BRV Up: Raises INT BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 8,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 10
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            4
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            168
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4796,
+            "name": "Prayer of the Cetra",
+            "desc": "Moderately restores HPã€? revives fallen ally\\nGrants target BRVã€? increases own BRV based on own INT BRV\\nSelf: 9 turns Cetra's Favorã€? ATK Up I\\nHigh turn rate\\nBRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ while Cetra's Favor active",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 7
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2475,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 43,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2476,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 54,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 5422,
+                    "type": 6,
+                    "arguments": [
+                        200
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 13,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 528,
+                    "cast_id": 963,
+                    "name": "Cetra's Favor",
+                    "desc": "Cetra's Favor: Raises MAX BRVã€? MAG ATKã€? DEF; restores BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 9
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            50,
+                            60
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            528
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 9
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4797,
+            "name": "Prayer of the Cetra",
+            "desc": "Largely restores HPã€? revives fallen ally\\nGrants target BRVã€? increases own BRV based on own INT BRV\\nSelf: 9 turns Cetra's Favorã€? ATK Up III\\nHigh turn rate\\nBRV Attack becomes BRV Attack+ã€? HP Attack becomes HP Attack+ while Cetra's Favor active",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 7
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2477,
+                    "type": 6,
+                    "arguments": [
+                        75,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 43,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 7,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2478,
+                    "type": 6,
+                    "arguments": [
+                        75,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 54,
+                    "effect_value_type": 6
+                },
+                {
+                    "id": 5422,
+                    "type": 6,
+                    "arguments": [
+                        200
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 13,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 528,
+                    "cast_id": 963,
+                    "name": "Cetra's Favor",
+                    "desc": "Cetra's Favor: Raises MAX BRVã€? MAG ATKã€? DEF; restores BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 9
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            50,
+                            60
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            528
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            80
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 9
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            70
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4798,
+            "name": "BRV Attack+",
+            "desc": "Magic \\bPG attack\\nGrants allies BRV based on own INT BRV\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5424,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5425,
+                    "type": 6,
+                    "arguments": [
+                        120
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 7,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4799,
+            "name": "HP Attack+",
+            "desc": "Increases BRV based on MAX BRV\\nMagic \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 120%\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5427,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 5426,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4800,
+            "name": "Fury Brand",
+            "desc": "Grants party BRV based on own ATK\\nSelf: 3 turns Ancient Lineage\\nBRV Attackã€? BRV Attack+ become BRV Attack++ã€? HP Attackã€? HP Attack+ become HP Attack++ while Ancient Lineage active",
+            "movement_cost": 30,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5428,
+                    "type": 6,
+                    "arguments": [
+                        200
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 529,
+                    "cast_id": 964,
+                    "name": "Ancient Lineage",
+                    "desc": "Ancient Lineage: Raises party's ATKã€? amount stolen BRV may exceed MAX BRV (does not stack)",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4801,
+            "name": "Fury Brand",
+            "desc": "Grants party BRV based on own ATK\\nSelf: 3 turns Ancient Lineage\\nHigh turn rate\\nBRV Attackã€? BRV Attack+ become BRV Attack++ã€? HP Attackã€? HP Attack+ become HP Attack++ while Ancient Lineage active",
+            "movement_cost": 24,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 2,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5429,
+                    "type": 6,
+                    "arguments": [
+                        200
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 529,
+                    "cast_id": 964,
+                    "name": "Ancient Lineage",
+                    "desc": "Ancient Lineage: Raises party's ATKã€? amount stolen BRV may exceed MAX BRV (does not stack)",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4802,
+            "name": "BRV Attack++",
+            "desc": "2-hit magic \\bPG attack\\nGrants party BRV based on own INT BRV\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5431,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5431,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5432,
+                    "type": 6,
+                    "arguments": [
+                        120
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 8
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4803,
+            "name": "HP Attack++",
+            "desc": "Increases BRV based on MAX BRV\\n2-hit magic \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 120%\\nHigh turn rate",
+            "movement_cost": 22,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5434,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 9
+                },
+                {
+                    "id": 5433,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5433,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 75.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        }
+    ],
+    "passives": [
+        {
+            "id": 627,
+            "name": "Charged Healing Wind",
+            "desc": "Healing Wind use +1",
+            "short_desc": "Charged Healing Wind: Raises use count of Healing Wind",
+            "meta_data": {
+                "cp": 15,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        703,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 287,
+            "name": "HP Damage Attack",
+            "desc": "Slightly raises ATK for 1 turn upon taking HP damage",
+            "short_desc": "HP Damage Attack: Raises ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 29,
+                    "required_id": 36,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 628,
+            "name": "Quick Healing Wind",
+            "desc": "Slightly raises turn rate for Healing Wind",
+            "short_desc": "Quick Healing Wind: Raises turn rate of Healing Wind",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 48,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        703,
+                        8,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 289,
+            "name": "Greater Rejuvenate",
+            "desc": "Slightly recovers more HP with heals",
+            "short_desc": "Greater Rejuvenate: Raises HP recovery amount",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 76,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 145,
+            "name": "Bravery Critical Hit",
+            "desc": "Slightly raises BRV upon unleashing a critical BRV attack",
+            "short_desc": "Bravery Critical Hit: Gains BRV",
+            "meta_data": {
+                "cp": 5,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 43,
+                    "required_id": 38,
+                    "required_target": 2,
+                    "effect_values": [
+                        12,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 629,
+            "name": "Quick Prayer of the Cetra",
+            "desc": "Slightly raises turn rate for Prayer of Cetra",
+            "short_desc": "Quick Prayer of the Cetra: Raises turn rate of Prayer of the Cetra",
+            "meta_data": {
+                "cp": 10,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 48,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        704,
+                        4,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 271,
+            "name": "Buffed Attack",
+            "desc": "Slightly raises ATK with active buffs",
+            "short_desc": "Buffed Attack: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 630,
+            "name": "Wish Upon a Star",
+            "desc": "Low chance 3 turns MAX BRV Up I with BRV Attack\\n*Also applies to abilities changed from BRV Attack",
+            "short_desc": "Wish Upon a Star: Grants MAX BRV Up to self",
+            "meta_data": {
+                "cp": 15,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 66,
+                    "required_id": 45,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        57,
+                        3
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 631,
+            "name": "Midgar Flower",
+            "desc": "Allies: Slightly raises INT BRVã€? DEF when own HP is MAX",
+            "short_desc": "Midgar Flower: Raises INT BRVã€? DEF of allies",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 4,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 34,
+                    "required_id": 30,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        100,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 30,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 979,
+            "name": "BRV Boost",
+            "desc": "Moderately raises MAX BRV while HP is at least 50% of MAX",
+            "short_desc": "BRV Boost: Raises MAX BRV",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 30,
+                    "required_target": 2,
+                    "effect_values": [
+                        60,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        50,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1748,
+            "name": "Healing Wind Extension",
+            "desc": "Healing Wind use +1\\n\\nWhen using Healing Wind:\\n â€¢ Slight boost to BRV granted based on own ATK\\n â€¢ Slightly increased HP recovery based on ATK\\n â€¢ Moderate INT BRV Up boost\\n â€¢ Higher turn rate",
+            "short_desc": "Healing Wind Extension: Boost to Healing Wind",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        703,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1749,
+            "name": "Speed Buff",
+            "desc": "Moderately raises SPD with active buffs",
+            "short_desc": "Speed Buff: Raises SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 32,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1750,
+            "name": "Prayer of the Cetra Extension",
+            "desc": "When using Prayer of the Cetra:\\n â€¢ Grants target BRVã€? increases own BRV based on own INT BRV\\n â€¢ Slightly increased HP recovery based on target's MAX HP\\n â€¢ Slight Cetra's Favor boostã€? additional MAX BRV Up Iã€? MAG ATK Up III effectã€? duration +1\\n â€¢ 9 turns slight boost to ATK Up\\n â€¢ Higher turn rate\\n\\nWhen using BRV Attack+:\\n â€¢ Slight BRV damage boost\\n\\nWhile Cetra's Favor active:\\n â€¢ HP Attack becomes HP Attack+ (increases BRV based on MAX BRV; magic \\bPG attack + \\bPF attack; stolen BRV may exceed MAX BRV up to 120%; higher turn rate)",
+            "short_desc": "Prayer of the Cetra Extension: Boost to Prayer of the Cetra",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        },
+        {
+            "id": 1732,
+            "name": "Tenacity Resonance",
+            "desc": "Slightly raises party's INT BRVã€? ATK",
+            "short_desc": "Tenacity Resonance: Raises party's INT BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 68,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 34,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1733,
+            "name": "All BRV Regen Attack Extension",
+            "desc": "When using All BRV Regen Attack:\\n â€¢ Marginal raised ATK boost\\n â€¢ Slight BRV Regen boost",
+            "short_desc": "All BRV Regen Attack Extension: Boost to All BRV Regen Attack",
+            "meta_data": {
+                "cp": 15,
+                "level": 70,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        }
+    ],
+    "bloom": {
+        "passive": {
+            "id": 1739,
+            "name": "All BRV Regen Attack Growth",
+            "desc": "All BRV Regen Attack use +1\\n\\nAll BRV Regen Attack effect duration +2",
+            "short_desc": "All BRV Regen Attack Growth: Boost to All BRV Regen Attack",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        4694,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    },
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 143,
+                "name": "Supernova",
+                "desc": "Party: Gains more BRV & recovers more HP with Healing Wind\\nParty: INT BRV Up boostã€? duration+",
+                "short_desc": "Supernova: Boost to Healing Wind",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 143,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 144,
+                "name": "Ancestral Arts",
+                "desc": "Prayer of the Cetra use +1\\nTarget: Recovers more HP\\nCetra's Favor boost\\nSelf: 4 turns ATK Up II",
+                "short_desc": "Ancestral Arts: Boost to Prayer of the Cetra",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 144,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 22,
+                        "required_id": 2,
+                        "required_target": 2,
+                        "effect_values": [
+                            704,
+                            1,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 789,
+                "name": "Conversant with the Planet",
+                "desc": "May equip EX ability Fury Brand",
+                "short_desc": "Conversant with the Planet: May equip Fury Brand",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 789,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            2045,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 790,
+                    "name": "Quick Fury Brand",
+                    "desc": "Slightly raises turn rate for Fury Brand",
+                    "short_desc": "Quick Fury Brand: Raises turn rate for Fury Brand",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 790,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                },
+                {
+                    "id": 791,
+                    "name": "Fury Brand Preserve",
+                    "desc": "Enemy attacks will not reduce HP below 1 while own HP is at least 50% of MAX",
+                    "short_desc": "Fury Brand Preserve: Prevents HP from dropping below 1 with sufficient HP",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 791,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 62,
+                            "required_id": 30,
+                            "required_target": 2,
+                            "effect_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                50,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 792,
+                    "name": "Fury Brand Recast Up",
+                    "desc": "Slightly raises recast speed of Fury Brand",
+                    "short_desc": "Fury Brand Recast Up: Raises recast speed of Fury Brand",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 792,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                4800,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

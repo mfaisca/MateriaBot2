@@ -1,0 +1,1524 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 3,
+            "name": "BRV Attack",
+            "desc": "Magic attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 614,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 155,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 64,
+            "name": "Protect",
+            "desc": "Party: 5 turns PHY Damage Resist\\nParty: Grants BRV based on own ATK",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 935,
+                    "type": 6,
+                    "arguments": [
+                        60,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [
+                2,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 52,
+                    "cast_id": 6,
+                    "name": "PHY Damage Resist",
+                    "desc": "PHY Damage Resist: Raises PHY resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            42,
+                            43
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            52,
+                            52
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Shell",
+            "desc": "Party: 5 turns MAG Damage Resist\\nParty: Grants BRV based on own ATK",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 1,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 933,
+                    "type": 6,
+                    "arguments": [
+                        60,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [
+                2,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 51,
+                    "cast_id": 5,
+                    "name": "MAG Damage Resist",
+                    "desc": "MAG Damage Resist: Raises MAG resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            41
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            51
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 357,
+            "name": "Shell",
+            "desc": "Self: 3 turns ATK Up I\\nParty: 5 turns MAG Damage Resist; grants BRV based on own ATK",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 934,
+                    "type": 6,
+                    "arguments": [
+                        60,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 51,
+                    "cast_id": 5,
+                    "name": "MAG Damage Resist",
+                    "desc": "MAG Damage Resist: Raises MAG resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            41
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            51
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 371,
+            "name": "Protect",
+            "desc": "Party: 6 turns PHY Damage Resistã€? SPD Up I; grants BRV based on own ATK",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 936,
+                    "type": 6,
+                    "arguments": [
+                        110,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [
+                2,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 52,
+                    "cast_id": 6,
+                    "name": "PHY Damage Resist",
+                    "desc": "PHY Damage Resist: Raises PHY resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            42,
+                            43
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            52,
+                            52
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            50
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2196,
+            "name": "Shell",
+            "desc": "Party: 5 turns MAG Damage Resist;\\n   increases BRV based on ATK\\nHP Attack becomes HP Attack+ while MAG Damage Resist is active",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 2406,
+                    "type": 6,
+                    "arguments": [
+                        110,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [
+                2,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 51,
+                    "cast_id": 5,
+                    "name": "MAG Damage Resist",
+                    "desc": "MAG Damage Resist: Raises MAG resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            41
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            51
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2197,
+            "name": "Shell",
+            "desc": "Party: 5 turns MAG Damage Resist;\\n   increases BRV based on ATK\\nSelf: 3 turns ATK Up I\\nHP Attack becomes HP Attack+ while MAG Damage Resist is active",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 2406,
+                    "type": 6,
+                    "arguments": [
+                        110,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 51,
+                    "cast_id": 5,
+                    "name": "MAG Damage Resist",
+                    "desc": "MAG Damage Resist: Raises MAG resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            41
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            51
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2198,
+            "name": "Protect",
+            "desc": "Party: 5 turns PHY Damage Resist;\\n   increases BRV based on ATK\\nBRV Attack becomes BRV Attack+ while PHY Damage Resist is active",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 2407,
+                    "type": 6,
+                    "arguments": [
+                        80,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [
+                2,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 52,
+                    "cast_id": 6,
+                    "name": "PHY Damage Resist",
+                    "desc": "PHY Damage Resist: Raises PHY resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            42,
+                            43
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            52,
+                            52
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40,
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2199,
+            "name": "Protect",
+            "desc": "Party: 6 turns PHY Damage Resistã€? SPD Up I;\\n   increases BRV based on ATK\\nBRV Attack becomes BRV Attack+ while PHY Damage Resist is active",
+            "movement_cost": 30,
+            "use_count": 5,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 3
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 2411,
+                    "type": 6,
+                    "arguments": [
+                        130,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 6,
+                    "effect": 41,
+                    "effect_value_type": 15
+                }
+            ],
+            "arguments": [
+                2,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 52,
+                    "cast_id": 6,
+                    "name": "PHY Damage Resist",
+                    "desc": "PHY Damage Resist: Raises PHY resist",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 6,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            42,
+                            43
+                        ],
+                        "effect_val_types": [
+                            0,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            52,
+                            52
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40,
+                            40
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 3,
+                        "target": 6,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            30
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2200,
+            "name": "HP Attack+",
+            "desc": "\\bPF attack\\nGrants BRV to allies based on HP damage dealt",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 2,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 155,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 2,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2408,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 7,
+                    "effect": 41,
+                    "effect_value_type": 14
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 2201,
+            "name": "BRV Attack+",
+            "desc": "Magic \\bPG attack",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2409,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        }
+    ],
+    "passives": [
+        {
+            "id": 169,
+            "name": "Bravery Shell",
+            "desc": "Slightly raises BRV upon using Shell",
+            "short_desc": "Bravery Shell: Gains BRV",
+            "meta_data": {
+                "cp": 10,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 43,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        28,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 170,
+            "name": "Quick Shell",
+            "desc": "Slightly raises turn rate for Shell",
+            "short_desc": "Quick Shell: Raises turn rate of Shell",
+            "meta_data": {
+                "cp": 10,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 48,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        28,
+                        4,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 171,
+            "name": "Shell Attack Up",
+            "desc": "Slightly raises ATK for 1 turn upon using Shell",
+            "short_desc": "Shell Attack Up: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 29,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        28,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 172,
+            "name": "Protect Attack Up",
+            "desc": "Slightly raises ATK for 1 turn upon using Protect",
+            "short_desc": "Protect Attack Up: Raises ATK",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 29,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        64,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 173,
+            "name": "Quick Protect",
+            "desc": "Slightly raises turn rate for Protect",
+            "short_desc": "Quick Protect: Raises turn rate of Protect",
+            "meta_data": {
+                "cp": 10,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 48,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        64,
+                        4,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 174,
+            "name": "Bonus: Protect Long",
+            "desc": "Extends party's Protect buff 1 turn upon inflicting Break",
+            "short_desc": "Bonus: Protect Long: Extends duration of party's Protect buff",
+            "meta_data": {
+                "cp": 5,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 54,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        52,
+                        1,
+                        1
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 175,
+            "name": "Charged Shell",
+            "desc": "Shell use +1",
+            "short_desc": "Charged Shell: Raises use count of Shell",
+            "meta_data": {
+                "cp": 10,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        28,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 176,
+            "name": "Charged Protect",
+            "desc": "Protect use +1",
+            "short_desc": "Charged Protect: Raises use count of Protect",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        64,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 451,
+            "name": "Hope's Testament",
+            "desc": "Party: Extends effects of all buffs by 1 turn when granting new buff (One use)",
+            "short_desc": "Hope's Testament: Extends duration of party's buffs",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 54,
+                    "required_id": 44,
+                    "required_target": 2,
+                    "effect_values": [
+                        -1,
+                        1,
+                        1
+                    ],
+                    "required_values": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 951,
+            "name": "Speed Shell",
+            "desc": "Slightly raises SPD while MAG Damage Resist active",
+            "short_desc": "Speed Shell: Raises SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 32,
+                    "required_id": 32,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        51,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 952,
+            "name": "Shell Extension",
+            "desc": "Shell use +1\\n\\nWhen using Shell:\\nâ€¢ Moderate BRV increase based on ATK\\nâ€¢ Slight MAG Damage Resist boost\\nâ€¢ HP Attack becomes HP Attack+ (grants BRV to allies based on HP damage dealt) while MAG Damage Resist active",
+            "short_desc": "Shell Extension: Boost to Shell",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        28,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 953,
+            "name": "Protect Attack Boost Up",
+            "desc": "Moderately raises MAX BRVã€? ATK while PHY Damage Resist active",
+            "short_desc": "Protect Attack Boost Up: Raises MAX BRVã€? ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 36,
+                    "required_id": 32,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        52,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 28,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 954,
+            "name": "Protect Extension",
+            "desc": "Protect use +1\\n\\nWhen using Protect:\\n â€¢ Slight BRV increase based on ATK\\n â€¢ Slight PHY Damage Resist boost\\n â€¢ BRV Attack becomes BRV Attack+ (great BRV damage boost) while PHY Damage Resist active",
+            "short_desc": "Protect Extension: Boost to Protect",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        64,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    ],
+    "bloom": {},
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 25,
+                "name": "Unbreakable Spirit",
+                "desc": "Self: 3 turns ATK Up I with Shell",
+                "short_desc": "Unbreakable Spirit: Boost to Shell",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 25,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 8,
+                "name": "Strong Defense",
+                "desc": "PHY Damage Resist duration+ with Protect\\nParty: 6 turns SPD Up I\\nParty: Gains more BRV",
+                "short_desc": "Strong Defense: Boost to Protect",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 8,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "exWeapon": {},
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {}
+    }
+}

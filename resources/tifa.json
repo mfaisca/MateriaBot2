@@ -1,0 +1,4736 @@
+{
+    "abilities": [],
+    "optAbilities": [],
+    "completeListOfAbilities": [
+        {
+            "id": 1,
+            "name": "BRV Attack",
+            "desc": "Melee attack\\nSteals enemy's BRV",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 1,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 4,
+            "name": "HP Attack",
+            "desc": "Expends BRV to deal HP damage",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 1,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 52,
+            "name": "Beat Rush",
+            "desc": "3-hit melee \\bPG attack\\nTarget: Low chance 2 turns ATK Down I\\nDeals extra BRV damage to skeleton types",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 1,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 143,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 143,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 143,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 50.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [
+                1,
+                30,
+                15,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 30,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "error": 1
+        },
+        {
+            "error": 1
+        },
+        {
+            "id": 34,
+            "name": "Battle Cry",
+            "desc": "Increases BRV based on ATKã€? then BRV Ã— 2\\nSelf: 2 turns MAX BRV Up Iã€? the Zangan Way",
+            "movement_cost": 30,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1855,
+                    "type": 6,
+                    "arguments": [
+                        50,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 61,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                }
+            ],
+            "arguments": [
+                2
+            ],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 289,
+                    "cast_id": 347,
+                    "name": "The Zangan Way",
+                    "desc": "The Zangan Way: Raises ATK and turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [
+                            1
+                        ],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            45
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            55,
+                            250
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20,
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 355,
+            "name": "Beat Rush",
+            "desc": "3-hit melee \\bPG attack\\nTarget: Fair chance 3 turns ATK Down I\\nDeals extra BRV damage to skeleton types",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 441,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 441,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 441,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [
+                1,
+                30,
+                15,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 50,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 369,
+            "name": "Battle Cry",
+            "desc": "Increases BRV based on ATKã€? then BRV Ã— 2\\nHigh turn rate\\nSelf: 4 turns MAX BRV Up Vã€? the Zangan Way",
+            "movement_cost": 24,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 1856,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 1825,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                }
+            ],
+            "arguments": [
+                2
+            ],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            100
+                        ]
+                    }
+                },
+                {
+                    "id": 289,
+                    "cast_id": 347,
+                    "name": "The Zangan Way",
+                    "desc": "The Zangan Way: Raises ATK and turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [
+                            2
+                        ],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            45
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            55,
+                            250
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60,
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2450,
+            "name": "Beat Rush",
+            "desc": "3-hit melee \\bPG attack\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: Low chance 2 turns ATK Down I\\nExtra damage to skeleton types\\nTriggers additional \\bPF attack if BRV at least 100% of MAX at time of use",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2660,
+                    "type": 1,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 106,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2660,
+                    "type": 1,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 106,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2660,
+                    "type": 1,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 106,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [
+                1,
+                30,
+                15,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 30,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2451,
+            "name": "Beat Rush",
+            "desc": "3-hit melee \\bPG attack\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: Fair chance 3 turns ATK Down I\\nExtra damage to skeleton types\\nTriggers additional \\bPF attack if BRV at least 100% of MAX at time of use",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 2661,
+                    "type": 1,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 106,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2661,
+                    "type": 1,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 106,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2661,
+                    "type": 1,
+                    "arguments": [
+                        150,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 106,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [
+                1,
+                30,
+                15,
+                50
+            ],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 50,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2452,
+            "name": "Battle Cry",
+            "desc": "Increases BRV based on ATKã€? then BRV Ã— 2\\nHigh turn rate\\nSelf: 4 turns MAX BRV Up Iã€? the Zangan Way",
+            "movement_cost": 24,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2662,
+                    "type": 6,
+                    "arguments": [
+                        70,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 61,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                }
+            ],
+            "arguments": [
+                2
+            ],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 289,
+                    "cast_id": 347,
+                    "name": "The Zangan Way",
+                    "desc": "The Zangan Way: Raises ATK and turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [
+                            1
+                        ],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            45
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            55,
+                            250
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20,
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2453,
+            "name": "Battle Cry",
+            "desc": "Increases BRV based on ATKã€? then BRV Ã— 2\\nHigh turn rate\\nSelf: 6 turns MAX BRV Up Vã€? the Zangan Way",
+            "movement_cost": 18,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 518,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 0.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2663,
+                    "type": 6,
+                    "arguments": [
+                        120,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 1825,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                }
+            ],
+            "arguments": [
+                2
+            ],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            100
+                        ]
+                    }
+                },
+                {
+                    "id": 289,
+                    "cast_id": 347,
+                    "name": "The Zangan Way",
+                    "desc": "The Zangan Way: Raises ATK and turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [
+                            2
+                        ],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            45
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            55,
+                            250
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60,
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2562,
+            "name": "0",
+            "desc": "0",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 2832,
+            "name": "Dolphin Blow",
+            "desc": "2-hit melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: Knock Back\\nSelf: 3 turns Fever Time\\nExtends MAX BRV Upã€? the Zangan Way duration 3 turns\\nBRV Attack becomes BRV Attack+ while Fever Time active",
+            "movement_cost": 30,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 50
+            },
+            "hit_data": [
+                {
+                    "id": 3211,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3211,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3776,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        79
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3777,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        289
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 681,
+                    "cast_id": 592,
+                    "name": "Fever Time",
+                    "desc": "Fever Time: Raises critical hit rateã€? critical BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [
+                            7
+                        ],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            112,
+                            46
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            681,
+                            75
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            100
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2833,
+            "name": "Dolphin Blow",
+            "desc": "2-hit melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: Knock Back\\nSelf: 6 turns Fever Time\\nExtends MAX BRV Upã€? the Zangan Way duration 3 turns\\nBRV Attack becomes BRV Attack+ while Fever Time active",
+            "movement_cost": 30,
+            "use_count": 15000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 50
+            },
+            "hit_data": [
+                {
+                    "id": 3211,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3211,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3776,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        79
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3777,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        289
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 681,
+                    "cast_id": 592,
+                    "name": "Fever Time",
+                    "desc": "Fever Time: Raises critical hit rateã€? critical BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [
+                            7
+                        ],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            112,
+                            46
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            681,
+                            75
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            100
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3353,
+            "name": "BRV Attack+",
+            "desc": "3-hit melee \\bPG attack",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 3775,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3775,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3775,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5785,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\n3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nã‚¹ã‚±ãƒ«ãƒˆãƒ³ç¨®ã?« ã‚ˆã‚Šå¤§ã??ã?ªBRVãƒ€ãƒ¡ãƒ¼ã‚¸\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®150ï¼…åˆ†\\nå°?ç¢ºçŽ‡ã?§å¯¾è±¡ã?«2ACTIONã€Œæ”»æ’ƒåŠ›å°?ãƒ€ã‚¦ãƒ³ã€?ä»˜ä¸Ž\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nå¯¾è±¡ãƒ–ãƒ¬ã‚¤ã‚¯å¾Œ ãƒ–ãƒ¬ã‚¤ã‚¯ä¸­æ”»æ’ƒå¾Œ\\nã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 24,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6630,
+                    "type": 6,
+                    "arguments": [
+                        70
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 6475,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6475,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6475,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 30,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5786,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\n3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nã‚¹ã‚±ãƒ«ãƒˆãƒ³ç¨®ã?« ã‚ˆã‚Šå¤§ã??ã?ªBRVãƒ€ãƒ¡ãƒ¼ã‚¸\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®150ï¼…åˆ†\\nä¸­ç¢ºçŽ‡ã?§å¯¾è±¡ã?«3ACTIONã€Œæ”»æ’ƒåŠ›å°?ãƒ€ã‚¦ãƒ³ã€?ä»˜ä¸Ž\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nå¯¾è±¡ãƒ–ãƒ¬ã‚¤ã‚¯å¾Œ ãƒ–ãƒ¬ã‚¤ã‚¯ä¸­æ”»æ’ƒå¾Œ\\nã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 24,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6630,
+                    "type": 6,
+                    "arguments": [
+                        70
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 6476,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6476,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6476,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 150,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 50,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5787,
+            "name": "æ°—å?ˆ",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\nã?•ã‚‰ã?«BRVã‚’2å€?ã?«ã‚¢ãƒƒãƒ—\\nè‡ªèº«ã?«8ACTIONã€Œæœ€å¤§BRVå°?ã‚¢ãƒƒãƒ—ã€?\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ä»˜ä¸Ž\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nç·?ACTIONæ•°ã?«åŠ ç®—ã?•ã‚Œã?ªã?„\\nå?¬å–šä¸­ã?Šã‚ˆã?³ãƒ•ãƒ¬ãƒ³ãƒ‰ã‚µãƒ?ãƒ¼ãƒˆã?®æ®‹ã‚ŠACTIONã?¯æ¶ˆè²»ã?•ã‚Œã‚‹\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ä»˜ä¸Žä¸­\\né€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 6,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2662,
+                    "type": 6,
+                    "arguments": [
+                        70,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 61,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 289,
+                    "cast_id": 347,
+                    "name": "The Zangan Way",
+                    "desc": "The Zangan Way: Raises ATK and turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [
+                            1
+                        ],
+                        "duration": 8
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            45
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            55,
+                            250
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20,
+                            10
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5788,
+            "name": "æ°—å?ˆ",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\nã?•ã‚‰ã?«BRVã‚’2å€?ã?«ã‚¢ãƒƒãƒ—\\nè‡ªèº«ã?«10ACTIONã€Œæœ€å¤§BRVæ¥µå¤§ã‚¢ãƒƒãƒ—ã€?\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ä»˜ä¸Ž\\nè¡Œå‹•è² è?·ã?Œã?ªã?„\\nç·?ACTIONæ•°ã?«åŠ ç®—ã?•ã‚Œã?ªã?„\\nå?¬å–šä¸­ã?Šã‚ˆã?³ãƒ•ãƒ¬ãƒ³ãƒ‰ã‚µãƒ?ãƒ¼ãƒˆã?®æ®‹ã‚ŠACTIONã?¯æ¶ˆè²»ã?•ã‚Œã‚‹\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ä»˜ä¸Žä¸­\\né€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 0,
+            "use_count": 3,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 0,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 2663,
+                    "type": 6,
+                    "arguments": [
+                        120,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 1825,
+                    "type": 6,
+                    "arguments": [
+                        100,
+                        -1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [
+                        1
+                    ],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 7
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 10
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            100
+                        ]
+                    }
+                },
+                {
+                    "id": 289,
+                    "cast_id": 347,
+                    "name": "The Zangan Way",
+                    "desc": "The Zangan Way: Raises ATK and turn rate",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [
+                            2
+                        ],
+                        "duration": 10
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1,
+                            45
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            55,
+                            250
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60,
+                            20
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5789,
+            "name": "HPæ”»æ’ƒï¼‹",
+            "desc": "è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6477,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5790,
+            "name": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦",
+            "desc": "4HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ†\\nå¯¾è±¡ã‚’å?¹ã??ã?¨ã?°ã?™\\nè‡ªèº«ã?«6ACTIONã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Ž\\nè‡ªèº«ã?«ä»˜ä¸Žã?•ã‚Œã?¦ã?„ã‚‹ã€Œæœ€å¤§BRVã‚¢ãƒƒãƒ—ã€?\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ã‚’3ACTIONå»¶é•·\\nã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Žä¸­\\né€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã?Œã€Œ\\bPGæ”»æ’ƒï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 30,
+            "use_count": 14400,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 50
+            },
+            "hit_data": [
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3776,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        79
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3777,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        289
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 681,
+                    "cast_id": 592,
+                    "name": "Fever Time",
+                    "desc": "Fever Time: Raises critical hit rateã€? critical BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [
+                            7
+                        ],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            112,
+                            46
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            681,
+                            75
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            100
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5792,
+            "name": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã‚³ãƒ³ãƒœ",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\n3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ†\\nä¸Žã?ˆã?ŸHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®50ï¼…åˆ† è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—ã?•ã?›ã‚‹\\nå¯¾è±¡ã?®è¡Œå‹•é †ã‚’1ã?¤ä¸‹ã?’ã‚‹\\nã??ã?®å¾Œä»¥ä¸‹ã?®è¡Œå‹•ã?Œè¿½åŠ ç™ºå‹•\\n4HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ†\\nå¯¾è±¡ã‚’å?¹ã??ã?¨ã?°ã?™\\nè‡ªèº«ã?«6ACTIONã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Ž\\nè‡ªèº«ã?«ä»˜ä¸Žã?•ã‚Œã?¦ã?„ã‚‹ã€Œæœ€å¤§BRVã‚¢ãƒƒãƒ—ã€?\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ã‚’3ACTIONå»¶é•·\\nã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Žä¸­ é€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã?Œã€Œ\\bPGæ”»æ’ƒï¼‹ï¼‹ã€?ã?«\\né€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 30,
+            "use_count": 14400,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 0
+            },
+            "hit_data": [
+                {
+                    "id": 6633,
+                    "type": 6,
+                    "arguments": [
+                        100
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 6479,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6479,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6479,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5126,
+                    "type": 7,
+                    "arguments": [
+                        1
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 46,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6634,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 14
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 5793,
+            "name": "è¿½åŠ _çœŸåŒ–ç¬¬3ãƒ†ã‚£ãƒ•ã‚¡3å‡¸",
+            "desc": "0",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 50
+            },
+            "hit_data": [
+                {
+                    "id": 6480,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6480,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6480,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6480,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3776,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        79
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3777,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        289
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 681,
+                    "cast_id": 592,
+                    "name": "Fever Time",
+                    "desc": "Fever Time: Raises critical hit rateã€? critical BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [
+                            7
+                        ],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            112,
+                            46
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            681,
+                            75
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            100
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5794,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—",
+            "desc": "3ACTIONè‡ªèº«ã?®æ”»æ’ƒåŠ›ã‚’æ¥µå°?ã‚¢ãƒƒãƒ—\\nä½¿ç”¨å¾Œã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?®ä½¿ç”¨å›žæ•°ï¼‹1ï¼ˆä¸Šé™?ã?‚ã‚Šï¼‰",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6636,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        52
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1166,
+                    "cast_id": 1128,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1166
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            5
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5795,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—",
+            "desc": "3ACTIONè‡ªèº«ã?®æ”»æ’ƒåŠ›ã‚’æ¥µå°?ã‚¢ãƒƒãƒ—\\nä½¿ç”¨å¾Œã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?®ä½¿ç”¨å›žæ•°ï¼‹1ï¼ˆä¸Šé™?ã?‚ã‚Šï¼‰",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6636,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        52
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1166,
+                    "cast_id": 1128,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1166
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            5
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5796,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—",
+            "desc": "3ACTIONè‡ªèº«ã?®æ”»æ’ƒåŠ›ã‚’å°?ã‚¢ãƒƒãƒ—\\nä½¿ç”¨å¾Œã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?®ä½¿ç”¨å›žæ•°ï¼‹1ï¼ˆä¸Šé™?ã?‚ã‚Šï¼‰",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6636,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        52
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1166,
+                    "cast_id": 1128,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1166
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            15
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5797,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—",
+            "desc": "3ACTIONè‡ªèº«ã?®æ”»æ’ƒåŠ›ã‚’å°?ã‚¢ãƒƒãƒ—\\nä½¿ç”¨å¾Œã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?®ä½¿ç”¨å›žæ•°ï¼‹1ï¼ˆä¸Šé™?ã?‚ã‚Šï¼‰",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6636,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        52
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1166,
+                    "cast_id": 1128,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1166
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            15
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6001,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ï¼‹",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\n3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nã‚¹ã‚±ãƒ«ãƒˆãƒ³ç¨®ã?« ã‚ˆã‚Šå¤§ã??ã?ªBRVãƒ€ãƒ¡ãƒ¼ã‚¸\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®180ï¼…åˆ†\\nå°?ç¢ºçŽ‡ã?§å¯¾è±¡ã?«2ACTIONã€Œæ”»æ’ƒåŠ›å°?ãƒ€ã‚¦ãƒ³ã€?ä»˜ä¸Ž\\nä½¿ç”¨å¾Œ ã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?«æˆ»ã‚‹\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nå¯¾è±¡ãƒ–ãƒ¬ã‚¤ã‚¯å¾Œ ãƒ–ãƒ¬ã‚¤ã‚¯ä¸­æ”»æ’ƒå¾Œã?¯\\nã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?«æˆ»ã‚‰ã?ªã?„",
+            "movement_cost": 24,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5333,
+                    "type": 6,
+                    "arguments": [
+                        111
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6633,
+                    "type": 6,
+                    "arguments": [
+                        100
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 6624,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6624,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6624,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 30,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6002,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ï¼‹",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\n3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nã‚¹ã‚±ãƒ«ãƒˆãƒ³ç¨®ã?« ã‚ˆã‚Šå¤§ã??ã?ªBRVãƒ€ãƒ¡ãƒ¼ã‚¸\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®180ï¼…åˆ†\\nä¸­ç¢ºçŽ‡ã?§å¯¾è±¡ã?«3ACTIONã€Œæ”»æ’ƒåŠ›å°?ãƒ€ã‚¦ãƒ³ã€?ä»˜ä¸Ž\\nä½¿ç”¨å¾Œ ã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?«æˆ»ã‚‹\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nå¯¾è±¡ãƒ–ãƒ¬ã‚¤ã‚¯å¾Œ ãƒ–ãƒ¬ã‚¤ã‚¯ä¸­æ”»æ’ƒå¾Œã?¯\\nã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ã€?ã?«æˆ»ã‚‰ã?ªã?„",
+            "movement_cost": 24,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5333,
+                    "type": 6,
+                    "arguments": [
+                        111
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6633,
+                    "type": 6,
+                    "arguments": [
+                        100
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 6625,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6625,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6625,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 6,
+                    "cast_id": 11,
+                    "name": "ATK Down",
+                    "desc": "ATK Down: Lowers ATK",
+                    "meta_data": {
+                        "rate": 50,
+                        "rank": 2,
+                        "target": 1,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 0,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            6
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20
+                        ]
+                    }
+                },
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6003,
+            "name": "ãƒ–ãƒ¬ã‚¤ãƒ–æ”»æ’ƒï¼‹ï¼‹",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\n3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒ",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6628,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 3775,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3775,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3775,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 6004,
+            "name": "HPæ”»æ’ƒï¼‹ï¼‹",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\nè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®120ï¼…åˆ†",
+            "movement_cost": 30,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 6628,
+                    "type": 6,
+                    "arguments": [
+                        50
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 15
+                },
+                {
+                    "id": 6627,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4634,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 6125,
+            "name": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦",
+            "desc": "4HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ†\\nå¯¾è±¡ã‚’å?¹ã??ã?¨ã?°ã?™\\nè‡ªèº«ã?«6ACTIONã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Ž\\nè‡ªèº«ã?«ä»˜ä¸Žã?•ã‚Œã?¦ã?„ã‚‹ã€Œæœ€å¤§BRVã‚¢ãƒƒãƒ—ã€?\\nã€Œã‚¶ãƒ³ã‚¬ãƒ³æµ?æ ¼é—˜è¡“ã€?ã‚’3ACTIONå»¶é•·\\nã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Žä¸­\\né€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã?Œã€Œ\\bPGæ”»æ’ƒï¼‹ï¼‹ã€?ã?«\\né€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 30,
+            "use_count": 14400,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 50
+            },
+            "hit_data": [
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6478,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 110.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3776,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        79
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3777,
+                    "type": 6,
+                    "arguments": [
+                        3,
+                        289
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 121,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 681,
+                    "cast_id": 592,
+                    "name": "Fever Time",
+                    "desc": "Fever Time: Raises critical hit rateã€? critical BRV damage",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 5,
+                        "target": 2,
+                        "arguments": [
+                            7
+                        ],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            112,
+                            46
+                        ],
+                        "effect_val_types": [
+                            0,
+                            1
+                        ],
+                        "effect_rank_tables": [
+                            681,
+                            75
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            50,
+                            100
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "passives": [
+        {
+            "id": 41,
+            "name": "Chain Bonus",
+            "desc": "Deals slightly more BRV damage when using chain attacks",
+            "short_desc": "Chain Bonus: Increases BRV damage dealt",
+            "meta_data": {
+                "cp": 5,
+                "level": 5,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 46,
+                    "required_target": 2,
+                    "effect_values": [
+                        20,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 158,
+            "name": "Mighty Beat Rush",
+            "desc": "Slightly increases BRV damage dealt with Beat Rush",
+            "short_desc": "Mighty Beat Rush: Increases BRV damage dealt with Beat Rush",
+            "meta_data": {
+                "cp": 10,
+                "level": 10,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 39,
+                    "required_id": 14,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        52,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 95,
+            "name": "Power Break",
+            "desc": "Low chance of inflicting 3 turns ATK Down I with BRV ATK\\n*Also applies to abilities changed from BRV Attack",
+            "short_desc": "Power Break: Inflicts ATK Down",
+            "meta_data": {
+                "cp": 15,
+                "level": 15,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 66,
+                    "required_id": 45,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        11,
+                        3
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 59,
+            "name": "Skeleton Slayer",
+            "desc": "Slightly raises BRV damage dealt to skeleton types with BRV Attack\\n*Also applies to abilities changed from BRV Attack",
+            "short_desc": "Skeleton Slayer: Increases BRV damage dealt to skeleton types",
+            "meta_data": {
+                "cp": 10,
+                "level": 25,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 60,
+                    "required_id": 45,
+                    "required_target": 2,
+                    "effect_values": [
+                        7,
+                        20,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 60,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        23,
+                        20,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 445,
+            "name": "Quick Battle Cry",
+            "desc": "Slightly raises turn rate for Battle Cry",
+            "short_desc": "Quick Battle Cry: Raises turn rate of Battle Cry",
+            "meta_data": {
+                "cp": 10,
+                "level": 30,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 48,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        34,
+                        4,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Spite",
+            "desc": "BRV Attack becomes Critical if BRV at least INT BRV and target's BRV at least own BRV Ã— 2\\n*Also applies to abilities changed from BRV Attack",
+            "short_desc": "Spite: \\bPG Attack becomes critical hit",
+            "meta_data": {
+                "cp": 5,
+                "level": 35,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 61,
+                    "required_id": 43,
+                    "required_target": 2,
+                    "effect_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        200,
+                        1,
+                        100
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 160,
+            "name": "Charged Battle Cry",
+            "desc": "Battle Cry use +1",
+            "short_desc": "Charged Battle Cry: Raises use count of Battle Cry",
+            "meta_data": {
+                "cp": 15,
+                "level": 40,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        34,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 161,
+            "name": "Charged Beat Rush",
+            "desc": "Beat Rush use +1",
+            "short_desc": "Charged Beat Rush: Raises use count of Beat Rush",
+            "meta_data": {
+                "cp": 10,
+                "level": 45,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        52,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 94,
+            "name": "Multi Break",
+            "desc": "Slightly raises MAX BRV for 3 turns upon inflicting Break",
+            "short_desc": "Multi Break: Raises MAX BRV",
+            "meta_data": {
+                "cp": 20,
+                "level": 50,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 37,
+                    "required_id": 33,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        3,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1024,
+            "name": "Buff Attack Speed",
+            "desc": "Slightly raises ATKã€? SPD with active buffs",
+            "short_desc": "Buff Attack Speed: Raises ATKã€? SPD",
+            "meta_data": {
+                "cp": 5,
+                "level": 54,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 61,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 32,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        30,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1025,
+            "name": "Beat Rush Extension",
+            "desc": "Beat Rush use +2\\n\\nWhen using Beat Rush:\\n â€¢ Slight BRV damage boost\\n â€¢ Slight BRV damage boost when attacking skeleton types\\n â€¢ Stolen BRV may exceed MAX BRV up to 150%\\n â€¢ Triggers additional \\bPF attack if BRV at least 100% of MAX at time of use",
+            "short_desc": "Beat Rush Extension: Boost to Beat Rush",
+            "meta_data": {
+                "cp": 15,
+                "level": 55,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        52,
+                        2,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1026,
+            "name": "Battle Cry Attack",
+            "desc": "Moderately raises ATK while the Zangan Way active",
+            "short_desc": "Battle Cry Attack: Raises ATK",
+            "meta_data": {
+                "cp": 5,
+                "level": 58,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 28,
+                    "required_id": 32,
+                    "required_target": 2,
+                    "effect_values": [
+                        40,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        289,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1027,
+            "name": "Battle Cry Extension",
+            "desc": "When using Battle Cry:\\nâ€¢ MAX BRV Up duration +2\\nâ€¢ The Zangan Way duration +2\\nâ€¢ Slight BRV increase based on ATK\\nâ€¢ Higher turn rate",
+            "short_desc": "Battle Cry Extension: Boost to Battle Cry",
+            "meta_data": {
+                "cp": 15,
+                "level": 60,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
+        }
+    ],
+    "bloom": {
+        "passive": {
+            "id": 2063,
+            "name": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—ã‚°ãƒ­ãƒ¼ã‚¹",
+            "desc": "ã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—ã€?ã?®ä½¿ç”¨å›žæ•°ï¼‹2",
+            "short_desc": "æŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—ã‚°ãƒ­ãƒ¼ã‚¹ï¼šã€ŒæŽŒæ‰“ãƒ©ãƒƒã‚·ãƒ¥ãƒªã‚«ãƒ?ãƒªãƒ¼ã‚¢ã‚¿ãƒƒã‚¯ã‚¢ãƒƒãƒ—ã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        5794,
+                        2,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    },
+    "sphere": {},
+    "gear": {
+        "baseWeapon": {
+            "passive": {
+                "id": 7,
+                "name": "Iron Fist",
+                "desc": "When using Beat Rush:\\n â€¢ BRV damage boost\\n â€¢ ATK Down hit rate+\\n â€¢ ATK Down duration+",
+                "short_desc": "Iron Fist: Boost to Beat Rush",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 7,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "uniqueWeapon": {
+            "passive": {
+                "id": 23,
+                "name": "The Zangan Wisdom",
+                "desc": "Increased BRV based on ATK gained with Battle Cry\\nBattle Cry turn rate+\\nMAX BRV Upã€? the Zangan Way boostã€? duration+",
+                "short_desc": "The Zangan Wisdom: Boost to Battle Cry",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 23,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": []
+            }
+        },
+        "exWeapon": {
+            "passive": {
+                "id": 416,
+                "name": "Fistful of Feelings",
+                "desc": "May equip EX ability Dolphin Blow",
+                "short_desc": "Fistful of Feelings: May equip Dolphin Blow",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 416,
+                    "required_passive": -1
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 0,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            2073,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 417,
+                    "name": "Mighty Dolphin Blow",
+                    "desc": "Slightly increases BRV damage dealt with Dolphin Blow",
+                    "short_desc": "Mighty Dolphin Blow: Increases BRV damage dealt with Dolphin Blow",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 417,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 39,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                2832,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 418,
+                    "name": "Dolphin Blow Buff Longer",
+                    "desc": "Fever Time duration +3",
+                    "short_desc": "Dolphin Blow Buff Longer: Fever Time duration+",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 418,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                },
+                {
+                    "id": 419,
+                    "name": "Dolphin Blow Recast Up",
+                    "desc": "Slightly raises recast speed of Dolphin Blow",
+                    "short_desc": "Dolphin Blow Recast Up: Raises recast speed of Dolphin Blow",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 419,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 0,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                2832,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "manikinWeapon": {}
+    },
+    "gear_evo": {
+        "exWeapon": {
+            "passive": {
+                "id": 1006,
+                "name": "æƒ³ã?„ã‚’ä¹—ã?›ã?Ÿæ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰",
+                "desc": "EXã‚¢ãƒ“ãƒªãƒ†ã‚£ã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                "short_desc": "æƒ³ã?„ã‚’ä¹—ã?›ã?Ÿæ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ï¼šã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 1006,
+                    "required_passive": 416
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 1,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            853,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 1005,
+                    "name": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦BRVãƒ’ãƒƒãƒˆãƒ—ãƒ©ã‚¹ãƒ•ã‚©ãƒ¼ã‚¹ã‚¢ãƒ‰ãƒ?ãƒ³ã‚¹",
+                    "desc": "ã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã€?ã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã‚³ãƒ³ãƒœã€?ä½¿ç”¨æ™‚\\nãƒ»\\bPGæ”»æ’ƒã?®HITæ•°ã?Œå?ˆè¨ˆ2HITå¢—ã?ˆ\\nã€€å?ˆè¨ˆBRVå¨?åŠ›ã‚‚æ¥µå¤§ã‚¢ãƒƒãƒ—\\nãƒ»å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹ä¸Šé™?ã‚’ä¸­ã‚¢ãƒƒãƒ—",
+                    "short_desc": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦BRVãƒ’ãƒƒãƒˆãƒ—ãƒ©ã‚¹ãƒ•ã‚©ãƒ¼ã‚¹ã‚¢ãƒ‰ãƒ?ãƒ³ã‚¹ï¼šã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1005,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                },
+                {
+                    "id": 1007,
+                    "name": "æƒ³ã?„ã‚’ä¹—ã?›ã?Ÿæ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã‚¢ã‚¿ãƒƒã‚¯ãƒ–ãƒ¼ã‚¹ãƒˆã‚¢ãƒƒãƒ—ï¼‹ï¼‹",
+                    "desc": "EX\\bQpæ­¦å™¨ã€Œãƒ¢ãƒ¼ã‚¿ãƒ¼ãƒ‰ãƒ©ã‚¤ãƒ–\\bP7\\bQpã€?\\nã?¾ã?Ÿã?¯ãƒ‘ãƒƒã‚·ãƒ–ã€Œæƒ³ã?„ã‚’ä¹—ã?›ã?Ÿæ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã€?è£…å‚™æ™‚\\nè‡ªèº«ã?®æœ€å¤§BRVä¸­ã‚¢ãƒƒãƒ—ã?¨æ”»æ’ƒåŠ›å°?ã‚¢ãƒƒãƒ—\\n\\nã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Žä¸­\\nãƒ»é€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã€Œ\\bPGæ”»æ’ƒï¼‹ã€?ã?Œ\\nã€€ã€Œ\\bPGæ”»æ’ƒï¼‹ï¼‹ã€?ã?«å¤‰åŒ–ã?—\\nã€€\\bPGæ”»æ’ƒå‰?\\nã€€è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—\\nãƒ»é€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?Œ\\nã€€ã€Œ\\bPFæ”»æ’ƒï¼‹ï¼‹ã€?ã?«å¤‰åŒ–ã?—\\nã€€-è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\nã€€ã€€è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nã€€-å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nã€€ã€€ä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®120ï¼…åˆ†",
+                    "short_desc": "æƒ³ã?„ã‚’ä¹—ã?›ã?Ÿæ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã‚¢ã‚¿ãƒƒã‚¯ãƒ–ãƒ¼ã‚¹ãƒˆã‚¢ãƒƒãƒ—ï¼‹ï¼‹ï¼šæœ€å¤§BRVã?¨æ”»æ’ƒåŠ›ã?Œã‚¢ãƒƒãƒ—",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1007,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 36,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                40,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        },
+                        {
+                            "effect_id": 28,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1008,
+                    "name": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ãƒ?ãƒ•ã‚¹ã‚¿ãƒ¼ãƒˆ",
+                    "desc": "ã‚¯ã‚¨ã‚¹ãƒˆé–‹å§‹æ™‚\\nè‡ªèº«ã?«6ACTIONã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Ž",
+                    "short_desc": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ãƒ?ãƒ•ã‚¹ã‚¿ãƒ¼ãƒˆï¼šã‚¯ã‚¨ã‚¹ãƒˆé–‹å§‹æ™‚ è‡ªèº«ã?«ã€Œãƒ•ã‚£ãƒ¼ãƒ?ãƒ¼ã‚¿ã‚¤ãƒ ã€?ä»˜ä¸Ž",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1008,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                },
+                {
+                    "id": 1009,
+                    "name": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã‚³ãƒ³ãƒœãƒ‡ã‚£ãƒ¬ã‚¤ãƒ—ãƒ©ã‚¹",
+                    "desc": "ã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã€?ã?Œã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã‚³ãƒ³ãƒœã€?ã?«å¤‰åŒ–ã?—\\næ”»æ’ƒå‰?ã?«ä»¥ä¸‹ã?®è¡Œå‹•ã?Œè¿½åŠ \\nãƒ»è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—ã?—\\nã€€3HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nãƒ»å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nã€€ä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ†\\nãƒ»ä¸Žã?ˆã?ŸHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®50ï¼…åˆ†\\nã€€è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—ã?•ã?›ã‚‹\\nãƒ»å¯¾è±¡ã?®è¡Œå‹•é †ã‚’1ã?¤ä¸‹ã?’ã‚‹",
+                    "short_desc": "ãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã‚³ãƒ³ãƒœãƒ‡ã‚£ãƒ¬ã‚¤ãƒ—ãƒ©ã‚¹ï¼šã€Œãƒ‰ãƒ«ãƒ•ã‚£ãƒ³ãƒ–ãƒ­ã‚¦ã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1009,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                }
+            ]
+        }
+    }
+}

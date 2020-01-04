@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.materiabot.GameElements.Element;
+import com.materiabot.GameElements.Datamining.Passive.Effect;
 
 public class Ability {
 	public static enum Type{
@@ -112,6 +113,34 @@ public class Ability {
 	}
 	
 	public static abstract class Hit_Data {
+		public static enum BasedOnStat{
+			Stat1(1, "???"),
+			Stat2(2, "Attack"),
+			Stat3(3, "Initial BRV"),
+			Stat4(4, "Total Party Max BRV"), //Unique to Steiner
+			Stat6(6, "Max HP"),
+			Stat7(7, "Current BRV"),
+			Stat8(8, "Initial BRV"),
+			Stat9(9, "Max BRV"),
+			Stat11(11, "Max HP"),
+			Stat12(12, "Target Current BRV"), //Locke unused skills?
+			Stat13(13, "BRV Damage Dealt"),
+			Stat14(14, "HP Damage Dealt"),
+			Stat15(15, "Attack"),
+			Stat16(16, "???"),
+			Stat29(29, "Unknown"), //Jecht unused skill?
+			Stat36(36, "HP Damage Dealt"), //Serah EX only?
+			;
+			
+			private int id;
+			private String stat;
+			
+			private BasedOnStat(int id, String stat) { this.id = id; this.stat = stat; }
+
+			public int getId() { return id; }
+			public String getStat() { return stat; }
+		}
+		
 		public static enum Type{
 			BRV(1), HP(2), Other(6), HPSplash(7), BRVIgnoreDEF(14), SketchSummon(15);
 			
@@ -157,11 +186,71 @@ public class Ability {
 			}
 		}
 		public static enum EffectType{ //EffectValueType irrelevant if not mentioned
-			E1(1, "BRV Attack"), 
+			EN1(-1, "None"),//Exclusive to Yuri
+			E1(1, "None"), 
 			E7(7, "Dispel debuffs"),//(#ofRemovedDebuffs[, ?]) First can be -1 for all
 			E8(8, "Remove buffs"),//(#ofRemovedBuffs[, ?, ?])  First can be -1 for all
 			E25(25, "100% Accuracy BRV Attack"),
-			E41(41, "Battery"),     //(Potency[, ?]) //TODO EffectValueType might represent stat its based on, needs further checking
+			E33(33, "Swap Turns"),//(-1) Argument unknown
+			E34(34, "Angel Wing"),//([1]) No value = remove, Value = give
+			E37(37, "Cancel buff"),//(ID of buff)
+			E38(38, "Recover Abilities"), //(1) or (-1, -1) - First is both, second is only skill1
+			E41(41, "Battery"),     //(Potency[, ?]) - EffectValueType says what stat its based on
+			E42(42, "Gravity"),//(% of shave)
+			E43(43, "Heal"), //(Potency[, ?]) - EffectValueType says what stat its based on
+			E44(44, "HP Splash Damage"), //(% of splash)
+			E46(46, "Turn Delay"), //(# of turns)
+			E48(48, "Steal Buffs"), //(# of buffs, ?(-1), success%, ?(-1)) OR (# of buffs, success%, ?(-1))
+			E51(51, "Transfer debuffs"), //(Duration extended, ?, ?, ?) OR (?, ?, ?) - It always transfers to all, even though target is 1
+			E52(52, "Reduce HP by current HP%"), //(%, ?) - Cecil, Rinoa, Yuri
+			E54(54, "Revive"), //(% of effectValueType, ?)
+			E55(55, "???"), //TODO (100, -1) - Balthier Great Aim, but unknown what it refers to
+			E57(57, "Insta Break"), //(success%)
+			E58(58, "Random Damage"), //(minPower, maxPower, ?(3), ?(-1)) - Shadow Exclusive - minPower and maxPower are in tens(4, 6 = 40%, 60%)
+			E61(61, "Battery for Target current BRV"), //(copy%)
+			E65(65, "HP Heal based on damage dealt"), //(Potency, MaxHP%Healed) EffectValueType = What damage it is based on
+			E70(70, "Battery"), //EffectValueType 2 = Copy Target BRV || Otherwise table
+			E72(72, "Lower turn rate when breaking or hitting broken target"), //(New Cost[, ?(-1)]))
+			E73(73, "100% Accuracy BRV & 50% Bonus DMG if target not targetting self"), //([?]) - No params - Fucking Lion
+			E78(78, "BRV Hits apply a stacking IBRV debuff"), //Lenna Rapid Fire mechanic
+			E80(80, "Copy random buff and extend its duration by 1"), //(?, ?, ?, ?) - Yuffie Snatch
+			E81(81, "Stronger BRV Hits when targetted"), //(Base Multiplier(100), Targetted Multipler(300), ?, ?, ?) - Zack
+			E84(84, "None"), //Old Vanille Data
+			E89(89, "Extends existing buff by X"), //(# of stacks to increase, buffID)
+			E90(90, "Moves own next turn to just before target's next turn"),
+			E93(93, "Adds an extra hit if [Royal Arms] is up"), //([-1]) Noctis unique hit (30/60/80/100/120)
+			E94(94, "Increases damage based on party's [Shield] value"), //(10, -1) Unknown how to formulate it
+			E97(97, "BRV Damage boosted up to X based on how much HP you're missing"), //(Potency, -1) Terra EX
+			E99(99, "HP Heal based on valueType"), //(Potency[, MaxHP%Healed, ?]) EffectValueType = What damage it is based on
+			E100(100, "HP Heal based on valueType, XXX% heal in excess goes to BRV"), //(Potency, MaxHP%Healed, XXX100, ?, ?) XXX = 100(%) / 300(%)
+			E102(102, "Dices"),		//Cait Sith Only
+			E103(103, "Dices"),		//Cait Sith Only	//I have no fucking idea how the arguments work
+			E104(104, "Dices"),  	//Cait Sith Only  //EffectValueType
+			E105(105, "Dices"),  	//Cait Sith Only  //EffectValueType
+			E106(106, "BRV with Overflow"), //(?, -1) - Mentions overflow through an argument instead of the regular field, older model perhaps?
+			E107(107, "100% HP Damage"),
+			E110(110, "Free Turn"),
+			E111(111, "None"), //Old Data? Barret Counter
+			E113(113, "Extends self-buffs by X turns"), //Prishe Only? (X, 1, -1)
+			E114(114, "???"), //TODO Fang EX (50, -1)
+			E115(115, "Increase Damage by X% against ST"), //(X, -1)
+			E116(116, "???"), //TODO
+			E117(117, "Increase Damage by X% against ST"), //(X)
+			E120(120, "Increase Damage by X% against target with Turn Rate Down or SPD Down"), //(1, X)
+			E121(121, "Extends [buff] by X turns || Extends own buffs by X turns"), //(X, buffId) || (X, 2, -1)
+			E124(124, "???"), //EffectValueType = 14 || Leon only || Could this be his unique debuff??
+			E125(125, "Unbreak target"),
+			E126(126, "Heal party by X%, allows overhealing up to Y%"), //Porom only (X, Y, ?)
+			E128(128, "???"), //Alphinaud Only - Something related to his summon?
+			E129(129, "Release pet when broken"), //Alphinaud Only
+			E131(131, "Raise party's BRV by X% of the party's highest current BRV"), //(X) || EffectValueType = 21 ||| Setzer Only
+			E135(135, "Increased BRV damage by X% when dealing critical hits"),
+			E136(136, "Recover skill uses "), //(#ofUses, 100, skillID)
+			E137(137, "AOE HP Attacks based on party members current BRV"), //(100) / (1, 100) || Sherlotta Only
+			E139(139, "X turn delay if buff Y is active"), //(X, Y) || Garland Only
+			E140(140, "???"), //Prompto Only - His AA
+			E141(141, "Reduces Chakra by #") //Lyse Only  (# of stacks to lose(negative), buff_id) - buff_id doesnt exist for some reason
+			
 			;
 			private int id;
 			private String description;
@@ -180,6 +269,13 @@ public class Ability {
 			public void setDescription(String description) {
 				this.description = description;
 			}
+			
+			public static EffectType get(int id) {
+				for(EffectType e : values())
+					if(e.getId() == id)
+						return e;
+				return null;
+			}
 		}
 		public static class Effect{
 			private EffectType effect;
@@ -189,7 +285,6 @@ public class Ability {
 			public Effect(EffectType effect, int effectValueType, int brvRate) {
 				this.effect = effect;
 				this.effectValueType = effectValueType;
-				this.brvRate = brvRate;
 			}
 
 			public EffectType getEffect() {

@@ -7,12 +7,28 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
+
+import com.materiabot.GameElements.Datamining.Ability;
 import com.materiabot.IO.JSON.JSONParser;
 import com.materiabot.IO.JSON.JSONParser.MyJSONObject;
 
 public class JSON_Analyzer {
 	public static void main(String[] args) throws IOException {
+		
 		File main = new File(JSONParser.JSON_PATH.CHARACTERS_PATH).getParentFile();
+//		for(File f : main.listFiles()){
+//			BufferedReader br = new BufferedReader(new FileReader(f));
+//			String name = f.getName().replace("raw_data_", "");
+//			FileWriter fw = new FileWriter("D:\\Workspace\\_files\\gl\\" + name);
+//			String l;
+//			while((l = br.readLine()) != null)
+//				fw.write(l + System.lineSeparator());
+//			fw.close();
+//			br.close();
+//		}
+//		
+//		if(true)
+//			return;		
 		HashMap<Integer, List<String>> abilityMap = new HashMap<Integer, List<String>>();
 		for(File f : main.listFiles()){
 			String charName = getNameFromFileName(f.getName());
@@ -32,6 +48,8 @@ public class JSON_Analyzer {
 						int i = 0;
 						if(!single)
 							for(MyJSONObject oo : ability.getObjectArray("hit_data")) {
+								if(Ability.Hit_Data.EffectType.get(oo.getInt("effect")).getDescription().length() > 0)
+									continue;
 								Integer key = oo.getInt("effect")*100 + oo.getInt("effect_value_type");
 								if(!abilityMap.containsKey(key))
 									abilityMap.put(key, new LinkedList<String>());
@@ -78,7 +96,8 @@ public class JSON_Analyzer {
 					}
 				}
 		}
-		//FileWriter fw = new FileWriter(new File("D:\\output.txt"));
+		
+				
 		for(Entry<Integer, List<String>> s : abilityMap.entrySet().stream().sorted((s1, s2) -> s1.getKey().compareTo(s2.getKey())).collect(Collectors.toList())) {
 			System.out.println(s.getKey() + ": {");
 			//fw.write(s.getKey() + ": {" + "\n");
@@ -107,7 +126,7 @@ public class JSON_Analyzer {
 //	}
 	
 	public static final String getNameFromFileName(String name){
-		name = name.substring(9);
+		//name = name;//name.substring(9);
 		int i = 0;
 		for(char c : name.toCharArray())
 			if('0' <= c && c <= '9')
