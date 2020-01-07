@@ -199,11 +199,11 @@ public class SummonCommand extends _BaseCommand{
 				s = null;
 			} else
 				embed = showSummon(s);
-			Message msg = null;
 			if(embed == null)
 				MessageUtils.sendEmbed(event.getChannel(), "There's no summon with that name.", EmoteUtils.Emotes.SORRY_MOOGLE_URL);
 			else {
-				msg = MessageUtils.sendEmbed(event.getChannel(), embed);
+				Message msg = MessageUtils.sendEmbed(event.getChannel(), embed);
+				if(msg == null) ;
 				//TODO Add reaction stuff
 			}
 		} catch (BotException e) {

@@ -8,7 +8,7 @@ public abstract class UnitParser {
 	public static Unit parseCharacter(String name) {
 		Unit c = new Unit();
 		MyJSONObject obj = JSONParser.loadContent(JSONParser.JSON_PATH.CHARACTERS_PATH.replace("{1}", name), false);
-		c.getAbilities().addAll(AbilityParser.parseAbilities(obj));
+		//c.getAbilities().addAll(AbilityParser.parseAbilities(obj));
 		c.getPassives().addAll(PassiveParser.parsePassives(obj));
 		return c;
 	}

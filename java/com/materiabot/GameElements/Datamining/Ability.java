@@ -2,9 +2,7 @@ package com.materiabot.GameElements.Datamining;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-
 import com.materiabot.GameElements.Element;
-import com.materiabot.GameElements.Datamining.Passive.Effect;
 
 public class Ability {
 	public static enum Type{
@@ -223,10 +221,10 @@ public class Ability {
 			E97(97, "BRV Damage boosted up to X based on how much HP you're missing"), //(Potency, -1) Terra EX
 			E99(99, "HP Heal based on valueType"), //(Potency[, MaxHP%Healed, ?]) EffectValueType = What damage it is based on
 			E100(100, "HP Heal based on valueType, XXX% heal in excess goes to BRV"), //(Potency, MaxHP%Healed, XXX100, ?, ?) XXX = 100(%) / 300(%)
-			E102(102, "Dices"),		//Cait Sith Only
-			E103(103, "Dices"),		//Cait Sith Only	//I have no fucking idea how the arguments work
-			E104(104, "Dices"),  	//Cait Sith Only  //EffectValueType
-			E105(105, "Dices"),  	//Cait Sith Only  //EffectValueType
+			E102(102, "Dices???"),		//Cait Sith Only
+			E103(103, "Dices???"),		//Cait Sith Only	//I have no fucking idea how the arguments work
+			E104(104, "Dices???"),  	//Cait Sith Only  //EffectValueType
+			E105(105, "Dices???"),  	//Cait Sith Only  //EffectValueType
 			E106(106, "BRV with Overflow"), //(?, -1) - Mentions overflow through an argument instead of the regular field, older model perhaps?
 			E107(107, "100% HP Damage"),
 			E110(110, "Free Turn"),
@@ -260,14 +258,8 @@ public class Ability {
 			public int getId() {
 				return id;
 			}
-			public void setId(int id) {
-				this.id = id;
-			}
 			public String getDescription() {
 				return description;
-			}
-			public void setDescription(String description) {
-				this.description = description;
 			}
 			
 			public static EffectType get(int id) {
@@ -395,8 +387,70 @@ public class Ability {
 	private Target_Type targetType;
 	private int chaseDmg; //can_initiate_chase * chase_dmg
 	private List<Hit_Data> hits = new LinkedList<Hit_Data>();
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
-		return null;
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public int getMovementCost() {
+		return movementCost;
+	}
+	public void setMovementCost(int movementCost) {
+		this.movementCost = movementCost;
+	}
+	public int getUseCount() {
+		return useCount;
+	}
+	public void setUseCount(int useCount) {
+		this.useCount = useCount;
+	}
+	public Type getType() {
+		return type;
+	}
+	public void setType(Type type) {
+		this.type = type;
+	}
+	public Attack_Type getAttackType() {
+		return attackType;
+	}
+	public void setAttackType(Attack_Type attackType) {
+		this.attackType = attackType;
+	}
+	public Command_Type getCommandType() {
+		return commandType;
+	}
+	public void setCommandType(Command_Type commandType) {
+		this.commandType = commandType;
+	}
+	public Target_Type getTargetType() {
+		return targetType;
+	}
+	public void setTargetType(Target_Type targetType) {
+		this.targetType = targetType;
+	}
+	public int getChaseDmg() {
+		return chaseDmg;
+	}
+	public void setChaseDmg(int chaseDmg) {
+		this.chaseDmg = chaseDmg;
+	}
+	public List<Hit_Data> getHits() {
+		return hits;
+	}
+	public void setHits(List<Hit_Data> hits) {
+		this.hits = hits;
 	}
 }

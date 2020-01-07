@@ -16,7 +16,7 @@ import org.json.JSONObject;
 public class JSONParser {
 	public static abstract class JSON_PATH{
 		public static final String ARTIFACT_PATH = "https://pastebin.com/raw/KhaefxA4";
-		public static final String CHARACTERS_PATH = "D:\\Workspace\\_files\\gl\\{1}.json";
+		public static final String CHARACTERS_PATH = ".\\resources\\GL\\characterFiles\\{1}.json";
 	}
 	
 	public static class MyJSONObject{

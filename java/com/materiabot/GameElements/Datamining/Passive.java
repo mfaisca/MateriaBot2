@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import com.materiabot.GameElements._Library;
 import com.materiabot.IO.JSON.JSONParser;
 import com.materiabot.Utils.BotException;
@@ -27,20 +26,11 @@ public class Passive {
 		public int getId() {
 			return id;
 		}
-		public void setId(int id) {
-			this.id = id;
-		}
 		public String getName() {
 			return name;
 		}
-		public void setName(String name) {
-			this.name = name;
-		}
 		public String getDescription() {
 			return description;
-		}
-		public void setDescription(String description) {
-			this.description = description;
 		}
 	}
 	public static enum Type{
