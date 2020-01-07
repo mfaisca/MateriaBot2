@@ -1492,7 +1492,7 @@
         {
             "id": 3302,
             "name": "Tornado Kick",
-            "desc": "4-hit melee \\bPG attack + \\bPF attack + melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 180% \\n\\nWhile Tornado Kick equipped:\\n â€¢ Snap Punch+ grants 1 Greased Lightning (limit 1)\\nWhile Greased Lightning 1:\\n â€¢ Slightly raises ATK\\n â€¢ Becomes Tornado Kick+\\n(consumes 1 Greased Lightning after use)",
+            "desc": "4-hit melee \\bPG attack + \\bPF attack\\nMelee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 180% \\n\\nWhile Tornado Kick equipped:\\n â€¢ Snap Punch+ increases special effect Greased Lightning by 1 (limit 1)\\n â€¢ Slightly raises ATKã€? becomes Tornado Kick+ while special effect Greased Lightning at 1; reduces special effect Greased Lightning by 1 after use",
             "movement_cost": 30,
             "use_count": 12000,
             "is_default": 0,
@@ -1630,7 +1630,7 @@
         {
             "id": 3303,
             "name": "Tornado Kick+",
-            "desc": "4-hit melee \\bPG attack + \\bPF attack + melee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 200% \\nConsumes 1 Greased Lightning\\n\\nWhile Tornado Kick equipped:\\n â€¢ Snap Punch+ grants 1 Greased Lightning (limit 1)\\nWhile Greased Lightning 1:\\n â€¢ Slightly raises ATK",
+            "desc": "4-hit melee \\bPG attack + \\bPF attack\\nMelee \\bPG attack + \\bPF attack\\nStolen BRV may exceed MAX BRV up to 200% \\nReduces special effect Greased Lightning by 1\\n\\nWhile Tornado Kick equipped:\\n â€¢ Snap Punch+ increases special effect Greased Lightning by 1 (limit 1)\\n â€¢ Slightly raises ATK while special effect Greased Lightning at 1",
             "movement_cost": 30,
             "use_count": 12000,
             "is_default": 0,
@@ -1794,7 +1794,7 @@
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -1889,7 +1889,7 @@
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -1984,7 +1984,7 @@
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -2079,7 +2079,7 @@
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -3700,6 +3700,1776 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 8265,
+            "name": "é—˜é­‚æ—‹é¢¨è„š",
+            "desc": "4HITå…¨ä½“è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nï¼‹ä¸Žã?ˆã?ŸHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—\\nï¼‹è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®180ï¼…åˆ†\\n\\nã€Œé—˜é­‚æ—‹é¢¨è„šã€?è£…å‚™ä¸­\\nã€Œå´©æ‹³ï¼‹ã€?ã?§ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1åŠ ç®—ã?™ã‚‹ã‚ˆã?†ã?«ã?ªã‚‹ï¼ˆä¸Šé™?1ï¼‰\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?0ä»¥ä¸Šã?®æ™‚ ä»¥ä¸‹ã?®åŠ¹æžœã?Œç™ºå‹•\\nãƒ»è‡ªèº«ã?«BRVãƒªã‚¸ã‚§ãƒ?åŠ¹æžœ\\nãƒ»è‡ªèº«ã?®åˆ?æœŸBRVå¤§ã‚¢ãƒƒãƒ—ã?¨æ”»æ’ƒåŠ›å°?ã‚¢ãƒƒãƒ—\\nãƒ»å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹ä¸Šé™?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®æ”»æ’ƒã?§ç™ºç”Ÿã?™ã‚‹BRVåŠ ç®—é‡?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®ä»˜ä¸Žã?™ã‚‹å¼·åŒ–åŠ¹æžœã?¨å¼±ä½“åŠ¹æžœã?®3ACTIONæœŸé–“å»¶é•·\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1ã?®æ™‚ ã€Œé—˜é­‚æ—‹é¢¨è„šï¼‹ã€?ã?«å¤‰åŒ–ã?—\\nä½¿ç”¨å¾Œç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1æ¶ˆè²»",
+            "movement_cost": 30,
+            "use_count": 12000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 8826,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8826,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8826,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8826,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 150.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7046,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 14
+                },
+                {
+                    "id": 8827,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 180.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 8266,
+            "name": "é—˜é­‚æ—‹é¢¨è„šï¼‹",
+            "desc": "4HITå…¨ä½“è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nï¼‹ä¸Žã?ˆã?ŸHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—\\nï¼‹è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ† \\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1æ¶ˆè²»\\n\\nã€Œé—˜é­‚æ—‹é¢¨è„šã€?è£…å‚™ä¸­\\nã€Œå´©æ‹³ï¼‹ã€?ã?§ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1åŠ ç®—ã?™ã‚‹ã‚ˆã?†ã?«ã?ªã‚‹ï¼ˆä¸Šé™?1ï¼‰\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?0ä»¥ä¸Šã?®æ™‚ ä»¥ä¸‹ã?®åŠ¹æžœã?Œç™ºå‹•\\nãƒ»è‡ªèº«ã?«BRVãƒªã‚¸ã‚§ãƒ?åŠ¹æžœ\\nãƒ»è‡ªèº«ã?®åˆ?æœŸBRVå¤§ã‚¢ãƒƒãƒ—ã?¨æ”»æ’ƒåŠ›å°?ã‚¢ãƒƒãƒ—\\nãƒ»å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹ä¸Šé™?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®æ”»æ’ƒã?§ç™ºç”Ÿã?™ã‚‹BRVåŠ ç®—é‡?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®ä»˜ä¸Žã?™ã‚‹å¼·åŒ–åŠ¹æžœã?¨å¼±ä½“åŠ¹æžœã?®3ACTIONæœŸé–“å»¶é•·",
+            "movement_cost": 30,
+            "use_count": 12000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 8828,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8828,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8828,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8828,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 160.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7046,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 14
+                },
+                {
+                    "id": 8829,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 200.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8939,
+                    "type": 6,
+                    "arguments": [
+                        -1,
+                        1565
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 89,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 8267,
+            "name": "é—˜é­‚æ—‹é¢¨è„š",
+            "desc": "6HITå…¨ä½“è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nï¼‹ä¸Žã?ˆã?ŸHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—\\nï¼‹6HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®180ï¼…åˆ†\\nã‚¿ãƒ¼ã‚²ãƒƒãƒˆä»¥å¤–ã?«ã‚‚ä¸Žã?ˆã?Ÿå?ˆè¨ˆHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†ã?®HPãƒ€ãƒ¡ãƒ¼ã‚¸\\n\\nã€Œé—˜é­‚æ—‹é¢¨è„šã€?è£…å‚™ä¸­\\nã€Œå´©æ‹³ï¼‹ã€?ã?§ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1åŠ ç®—ã?™ã‚‹ã‚ˆã?†ã?«ã?ªã‚‹ï¼ˆä¸Šé™?1ï¼‰\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?0ä»¥ä¸Šã?®æ™‚ ä»¥ä¸‹ã?®åŠ¹æžœã?Œç™ºå‹•\\nãƒ»è‡ªèº«ã?«BRVãƒªã‚¸ã‚§ãƒ?åŠ¹æžœ\\nãƒ»è‡ªèº«ã?®åˆ?æœŸBRVå¤§ã‚¢ãƒƒãƒ—ã?¨æ”»æ’ƒåŠ›å°?ã‚¢ãƒƒãƒ—\\nãƒ»å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹ä¸Šé™?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®æ”»æ’ƒã?§ç™ºç”Ÿã?™ã‚‹BRVåŠ ç®—é‡?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®ä»˜ä¸Žã?™ã‚‹å¼·åŒ–åŠ¹æžœã?¨å¼±ä½“åŠ¹æžœã?®3ACTIONæœŸé–“å»¶é•·\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1ã?®æ™‚ ã€Œé—˜é­‚æ—‹é¢¨è„šï¼‹ã€?ã?«å¤‰åŒ–ã?—\\nä½¿ç”¨å¾Œç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1æ¶ˆè²»",
+            "movement_cost": 30,
+            "use_count": 12000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 8830,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8830,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8830,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8830,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8830,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8830,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 60.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7046,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 14
+                },
+                {
+                    "id": 8831,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8831,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8831,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8831,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8831,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8831,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6329,
+                    "type": 7,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 10,
+                    "effect": 44,
+                    "effect_value_type": 14
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 8268,
+            "name": "é—˜é­‚æ—‹é¢¨è„šï¼‹",
+            "desc": "6HITå…¨ä½“è¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nï¼‹ä¸Žã?ˆã?ŸHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—\\nï¼‹6HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹å?˜ä½“\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®200ï¼…åˆ†\\nã‚¿ãƒ¼ã‚²ãƒƒãƒˆä»¥å¤–ã?«ã‚‚ä¸Žã?ˆã?Ÿå?ˆè¨ˆHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†ã?®HPãƒ€ãƒ¡ãƒ¼ã‚¸ \\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1æ¶ˆè²»\\n\\nã€Œé—˜é­‚æ—‹é¢¨è„šã€?è£…å‚™ä¸­\\nã€Œå´©æ‹³ï¼‹ã€?ã?§ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1åŠ ç®—ã?™ã‚‹ã‚ˆã?†ã?«ã?ªã‚‹ï¼ˆä¸Šé™?1ï¼‰\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?0ä»¥ä¸Šã?®æ™‚ ä»¥ä¸‹ã?®åŠ¹æžœã?Œç™ºå‹•\\nãƒ»è‡ªèº«ã?«BRVãƒªã‚¸ã‚§ãƒ?åŠ¹æžœ\\nãƒ»è‡ªèº«ã?®åˆ?æœŸBRVå¤§ã‚¢ãƒƒãƒ—ã?¨æ”»æ’ƒåŠ›å°?ã‚¢ãƒƒãƒ—\\nãƒ»å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹ä¸Šé™?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®æ”»æ’ƒã?§ç™ºç”Ÿã?™ã‚‹BRVåŠ ç®—é‡?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®ä»˜ä¸Žã?™ã‚‹å¼·åŒ–åŠ¹æžœã?¨å¼±ä½“åŠ¹æžœã?®3ACTIONæœŸé–“å»¶é•·",
+            "movement_cost": 30,
+            "use_count": 12000,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 2,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 8832,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8832,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8832,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8832,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8832,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8832,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 5,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7046,
+                    "type": 6,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 14
+                },
+                {
+                    "id": 8833,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8833,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8833,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8833,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8833,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8833,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 90.0,
+                        "max_brv_overflow": 200,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 4,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 6329,
+                    "type": 7,
+                    "arguments": [
+                        20
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 10,
+                    "effect": 44,
+                    "effect_value_type": 14
+                },
+                {
+                    "id": 8939,
+                    "type": 6,
+                    "arguments": [
+                        -1,
+                        1565
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 89,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 8269,
+            "name": "ãƒ–ãƒ¬ã‚¤ãƒ–æ”»æ’ƒï¼‹ï¼‹",
+            "desc": "6HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒ\\nè‡ªèº«ã‚’ç‹™ã?£ã?¦ã?„ã?ªã?„ã‚¿ãƒ¼ã‚²ãƒƒãƒˆæ”»æ’ƒæ™‚ ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ã?«ã?ªã‚‹\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nã‚¿ãƒ¼ã‚²ãƒƒãƒˆãƒ–ãƒ¬ã‚¤ã‚¯æ™‚ è¡Œå‹•è² è?·ã?Œã?ªã??ã?ªã‚Š è¿½åŠ è¡Œå‹•ã?Œå?¯èƒ½\\nè¿½åŠ è¡Œå‹•ã?§ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã‚’ãƒ–ãƒ¬ã‚¤ã‚¯ã?—ã?¦ã‚‚ è¿½åŠ è¡Œå‹•ã?¯ç™ºç”Ÿã?—ã?ªã?„\\nè‡ªèº«ã?®è¿½åŠ è¡Œå‹•ã?¯ç·?ACTIONæ•°ã?«åŠ ç®—ã?•ã‚Œã?ªã?„\\nå?¬å–šä¸­ã?Šã‚ˆã?³ãƒ•ãƒ¬ãƒ³ãƒ‰ã‚µãƒ?ãƒ¼ãƒˆã?®æ®‹ã‚ŠACTIONã?¯æ¶ˆè²»ã?•ã‚Œã‚‹\\nãƒ‘ãƒƒã‚·ãƒ–ã€Œå´©æ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã€?è£…å‚™æ™‚\\nä½¿ç”¨å¾Œ ã€Œå´©æ‹³ã€?ã?Œã€Œå´©æ‹³ï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 24,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 1,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 8834,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8834,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8834,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8834,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8834,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8834,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 40.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": -1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 1577,
+                    "cast_id": 1539,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": -1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            110
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8270,
+            "name": "HPæ”»æ’ƒï¼‹ï¼‹",
+            "desc": "è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—\\nï¼‹2HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®120ï¼…åˆ†\\nè‡ªèº«ã‚’ç‹™ã?£ã?¦ã?„ã?ªã?„ã‚¿ãƒ¼ã‚²ãƒƒãƒˆæ”»æ’ƒæ™‚ ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ã?«ã?ªã‚‹\\nè¡Œå‹•è² è?·ã?Œä½Žã?„\\nã‚¿ãƒ¼ã‚²ãƒƒãƒˆãƒ–ãƒ¬ã‚¤ã‚¯æ™‚ è¡Œå‹•è² è?·ã?Œã?ªã??ã?ªã‚Š è¿½åŠ è¡Œå‹•ã?Œå?¯èƒ½\\nè¿½åŠ è¡Œå‹•ã?§ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã‚’ãƒ–ãƒ¬ã‚¤ã‚¯ã?—ã?¦ã‚‚ è¿½åŠ è¡Œå‹•ã?¯ç™ºç”Ÿã?—ã?ªã?„\\nè‡ªèº«ã?®è¿½åŠ è¡Œå‹•ã?¯ç·?ACTIONæ•°ã?«åŠ ç®—ã?•ã‚Œã?ªã?„\\nå?¬å–šä¸­ã?Šã‚ˆã?³ãƒ•ãƒ¬ãƒ³ãƒ‰ã‚µãƒ?ãƒ¼ãƒˆã?®æ®‹ã‚ŠACTIONã?¯æ¶ˆè²»ã?•ã‚Œã‚‹\\nãƒ‘ãƒƒã‚·ãƒ–ã€Œå´©æ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã€?è£…å‚™æ™‚\\nä½¿ç”¨å¾Œ ã€Œå´©æ‹³ã€?ã?Œã€Œå´©æ‹³ï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 24,
+            "use_count": 0,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 8835,
+                    "type": 6,
+                    "arguments": [
+                        70
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 41,
+                    "effect_value_type": 22
+                },
+                {
+                    "id": 8836,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 8836,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 120,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3128,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 111,
+                    "cast_id": 109,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": -1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": -1
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [],
+                        "effect_val_types": [],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                },
+                {
+                    "id": 1577,
+                    "cast_id": 1539,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": -1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 0
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            110
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8373,
+            "name": "å´©æ‹³ï¼‹",
+            "desc": "5HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nè‡ªèº«ã‚’ç‹™ã?£ã?¦ã?„ã?ªã?„ã‚¿ãƒ¼ã‚²ãƒƒãƒˆæ”»æ’ƒæ™‚ ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ã?«ã?ªã‚‹\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®180ï¼…åˆ†\\nè‡ªèº«ã?«3ACTIONã€Œæ”»æ’ƒåŠ›ä¸­ã‚¢ãƒƒãƒ—ã€?ã€Œç´ æ—©ã?•ä¸­ã‚¢ãƒƒãƒ—ã€?\\n5ACTIONã€Œæœ€å¤§BRVä¸­ã‚¢ãƒƒãƒ—ã€?ä»˜ä¸Ž\\nä½¿ç”¨å¾Œ ã€Œå´©æ‹³ã€?ã?«æˆ»ã‚‹\\nè‡ªèº«ã?«å¼·åŒ–åŠ¹æžœã?Œä»˜ä¸Žã?•ã‚Œã?¦ã?„ã‚‹æ™‚\\né€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã?Œã€Œ\\bPGæ”»æ’ƒï¼‹ã€?ã?«\\né€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5269,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5269,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5269,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5269,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5269,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 70.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 131,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3756,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        1565
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 89,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5333,
+                    "type": 6,
+                    "arguments": [
+                        111
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8374,
+            "name": "å´©æ‹³ï¼‹",
+            "desc": "5HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒ\\nè‡ªèº«ã‚’ç‹™ã?£ã?¦ã?„ã?ªã?„ã‚¿ãƒ¼ã‚²ãƒƒãƒˆæ”»æ’ƒæ™‚ ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ã?«ã?ªã‚‹\\nå¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®180ï¼…åˆ†\\nè‡ªèº«ã?«5ACTIONã€Œæ”»æ’ƒåŠ›ä¸­ã‚¢ãƒƒãƒ—ã€?\\nã€Œç´ æ—©ã?•ä¸­ã‚¢ãƒƒãƒ—ã€?ã€Œæœ€å¤§BRVä¸­ã‚¢ãƒƒãƒ—ã€?ä»˜ä¸Ž\\nä½¿ç”¨å¾Œ ã€Œå´©æ‹³ã€?ã?«æˆ»ã‚‹\\nè‡ªèº«ã?«å¼·åŒ–åŠ¹æžœã?Œä»˜ä¸Žã?•ã‚Œã?¦ã?„ã‚‹æ™‚\\né€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã?Œã€Œ\\bPGæ”»æ’ƒï¼‹ã€?ã?«\\né€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?«å¤‰åŒ–",
+            "movement_cost": 30,
+            "use_count": 7,
+            "is_default": 0,
+            "type_data": {
+                "type": 2,
+                "attack_type": 1,
+                "command_type": 1,
+                "target_type": 2
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5271,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5271,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5271,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5271,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5271,
+                    "type": 1,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 80.0,
+                        "max_brv_overflow": 180,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 352,
+                    "type": 2,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [
+                        1
+                    ],
+                    "target": 1,
+                    "effect": 1,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 3756,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        1565
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 89,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 5333,
+                    "type": 6,
+                    "arguments": [
+                        111
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 37,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 55,
+                    "cast_id": 10,
+                    "name": "ATK Up",
+                    "desc": "ATK Up: Raises ATK",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            1
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            55
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 57,
+                    "cast_id": 14,
+                    "name": "SPD Up",
+                    "desc": "SPD Up: Raises SPD",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 9,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            3
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            57
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            60
+                        ]
+                    }
+                },
+                {
+                    "id": 79,
+                    "cast_id": 57,
+                    "name": "MAX BRV Up",
+                    "desc": "MAX BRV Up: Raises MAX BRV",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 7,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 5
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            5
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            79
+                        ],
+                        "stackable": -1,
+                        "extendable": 1,
+                        "removable": 1,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            40
+                        ]
+                    }
+                }
+            ]
         }
     ],
     "passives": [
@@ -4361,7 +6131,7 @@
             "passive": {
                 "id": 500,
                 "name": "The Legend Continues",
-                "desc": "May equip EX ability Tornado Kick\\nAdds special effect Greased Lightning while  equipped",
+                "desc": "May equip EX ability Tornado Kick\\nAdds special effect Greased Lightning while Tornado Kick equipped",
                 "short_desc": "The Legend Continues: May equip Tornado Kick",
                 "meta_data": {
                     "cp": 20,
@@ -4524,6 +6294,188 @@
         "manikinWeapon": {}
     },
     "gear_evo": {
-        "exWeapon": {}
+        "exWeapon": {
+            "passive": {
+                "id": 1589,
+                "name": "æ–°ã?Ÿã?ªãƒ?ãƒ£ã‚¯ãƒ©ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰",
+                "desc": "EXã‚¢ãƒ“ãƒªãƒ†ã‚£ã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                "short_desc": "æ–°ã?Ÿã?ªãƒ?ãƒ£ã‚¯ãƒ©ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ï¼šã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                "meta_data": {
+                    "cp": 20,
+                    "level": -1,
+                    "target": 2,
+                    "is_weapon_passive": 1589,
+                    "required_passive": 500
+                },
+                "type_data": {
+                    "type": 3,
+                    "disp_type": 1,
+                    "condition_type": 1
+                },
+                "effects": [
+                    {
+                        "effect_id": 117,
+                        "required_id": -1,
+                        "required_target": 2,
+                        "effect_values": [
+                            913,
+                            0,
+                            0
+                        ],
+                        "required_values": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "required_target_value": 0
+                    }
+                ]
+            },
+            "passives": [
+                {
+                    "id": 1588,
+                    "name": "é—˜é­‚æ—‹é¢¨è„šBRVãƒ’ãƒƒãƒˆã‚ªãƒ¼ãƒ«BRVã‚¢ãƒƒãƒ—ãƒ•ã‚©ãƒ¼ã‚¹ç–¾é¢¨è¿…é›·ã‚¢ãƒƒãƒ—",
+                    "desc": "ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?0ã?®æ™‚\\nè‡ªèº«ã?®æ”»æ’ƒåŠ›å°?ã‚¢ãƒƒãƒ—ã?®åŠ¹æžœè¿½åŠ \\n\\nç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?0ä»¥ä¸Šã?®æ™‚ ä»¥ä¸‹ã?®åŠ¹æžœã?Œç™ºå‹•\\nãƒ»è‡ªèº«ã?«BRVãƒªã‚¸ã‚§ãƒ?åŠ¹æžœ\\nãƒ»è‡ªèº«ã?®åˆ?æœŸBRVå¤§ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹ä¸Šé™?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®æ”»æ’ƒã?§ç™ºç”Ÿã?™ã‚‹BRVåŠ ç®—é‡?å°?ã‚¢ãƒƒãƒ—\\nãƒ»è‡ªèº«ã?®ä»˜ä¸Žã?™ã‚‹å¼·åŒ–åŠ¹æžœã?¨å¼±ä½“åŠ¹æžœã?®3ACTIONå»¶é•·\\n\\nã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã€Œé—˜é­‚æ—‹é¢¨è„šï¼‹ã€?ä½¿ç”¨æ™‚\\nãƒ»æœ€åˆ?ã?®\\bPFæ”»æ’ƒå‰?ã?®\\nã€€\\bPGæ”»æ’ƒã?®æ”»æ’ƒå¯¾è±¡ã?Œå…¨ä½“åŒ–\\nãƒ»BRVå¨?åŠ›æ¥µå¤§ã‚¢ãƒƒãƒ—\\nãƒ»æœ€åˆ?ã?®\\bPFæ”»æ’ƒå¾Œ\\nã€€ä¸Žã?ˆã?Ÿå?ˆè¨ˆHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†è‡ªèº«ã?®BRVã‚’ã‚¢ãƒƒãƒ—ã?™ã‚‹",
+                    "short_desc": "é—˜é­‚æ—‹é¢¨è„šBRVãƒ’ãƒƒãƒˆã‚ªãƒ¼ãƒ«BRVã‚¢ãƒƒãƒ—ãƒ•ã‚©ãƒ¼ã‚¹ç–¾é¢¨è¿…é›·ã‚¢ãƒƒãƒ—ï¼šã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ— ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?ã?®åŠ¹æžœã‚¢ãƒƒãƒ—",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1588,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 44,
+                            "required_id": 78,
+                            "required_target": 2,
+                            "effect_values": [
+                                20,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                1565,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1590,
+                    "name": "æ–°ã?Ÿã?ªãƒ?ãƒ£ã‚¯ãƒ©ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã‚¢ã‚¿ãƒƒã‚¯ãƒ–ãƒ¼ã‚¹ãƒˆã‚¢ãƒƒãƒ—",
+                    "desc": "EX\\bQpæ­¦å™¨ã€Œã‚¹ãƒ€ãƒ«ã‚·ãƒ£ãƒŠ\\bPE\\bQpã€?ã?¾ã?Ÿã?¯\\nãƒ‘ãƒƒã‚·ãƒ–ã€Œæ–°ã?Ÿã?ªãƒ?ãƒ£ã‚¯ãƒ©ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã€?è£…å‚™æ™‚\\nè‡ªèº«ã?®æœ€å¤§BRVã?¨æ”»æ’ƒåŠ›ã‚’ä¸­ã‚¢ãƒƒãƒ—",
+                    "short_desc": "æ–°ã?Ÿã?ªãƒ?ãƒ£ã‚¯ãƒ©ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã‚¢ã‚¿ãƒƒã‚¯ãƒ–ãƒ¼ã‚¹ãƒˆã‚¢ãƒƒãƒ—ï¼šæœ€å¤§BRVã?¨æ”»æ’ƒåŠ›ã?Œã‚¢ãƒƒãƒ—",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1590,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 36,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                60,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        },
+                        {
+                            "effect_id": 28,
+                            "required_id": 1,
+                            "required_target": 2,
+                            "effect_values": [
+                                60,
+                                0,
+                                0
+                            ],
+                            "required_values": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1591,
+                    "name": "é—˜é­‚æ—‹é¢¨è„šãƒªã‚­ãƒ£ã‚¹ãƒˆã‚¢ãƒƒãƒ—å´©æ‹³ï¼†ç–¾é¢¨è¿…é›·ãƒ?ãƒ•ã‚¹ã‚¿ãƒ¼ãƒˆ",
+                    "desc": "ã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã?®\\nãƒªã‚­ãƒ£ã‚¹ãƒˆã‚¹ãƒ”ãƒ¼ãƒ‰ã‚’å°?ã‚¢ãƒƒãƒ—\\n\\nã‚¯ã‚¨ã‚¹ãƒˆé–‹å§‹æ™‚ è‡ªèº«ã?«\\nãƒ»5ACTIONã€Œæ”»æ’ƒåŠ›ä¸­ã‚¢ãƒƒãƒ—ã€?ã€Œç´ æ—©ã?•ä¸­ã‚¢ãƒƒãƒ—ã€?\\nã€€ã€Œæœ€å¤§BRVä¸­ã‚¢ãƒƒãƒ—ã€?ä»˜ä¸Ž\\nãƒ»ç‰¹æ®ŠåŠ¹æžœã€Œç–¾é¢¨è¿…é›·ã€?1åŠ ç®—",
+                    "short_desc": "é—˜é­‚æ—‹é¢¨è„šãƒªã‚­ãƒ£ã‚¹ãƒˆã‚¢ãƒƒãƒ—å´©æ‹³ï¼†ç–¾é¢¨è¿…é›·ãƒ?ãƒ•ã‚¹ã‚¿ãƒ¼ãƒˆï¼šã‚¯ã‚¨ã‚¹ãƒˆé–‹å§‹æ™‚ è‡ªèº«ã?«ã€Œã€Œæ”»æ’ƒåŠ›ä¸­ã‚¢ãƒƒãƒ—ã€?ã€Œç´ æ—©ã?•ä¸­ã‚¢ãƒƒãƒ—ã€?ã€Œæœ€å¤§BRVä¸­ã‚¢ãƒƒãƒ—ã€?ä»˜ä¸Ž",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1591,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": [
+                        {
+                            "effect_id": 107,
+                            "required_id": 14,
+                            "required_target": 2,
+                            "effect_values": [
+                                10,
+                                3302,
+                                0
+                            ],
+                            "required_values": [
+                                3302,
+                                0,
+                                0
+                            ],
+                            "required_target_value": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1592,
+                    "name": "é—˜é­‚æ—‹é¢¨è„šBRVãƒ’ãƒƒãƒˆãƒ—ãƒ©ã‚¹ãƒ•ã‚©ãƒ¼ã‚¹ã‚¹ãƒ—ãƒ¬ãƒƒãƒ‰ã‚¢ãƒƒãƒ—ï¼‹ï¼‹",
+                    "desc": "ã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã€Œé—˜é­‚æ—‹é¢¨è„šï¼‹ã€?ä½¿ç”¨æ™‚\\nãƒ»æœ€åˆ?ã?®\\bPFæ”»æ’ƒå‰?ã?¨æœ€åˆ?ã?®\\bPFæ”»æ’ƒå¾Œã?®\\nã€€\\bPGæ”»æ’ƒã?®HITæ•°ã?Œã??ã‚Œã?žã‚Œ6HITã?«å¤‰åŒ–ã?—\\nã€€å?ˆè¨ˆBRVå¨?åŠ›ã‚‚æ¥µå¤§ã‚¢ãƒƒãƒ—\\nãƒ»ã‚¿ãƒ¼ã‚²ãƒƒãƒˆä»¥å¤–ã?«ã‚‚ä¸Žã?ˆã?Ÿå?ˆè¨ˆHPãƒ€ãƒ¡ãƒ¼ã‚¸ã?®20ï¼…åˆ†ã?®HPãƒ€ãƒ¡ãƒ¼ã‚¸ \\n\\nè‡ªèº«ã?«å¼·åŒ–åŠ¹æžœã?Œä»˜ä¸Žã?•ã‚Œã?¦ã?„ã‚‹æ™‚\\nãƒ»é€šå¸¸ã€Œ\\bPGæ”»æ’ƒã€?ã€Œ\\bPGæ”»æ’ƒï¼‹ã€?ã?Œã€Œ\\bPGæ”»æ’ƒï¼‹ï¼‹ã€?ã?«å¤‰åŒ–ã?—\\nã€€-\\bPGæ”»æ’ƒã?®HITæ•°ã?Œ6HITã?«å¤‰åŒ–ã?—\\nã€€ã€€ã€Œ\\bPGæ”»æ’ƒï¼‹ã€?ã‚ˆã‚Šã‚‚å?ˆè¨ˆBRVå¨?åŠ›ã‚‚å°?ã‚¢ãƒƒãƒ—\\nã€€-è‡ªèº«ã‚’ç‹™ã?£ã?¦ã?„ã?ªã?„ã‚¿ãƒ¼ã‚²ãƒƒãƒˆæ”»æ’ƒæ™‚ ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ã?«ã?ªã‚‹\\nã€€-è¡Œå‹•è² è?·ã?Œä½Žã?„\\nã€€-ã‚¿ãƒ¼ã‚²ãƒƒãƒˆãƒ–ãƒ¬ã‚¤ã‚¯æ™‚ è¡Œå‹•è² è?·ã?Œã?ªã??ã?ªã‚Š è¿½åŠ è¡Œå‹•ã?Œå?¯èƒ½\\nã€€ã€€è¿½åŠ è¡Œå‹•ã?§ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã‚’ãƒ–ãƒ¬ã‚¤ã‚¯ã?—ã?¦ã‚‚ è¿½åŠ è¡Œå‹•ã?¯ç™ºç”Ÿã?—ã?ªã?„ã€€\\nã€€ã€€è‡ªèº«ã?®è¿½åŠ è¡Œå‹•ã?¯ç·?ACTIONæ•°ã?«åŠ ç®—ã?•ã‚Œã?ªã?„\\nã€€ã€€å?¬å–šä¸­ã?Šã‚ˆã?³ãƒ•ãƒ¬ãƒ³ãƒ‰ã‚µãƒ?ãƒ¼ãƒˆã?®æ®‹ã‚ŠACTIONã?¯æ¶ˆè²»ã?•ã‚Œã‚‹\\nã€€-ãƒ‘ãƒƒã‚·ãƒ–ã€Œå´©æ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã€?è£…å‚™æ™‚\\nã€€ã€€ä½¿ç”¨å¾Œ ã€Œå´©æ‹³ã€?ã?Œã€Œå´©æ‹³ï¼‹ã€?ã?«å¤‰åŒ–\\nãƒ»é€šå¸¸ã€Œ\\bPFæ”»æ’ƒã€?ã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã?Œã€Œ\\bPFæ”»æ’ƒï¼‹ï¼‹ã€?ã?«å¤‰åŒ–ã?—\\nã€€-æ”»æ’ƒå‰? è‡ªèº«ã?«è‡ªèº«ã?®æ”»æ’ƒåŠ›ã?«ä¾?å­˜ã?—ã?Ÿé‡?ã?®BRVã‚’åŠ ç®—\\nã€€-2HITè¿‘è·?é›¢ç‰©ç?†\\bPGæ”»æ’ƒï¼‹\\bPFæ”»æ’ƒã?«å¤‰åŒ–ã?—\\nã€€ã€€ã€Œ\\bPFæ”»æ’ƒï¼‹ã€?ã‚ˆã‚Šã‚‚å?ˆè¨ˆBRVå¨?åŠ›ã‚‚ä¸­ã‚¢ãƒƒãƒ—\\nã€€-å¥ªã?£ã?ŸBRVã‚’æœ€å¤§BRVã‚’è¶…ã?ˆã?¦åŠ ç®—ã?™ã‚‹\\nã€€ã€€ä¸Šé™?ã?¯è‡ªèº«ã?®æœ€å¤§BRVã?®120ï¼…åˆ†\\nã€€-è‡ªèº«ã‚’ç‹™ã?£ã?¦ã?„ã?ªã?„ã‚¿ãƒ¼ã‚²ãƒƒãƒˆæ”»æ’ƒæ™‚ ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ã?«ã?ªã‚‹\\nã€€-è¡Œå‹•è² è?·ã?Œä½Žã?„\\nã€€-ã‚¿ãƒ¼ã‚²ãƒƒãƒˆãƒ–ãƒ¬ã‚¤ã‚¯æ™‚ è¡Œå‹•è² è?·ã?Œã?ªã??ã?ªã‚Š è¿½åŠ è¡Œå‹•ã?Œå?¯èƒ½\\nã€€ã€€è¿½åŠ è¡Œå‹•ã?§ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã‚’ãƒ–ãƒ¬ã‚¤ã‚¯ã?—ã?¦ã‚‚ è¿½åŠ è¡Œå‹•ã?¯ç™ºç”Ÿã?—ã?ªã?„\\nã€€ã€€è‡ªèº«ã?®è¿½åŠ è¡Œå‹•ã?¯ç·?ACTIONæ•°ã?«åŠ ç®—ã?•ã‚Œã?ªã?„\\nã€€ã€€å?¬å–šä¸­ã?Šã‚ˆã?³ãƒ•ãƒ¬ãƒ³ãƒ‰ã‚µãƒ?ãƒ¼ãƒˆã?®æ®‹ã‚ŠACTIONã?¯æ¶ˆè²»ã?•ã‚Œã‚‹\\nã€€-ãƒ‘ãƒƒã‚·ãƒ–ã€Œå´©æ‹³ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ‰ã€?è£…å‚™æ™‚\\nã€€ã€€ä½¿ç”¨å¾Œ ã€Œå´©æ‹³ã€?ã?Œã€Œå´©æ‹³ï¼‹ã€?ã?«å¤‰åŒ–",
+                    "short_desc": "é—˜é­‚æ—‹é¢¨è„šBRVãƒ’ãƒƒãƒˆãƒ—ãƒ©ã‚¹ãƒ•ã‚©ãƒ¼ã‚¹ã‚¹ãƒ—ãƒ¬ãƒƒãƒ‰ã‚¢ãƒƒãƒ—ï¼‹ï¼‹ï¼šã€Œé—˜é­‚æ—‹é¢¨è„šã€?ã?®æ€§èƒ½ã‚¢ãƒƒãƒ—",
+                    "meta_data": {
+                        "cp": -1,
+                        "level": -1,
+                        "target": 2,
+                        "is_weapon_passive": 1592,
+                        "required_passive": -1
+                    },
+                    "type_data": {
+                        "type": 3,
+                        "disp_type": 1,
+                        "condition_type": 1
+                    },
+                    "effects": []
+                }
+            ]
+        }
     }
 }

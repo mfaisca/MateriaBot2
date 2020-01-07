@@ -1844,15 +1844,15 @@
         },
         {
             "id": 5042,
-            "name": "BRVリジェ�?ブーストオール",
-            "desc": "3ACTION味方全員�?�最大BRVを極�?アップ�?�\\n「BRVリジェ�?�?効果を与�?�る",
+            "name": "All BRV Regen Boost",
+            "desc": "Marginally raises party's MAX BRV�? grants party BRV Regen effect for 3 turns",
             "movement_cost": 0,
             "use_count": 1,
             "is_default": 0,
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -1900,8 +1900,8 @@
                 {
                     "id": 1060,
                     "cast_id": 1022,
-                    "name": "",
-                    "desc": "",
+                    "name": "All BRV Regen Boost",
+                    "desc": "Effect from additional ability All BRV Regen Boost",
                     "meta_data": {
                         "rate": 100,
                         "rank": 1,
@@ -1933,15 +1933,15 @@
         },
         {
             "id": 5043,
-            "name": "BRVリジェ�?ブーストオール",
-            "desc": "5ACTION味方全員�?�最大BRVを極�?アップ�?�\\n「BRVリジェ�?�?効果を与�?�る",
+            "name": "All BRV Regen Boost",
+            "desc": "Marginally raises party's MAX BRV�? grants party BRV Regen effect for 5 turns",
             "movement_cost": 0,
             "use_count": 1,
             "is_default": 0,
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -1989,8 +1989,8 @@
                 {
                     "id": 1060,
                     "cast_id": 1022,
-                    "name": "",
-                    "desc": "",
+                    "name": "All BRV Regen Boost",
+                    "desc": "Effect from additional ability All BRV Regen Boost",
                     "meta_data": {
                         "rate": 100,
                         "rank": 1,
@@ -2022,15 +2022,15 @@
         },
         {
             "id": 5044,
-            "name": "BRVリジェ�?ブーストオール",
-            "desc": "3ACTION味方全員�?�最大BRVを�?アップ�?�\\n「BRVリジェ�?�?効果を与�?�る",
+            "name": "All BRV Regen Boost",
+            "desc": "Slightly raises party's MAX BRV�? grants party BRV Regen effect for 3 turns",
             "movement_cost": 0,
             "use_count": 1,
             "is_default": 0,
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -2078,8 +2078,8 @@
                 {
                     "id": 1060,
                     "cast_id": 1022,
-                    "name": "",
-                    "desc": "",
+                    "name": "All BRV Regen Boost",
+                    "desc": "Effect from additional ability All BRV Regen Boost",
                     "meta_data": {
                         "rate": 100,
                         "rank": 2,
@@ -2111,15 +2111,15 @@
         },
         {
             "id": 5045,
-            "name": "BRVリジェ�?ブーストオール",
-            "desc": "5ACTION味方全員�?�最大BRVを�?アップ�?�\\n「BRVリジェ�?�?効果を与�?�る",
+            "name": "All BRV Regen Boost",
+            "desc": "Slightly raises party's MAX BRV�? grants party BRV Regen effect for 5 turns",
             "movement_cost": 0,
             "use_count": 1,
             "is_default": 0,
             "type_data": {
                 "type": 6,
                 "attack_type": 3,
-                "command_type": 1,
+                "command_type": 4,
                 "target_type": 5
             },
             "chase_data": {
@@ -2167,8 +2167,8 @@
                 {
                     "id": 1060,
                     "cast_id": 1022,
-                    "name": "",
-                    "desc": "",
+                    "name": "All BRV Regen Boost",
+                    "desc": "Effect from additional ability All BRV Regen Boost",
                     "meta_data": {
                         "rate": 100,
                         "rank": 2,
@@ -2197,39 +2197,6 @@
                     }
                 }
             ]
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
-        },
-        {
-            "error": 1
         },
         {
             "error": 1
@@ -2767,14 +2734,85 @@
                     "required_target_value": 0
                 }
             ]
+        },
+        {
+            "id": 1835,
+            "name": "Shatter Resonance",
+            "desc": "Slightly raises party's INT BRV�? MAX BRV",
+            "short_desc": "Shatter Resonance: Raises party's INT BRV�? MAX BRV",
+            "meta_data": {
+                "cp": 5,
+                "level": 68,
+                "target": 3,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 34,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                },
+                {
+                    "effect_id": 36,
+                    "required_id": 1,
+                    "required_target": 2,
+                    "effect_values": [
+                        10,
+                        0,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        },
+        {
+            "id": 1836,
+            "name": "All BRV Regen Boost Extension",
+            "desc": "When using All BRV Regen Boost:\\n • Marginal raised MAX BRV boost\\n • Slight BRV Regen boost",
+            "short_desc": "All BRV Regen Boost Extension: Boost to All BRV Regen Boost",
+            "meta_data": {
+                "cp": 15,
+                "level": 70,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 1,
+                "condition_type": 1
+            },
+            "effects": []
         }
     ],
     "bloom": {
         "passive": {
             "id": 1837,
-            "name": "BRVリジェ�?ブーストオールグロース",
-            "desc": "「BRVリジェ�?ブーストオール�?�?�\\n使用回数＋1\\n\\n「BRVリジェ�?ブーストオール�?�?�効果を\\n2ACTION期間延長",
-            "short_desc": "BRVリジェ�?ブーストオールグロース：「BRVリジェ�?ブーストオール�?�?�性能アップ",
+            "name": "All BRV Regen Boost Growth",
+            "desc": "All BRV Regen Boost use +1\\n\\nAll BRV Regen Boost effect duration +2",
+            "short_desc": "All BRV Regen Boost Growth: Boost to All BRV Regen Boost",
             "meta_data": {
                 "cp": 20,
                 "level": -1,

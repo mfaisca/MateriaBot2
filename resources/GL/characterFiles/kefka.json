@@ -151,7 +151,7 @@
                     "element": [
                         1
                     ],
-                    "target": 1,
+                    "target": 2,
                     "effect": 1,
                     "effect_value_type": 1
                 }
@@ -297,7 +297,7 @@
                     "element": [
                         1
                     ],
-                    "target": 1,
+                    "target": 2,
                     "effect": 1,
                     "effect_value_type": 1
                 }
@@ -480,7 +480,7 @@
                     "element": [
                         1
                     ],
-                    "target": 1,
+                    "target": 2,
                     "effect": 1,
                     "effect_value_type": 1
                 }
@@ -671,7 +671,7 @@
                     "element": [
                         1
                     ],
-                    "target": 1,
+                    "target": 2,
                     "effect": 1,
                     "effect_value_type": 1
                 }
@@ -1807,7 +1807,7 @@
         {
             "id": 3584,
             "name": "Havoc Wing",
-            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra damage to debuffed targets\\nStolen BRV may exceed MAX BRV up to 150%\\nFair chance of inflicting Break\\nHigh turn rate\\nTarget: 6 turns Sneering Clown\\nExtends own buffs 2 turns\\nBRV Attack or Meteor becomes Meteor+ after use",
+            "desc": "Fair chance of inflicting Break\\n3-hit magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to debuffed targets\\nStolen BRV may exceed MAX BRV up to 150%\\nTarget: 6 turns Sneering Clown\\nExtends own buffs 2 turns\\nHigh turn rate\\nBRV Attack�? Meteor become Meteor+ after use",
             "movement_cost": 18,
             "use_count": 15000,
             "is_default": 0,
@@ -2028,7 +2028,7 @@
         {
             "id": 3585,
             "name": "Havoc Wing",
-            "desc": "3-hit magic \\bPG attack + \\bPF attack\\nDeals extra damage to debuffed targets\\nStolen BRV may exceed MAX BRV up to 150%\\nFair chance of inflicting Break\\nHigh turn rate\\nTarget: 6 turns Sneering Clown\\nExtends own buffs 2 turns\\nBRV Attack or Meteor becomes Meteor+ after use",
+            "desc": "Fair chance of inflicting Break\\n3-hit magic \\bPG attack + \\bPF attack\\nDeals extra BRV damage to debuffed targets\\nStolen BRV may exceed MAX BRV up to 150%\\nFair chance of inflicting Break\\nTarget: 6 turns Sneering Clown\\nExtends own buffs 2 turns\\nHigh turn rate\\nBRV Attack�? Meteor become Meteor+ after use",
             "movement_cost": 18,
             "use_count": 15000,
             "is_default": 0,
@@ -2436,6 +2436,314 @@
         },
         {
             "error": 1
+        },
+        {
+            "id": 6662,
+            "name": "マル�?デ�?フダメージアップ",
+            "desc": "2ACTION自身�?�弱体効果�?�付与�?�れ�?�対象攻撃時\\n対象�?�弱体効果�?�数�?�応�?��?�\\n与�?�るBRVダメージ極�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1287,
+                    "cast_id": 1249,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            114,
+                            5
+                        ],
+                        "effect_val_types": [
+                            7,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1287,
+                            1287
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0,
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6663,
+            "name": "マル�?デ�?フダメージアップ",
+            "desc": "4ACTION自身�?�弱体効果�?�付与�?�れ�?�対象攻撃時\\n対象�?�弱体効果�?�数�?�応�?��?�\\n与�?�るBRVダメージ極�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1287,
+                    "cast_id": 1249,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            114,
+                            5
+                        ],
+                        "effect_val_types": [
+                            7,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1287,
+                            1287
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0,
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6664,
+            "name": "マル�?デ�?フダメージアップ",
+            "desc": "2ACTION自身�?�最大BRV�?アップ�?�\\n自身�?�弱体効果�?�付与�?�れ�?�対象攻撃時\\n対象�?�弱体効果�?�数�?�応�?��?�\\n与�?�るBRVダメージ極�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1287,
+                    "cast_id": 1249,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 2
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            114,
+                            5
+                        ],
+                        "effect_val_types": [
+                            7,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1287,
+                            1287
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20005,
+                            20005
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6665,
+            "name": "マル�?デ�?フダメージアップ",
+            "desc": "4ACTION自身�?�最大BRV�?アップ�?�\\n自身�?�弱体効果�?�付与�?�れ�?�対象攻撃時\\n対象�?�弱体効果�?�数�?�応�?��?�\\n与�?�るBRVダメージ極�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1287,
+                    "cast_id": 1249,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 2,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 4
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            114,
+                            5
+                        ],
+                        "effect_val_types": [
+                            7,
+                            0
+                        ],
+                        "effect_rank_tables": [
+                            1287,
+                            1287
+                        ],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            20005,
+                            20005
+                        ]
+                    }
+                }
+            ]
         }
     ],
     "passives": [
@@ -2923,7 +3231,44 @@
             ]
         }
     ],
-    "bloom": {},
+    "bloom": {
+        "passive": {
+            "id": 2277,
+            "name": "マル�?デ�?フダメージアップグロース",
+            "desc": "「マル�?デ�?フダメージアップ�?�?�使用回数＋1\\n\\n「マル�?デ�?フダメージアップ�?�?�効果を\\n2ACTION期間延長",
+            "short_desc": "マル�?デ�?フダメージアップグロース：「マル�?デ�?フダメージアップ�?�?�性能アップ",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": [
+                {
+                    "effect_id": 22,
+                    "required_id": 2,
+                    "required_target": 2,
+                    "effect_values": [
+                        6662,
+                        1,
+                        0
+                    ],
+                    "required_values": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "required_target_value": 0
+                }
+            ]
+        }
+    },
     "sphere": {},
     "gear": {
         "baseWeapon": {

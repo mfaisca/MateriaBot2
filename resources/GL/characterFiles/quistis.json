@@ -156,7 +156,7 @@
         {
             "id": 1518,
             "name": "Laser Whip",
-            "desc": "Melee \\bPG attack\\nTarget: 3 turns Turn Rate Down\\nSelf: 6 turns ATK Up I\\nBRV Attack becomes BRV Attack+ for 6 turns",
+            "desc": "Melee \\bPG attack\\nTarget: 3 turns Turn Rate Down\\nSelf: 6 turns ATK Up I\\nBRV Attack becomes BRV Attack+ for 6 turns after use",
             "movement_cost": 30,
             "use_count": 7,
             "is_default": 0,
@@ -2187,6 +2187,417 @@
         },
         {
             "error": 1
+        },
+        {
+            "id": 7057,
+            "name": "アビリティリカ�?リー",
+            "desc": "「メーザーウィップ�?「デジョ�?ーターウィップ�?�?�\\n使用回数＋1（上�?�?�り）",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7630,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1517
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7631,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1519
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": []
+        },
+        {
+            "id": 7058,
+            "name": "アビリティリカ�?リー",
+            "desc": "「メーザーウィップ�?「デジョ�?ーターウィップ�?�?�\\n使用回数＋1（上�?�?�り）\\n6ACTION味方全員�?�奪�?��?�BRVを\\n最大BRVを超�?��?�加算�?�る上�?�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7630,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1517
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7631,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1519
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1381,
+                    "cast_id": 1344,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 6
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 7059,
+            "name": "アビリティリカ�?リー",
+            "desc": "「メーザーウィップ�?「デジョ�?ーターウィップ�?�?�\\n使用回数＋1（上�?�?�り）\\n3ACTION味方全員�?�奪�?��?�BRVを\\n最大BRVを超�?��?�加算�?�る上�?�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7630,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1517
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7631,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1519
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1381,
+                    "cast_id": 1344,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 3
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 7060,
+            "name": "アビリティリカ�?リー",
+            "desc": "「メーザーウィップ�?「デジョ�?ーターウィップ�?�?�\\n使用回数＋1（上�?�?�り）\\n9ACTION味方全員�?�奪�?��?�BRVを\\n最大BRVを超�?��?�加算�?�る上�?�?アップ",
+            "movement_cost": 0,
+            "use_count": 1,
+            "is_default": 0,
+            "type_data": {
+                "type": 6,
+                "attack_type": 3,
+                "command_type": 4,
+                "target_type": 5
+            },
+            "chase_data": {
+                "can_initiate_chase": 1,
+                "chase_dmg": 3
+            },
+            "hit_data": [
+                {
+                    "id": 5038,
+                    "type": 6,
+                    "arguments": [],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": 3,
+                    "element": [],
+                    "target": 2,
+                    "effect": 110,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7630,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1517
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                },
+                {
+                    "id": 7631,
+                    "type": 6,
+                    "arguments": [
+                        1,
+                        100,
+                        1519
+                    ],
+                    "brv_data": {
+                        "brv_rate": 100.0,
+                        "max_brv_overflow": 100,
+                        "max_brv_overflow_with_break": 0,
+                        "single_target_brv_rate": 0
+                    },
+                    "attack_type": -1,
+                    "element": [],
+                    "target": 2,
+                    "effect": 136,
+                    "effect_value_type": 1
+                }
+            ],
+            "arguments": [],
+            "ailments": [
+                {
+                    "id": 1381,
+                    "cast_id": 1344,
+                    "name": "",
+                    "desc": "",
+                    "meta_data": {
+                        "rate": 100,
+                        "rank": 1,
+                        "target": 2,
+                        "arguments": [],
+                        "duration": 9
+                    },
+                    "type_data": {
+                        "buff_type": 1,
+                        "effects": [
+                            60
+                        ],
+                        "effect_val_types": [
+                            0
+                        ],
+                        "effect_rank_tables": [],
+                        "stackable": -1,
+                        "extendable": 0,
+                        "removable": 0,
+                        "max_stacks": 0
+                    },
+                    "rank_data": {
+                        "values": [
+                            0
+                        ]
+                    }
+                }
+            ]
         }
     ],
     "passives": [
@@ -2675,14 +3086,34 @@
             ]
         }
     ],
-    "bloom": {},
+    "bloom": {
+        "passive": {
+            "id": 2373,
+            "name": "アビリティリカ�?リーグロース",
+            "desc": "「アビリティリカ�?リー�?使用時\\n味方全員�?�奪�?��?�BRVを\\n最大BRVを超�?��?�加算�?�る上�?�?アップ�?�\\n効果を6ACTION追加",
+            "short_desc": "アビリティリカ�?リーグロース：「アビリティリカ�?リー�?�?�性能アップ",
+            "meta_data": {
+                "cp": 20,
+                "level": -1,
+                "target": 2,
+                "is_weapon_passive": -1,
+                "required_passive": -1
+            },
+            "type_data": {
+                "type": 3,
+                "disp_type": 0,
+                "condition_type": 1
+            },
+            "effects": []
+        }
+    },
     "sphere": {},
     "gear": {
         "baseWeapon": {
             "passive": {
                 "id": 178,
                 "name": "Lovely Lasher",
-                "desc": "When using Laser Whip:\\n • BRV damage boost\\n • Turn Rate Down duration+\\n • Self: 6 turns ATK Up I\\n • BRV Attack becomes BRV Attack+ for 6 turns",
+                "desc": "When using Laser Whip:\\n • BRV damage boost\\n • Turn Rate Down duration+\\n • Self: 6 turns ATK Up I\\n • BRV Attack becomes BRV Attack+ for 6 turns after use",
                 "short_desc": "Lovely Lasher: Boost to Laser Whip",
                 "meta_data": {
                     "cp": 20,
