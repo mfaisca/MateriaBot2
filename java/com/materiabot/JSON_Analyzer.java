@@ -145,20 +145,20 @@ public class JSON_Analyzer {
 				}
 		}
 		
-		FileWriter fw = new FileWriter(new File("output.txt"));
+		//FileWriter fw = new FileWriter(new File("output.txt"));
 		for(Entry<Integer, List<String>> s : helperMap.entrySet().stream().sorted((s1, s2) -> s1.getKey().compareTo(s2.getKey())).collect(Collectors.toList())) {
 			System.out.println(s.getKey() + ": {");
-			fw.write(s.getKey() + ": {" + "\n");
+			//fw.write(s.getKey() + ": {" + "\n");
 			int cur = 0;
 			for(String ss : s.getValue()) {
 				if(++cur == 100) break;
 				System.out.println("\t" + ss);
-				fw.write("\t" + ss + "\n");
+				//fw.write("\t" + ss + "\n");
 			}
 			System.out.println("}");
-			fw.write("}\n");
+			//fw.write("}\n");
 		}
-		fw.close();
+		//fw.close();
 	}
 	
 //	public static final int getNumberFromFileName(String name){
