@@ -53,7 +53,7 @@ public class JSON_Analyzer {
 			MyJSONObject obj = JSONParser.loadContent(f.getAbsolutePath(), false);
 			MyJSONObject[] abilities = obj.getObjectArray("completeListOfAbilities");
 			MyJSONObject[] passives = obj.getObjectArray("passives");
-			boolean parseAbilities = false, parsePassives = false, parseAilments = true, single = false;
+			boolean parseAbilities = true, parsePassives = false, parseAilments = false, single = false;
 			if(parseAilments)
 				for(MyJSONObject ability : abilities) {
 					try {
@@ -94,15 +94,16 @@ public class JSON_Analyzer {
 						int i = 0;
 						if(!single)
 							for(MyJSONObject oo : ability.getObjectArray("hit_data")) {
-								if(Ability.Hit_Data.EffectType.get(oo.getInt("effect")).getDescription().length() > 0)
-									continue;
-								Integer key = oo.getInt("effect")*100 + oo.getInt("effect_value_type");
+//								if(Ability.Hit_Data.EffectType.get(oo.getInt("effect")).getBaseDescription().length() > 0)
+//									continue;
+//								Integer key = oo.getInt("effect")*100 + oo.getInt("effect_value_type");
+								Integer key = oo.getInt("target");
 								if(!helperMap.containsKey(key))
 									helperMap.put(key, new LinkedList<String>());
 								helperMap.get(key).add(charName + "@" + ability.getString("name") + "/" + i++ + "(" + ability.getInt("id") + "/" + oo.getInt("id") + ")");
 							}
 						else {
-							Integer key = ability.getObject("chase_data").getInt("chase_dmg");
+							Integer key = ability.getObject("type_data").getInt("target_type");
 							//Integer key = ability.getInt("movement_cost");
 							if(!helperMap.containsKey(key))
 								helperMap.put(key, new LinkedList<String>());

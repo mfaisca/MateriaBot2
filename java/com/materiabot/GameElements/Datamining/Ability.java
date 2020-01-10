@@ -2,6 +2,8 @@ package com.materiabot.GameElements.Datamining;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import com.materiabot.GameElements.Element;
 
 public class Ability {
@@ -160,16 +162,17 @@ public class Ability {
 			public int getId() { return id; }
 		}
 		public static enum Target{
-			ST(1, "ST"),
-			Self(2, "Self?"),
-			Random(3, "Random Targets"),
-			AoE(5, "AoE"),
-			Party(6, "Party"),
-			Party2(7, "Party"),
-			Splash(10, "Splash"),
-			SplitBRV(11, "Split"),
-			Ally(13, "Ally only"),
-			SplitHP(18, "Split");
+			ST(1, "target"),
+			Self(2, "self"),
+			Random(3, "random targets"), //Kuja/Lenna only
+			AoE(5, "all enemies"),
+			Party(6, "party"),
+			Allies(7, "allies"),
+			Splash(10, "splash"),
+			SplitBRV(11, "split between enemies"),
+			Ally(13, "ally"),
+			SplitHP(18, "split between enemies"), //Cid/Prompto Only
+			Traps(18, "traps???"); //Emperor only(S2 / EX)
 			
 			private int id;
 			private String desc;
@@ -186,10 +189,10 @@ public class Ability {
 		public static enum EffectType{ //EffectValueType irrelevant if not mentioned
 			EN1(-1, "None"),//Exclusive to Yuri
 			E1(1, "None"), 
-			E7(7, "Dispel debuffs"),//(#ofRemovedDebuffs[, ?]) First can be -1 for all
-			E8(8, "Remove buffs"),//(#ofRemovedBuffs[, ?, ?])  First can be -1 for all
-			E25(25, "100% Accuracy BRV Attack"),
-			E33(33, "Swap Turns"),//(-1) Argument unknown
+			E7(7, "Removes {0} debuffs from {t}"),//(#ofRemovedDebuffs[, ?]) First can be -1 for all
+			E8(8, "Removes {0} buffs from {t}"),//(#ofRemovedBuffs[, ?, ?])  First can be -1 for all
+			E25(25, "Guaranteed hit"),
+			E33(33, "Swap turns with selected ally"),//(-1) Argument unknown
 			E34(34, "Angel Wing"),//([1]) No value = remove, Value = give
 			E37(37, "Cancel buff"),//(ID of buff)
 			E38(38, "Recover Abilities"), //(1) or (-1, -1) - First is both, second is only skill1
@@ -251,15 +254,27 @@ public class Ability {
 			
 			;
 			private int id;
-			private String description;
+			private String baseDescription;
 			
-			private EffectType(int id, String desc) { this.id = id; description = desc; }
+			private EffectType(int id, String desc) { this.id = id; baseDescription = desc; }
 
-			public int getId() {
-				return id;
+			public int getId() { return id; }
+			public String getBaseDescription() { return baseDescription; }
+
+			public String getDescription(Integer... values) {
+				return getDescription(Arrays.stream(values).map(i -> i.toString()).collect(Collectors.toList()).toArray(new String[0]));
 			}
-			public String getDescription() {
-				return description;
+			public String getDescription(String... values) {
+				values = fix(values);
+				String r = baseDescription;
+				for(int i = 0; i < values.length; i++)
+					r = r.replace("{" + i + "}", values[i]);
+				return r;
+			}
+			private String[] fix(String[] v) {
+				if(id == 7 || id == 8)
+					if(v[0].equals("-1")) v[0] = "all";
+				return v;
 			}
 			
 			public static EffectType get(int id) {

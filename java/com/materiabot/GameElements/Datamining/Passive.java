@@ -228,7 +228,7 @@ public class Passive {
 		R74(74, "when an ally's BRV is below their Int Brv"), //Krile CL50 Exclusive (3 parameters, but its an exclusive passive, so leaving it hardcoded)
 		R75(75, "After using Darkness:", false), //Cecil Exclusive                 
 		R76(76, "when inflicting a debuff"),
-		R77(77, "when using an ability"), //Has 1 argument, but it doesn't seem to be used for anything                                            //TODO RECHECK THIS ONE
+		R77(77, "when using an ability"), //Has 1 argument, but it doesn't seem to be used for anything //TODO RECHECK THIS ONE
 		R78(78, "while {0} is active"), //While buff is active
 		R79(79, "while an enemy is poisoned"), //Thancred Exclusive
 		;
