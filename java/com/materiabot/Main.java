@@ -1,4 +1,9 @@
 package com.materiabot;
+import org.plugface.core.PluginManager;
+import org.plugface.core.factory.PluginManagers;
+import org.plugface.core.factory.PluginSources;
+
+import com.materiabot.GameElements.UnitOverride;
 import com.materiabot.IO.SQL.ConfigsDB;
 import com.materiabot.commands._Listener;
 
@@ -23,5 +28,12 @@ public class Main {
 				.setActivity(Activity.playing("Opera Omnia")).addEventListeners(new _Listener()).build();
 		client.awaitReady();
 		System.out.println("Bot is ready!!");
+		
+		PluginManager manager = PluginManagers.defaultPluginManager();
+		manager.loadPlugins(PluginSources.jarSource("file:/C:/Test"));
+
+		UnitOverride greeterPlugin = manager.getPlugin(UnitOverride.class); // Here is why having a shared interface between plugins and applications is convenient
+
+		System.out.println(greeterPlugin.getName()); // It works!
 	}
 }

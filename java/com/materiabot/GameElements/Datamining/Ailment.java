@@ -25,8 +25,8 @@ public class Ailment {
 	}
 	public static class Effect{
 		public static enum EffectType{
-			E2(2, "Self"),
-			E3(3, "Party");
+			E1(1, "Attack"),
+			E5(5, "Party");
 			
 			private int id;
 			private String name;
