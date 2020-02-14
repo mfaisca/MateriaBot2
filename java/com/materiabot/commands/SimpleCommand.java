@@ -1,11 +1,9 @@
 package com.materiabot.commands;
 import java.util.Arrays;
 import org.apache.commons.lang3.text.WordUtils;
-
-import com.materiabot.Main;
+import com.materiabot.Utils.Constants;
 import com.materiabot.Utils.MessageUtils;
 import com.materiabot.commands.general.HelpCommand;
-
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
@@ -70,7 +68,7 @@ public class SimpleCommand extends _BaseCommand{
 			EmbedBuilder embed = new EmbedBuilder();
 			embed.setImage(message);
 			if(ownerID != null) {
-				User u = Main.getClient().getUserById(ownerID);
+				User u = Constants.getClient().getUserById(ownerID);
 				embed.setFooter(u.getName() + "#" + u.getDiscriminator(), u.getAvatarUrl());
 			}
 			if(owner != null)
@@ -78,7 +76,7 @@ public class SimpleCommand extends _BaseCommand{
 			MessageUtils.sendEmbed(event.getChannel(), embed);
 		}else {
 			if(ownerID != null) {
-				User u = Main.getClient().getUserById(ownerID);
+				User u = Constants.getClient().getUserById(ownerID);
 		        MessageUtils.sendMessage(event.getChannel(), message + System.lineSeparator() + "Credits to " + u.getName() + "#" + u.getDiscriminator() + " on Discord.");
 			}
 			else
@@ -87,7 +85,7 @@ public class SimpleCommand extends _BaseCommand{
 	}
 	
 	@Override
-	public String help(final Message event, HelpCommand.HELP_TYPE helpType) {
+	public String help(HelpCommand.HELP_TYPE helpType) {
 		String ret = "";
 		if(HelpCommand.HELP_TYPE.SHORT.equals(helpType)){
 			ret += helpShort;
@@ -95,7 +93,7 @@ public class SimpleCommand extends _BaseCommand{
 			ret += "```md" + System.lineSeparator();
 			ret += WordUtils.capitalize(getCommand()) + " Command" + System.lineSeparator();
 			ret += "===============" + System.lineSeparator();
-			ret += help(event, HelpCommand.HELP_TYPE.SHORT) + System.lineSeparator();
+			ret += help(HelpCommand.HELP_TYPE.SHORT) + System.lineSeparator();
 			ret += System.lineSeparator();
 			ret += "[*][Usage][*]" + System.lineSeparator();
 			ret += "* $" + getCommand() + System.lineSeparator();

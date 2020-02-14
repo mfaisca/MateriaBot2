@@ -1,12 +1,11 @@
 package com.materiabot.commands;
 import java.util.List;
-
 import com.materiabot.Utils.CooldownManager;
 import com.materiabot.commands.general.HelpCommand;
-
 import java.util.LinkedList;
-import net.dv8tion.jda.api.entities.Emote;
 import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
+import net.dv8tion.jda.api.events.message.react.MessageReactionRemoveEvent;
 
 public abstract class _BaseCommand{
 	protected List<String> triggerWords = new LinkedList<String>();
@@ -20,9 +19,10 @@ public abstract class _BaseCommand{
 			triggerWords.add(k);
 	}
 	
-	public boolean validateCommand(Message message) {
+	public boolean validateCommand(final Message message) {
+		String prefix = _Listener.getGuildPrefix(message.getGuild());
 		for(String t : triggerWords)
-			if(message.getContentRaw().toLowerCase().startsWith(t.toLowerCase(), _Listener.COMMAND_PREFIX.length()))
+			if(message.getContentRaw().toLowerCase().startsWith(t.toLowerCase(), prefix.length()))
 				return true;
 		return false;
 	}
@@ -32,9 +32,10 @@ public abstract class _BaseCommand{
 	public CooldownManager.Type getCooldown(Message message) {
 		return CooldownManager.Type.REGULAR;
 	}
-	
-	public void doReactionStuff(Message messOrig, Message messResp, Emote emote) {}
+
+	public void doAddReactionStuff(MessageReactionAddEvent event) {}
+	public void doRemoveReactionStuff(MessageReactionRemoveEvent event) {}
 	public abstract void doStuff(Message message);
 	
-	public abstract String help(Message message, HelpCommand.HELP_TYPE helpType);
+	public String help(HelpCommand.HELP_TYPE helpType) { return null; }
 }

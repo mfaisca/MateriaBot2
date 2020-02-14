@@ -58,7 +58,7 @@ public class Summon{
 		int i = 0;
 		if(specialBoostedChars != null)
 			for(String ch : StringUtils.split(specialBoostedChars, "|"))
-				chars[i++] = null; //TODO OperaOmniaConstants.getCharacter(ch);
+				chars[i++] = _Library.JP.getUnit(ch);
 	}
 	
 	public String getName() {

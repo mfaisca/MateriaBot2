@@ -5,14 +5,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import com.materiabot.Main;
 import com.materiabot.Utils.Constants;
 import com.materiabot.Utils.EmoteUtils;
 import com.materiabot.Utils.MessageUtils;
 import com.materiabot.Utils.EmoteUtils.Emotes;
 import com.materiabot.commands._BaseCommand;
-import com.materiabot.commands._Listener;
 import com.patreon.PatreonAPI;
 import com.patreon.resources.Campaign;
 import com.patreon.resources.Pledge;
@@ -21,13 +18,11 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
 
 public class PatreonCommand extends _BaseCommand{
-	private static final String PATREON_KEY = "r-lYyoIHMoT9m4Xc_9wxSDwombbzxSGaT9zy3-2IMT0"; //eDiUhDAufgDUaedMoKLybsa8w6WAWM2fVBzczHAPXZw
+	private static final String PATREON_KEY = "r-lYyoIHMoT9m4Xc_9wxSDwombbzxSGaT9zy3-2IMT0"; //ConfigsDB.getKeyValue(ConfigsDB.PATREON_TOKEN_KEY);
 	private static final String PATREON_LINK = "https://www.patreon.com/MateriaBot";
 	private static final int NUMBER_OF_VISIBLE_PATRONS = 20;
 	
-	public PatreonCommand() {
-		super("patreon","donate");
-	}
+	public PatreonCommand() { super("patreon","donate"); }
 	
 	public static boolean isUserPatreon(User u) {
 		return Constants.MATERIABOT_SERVER.getMembersWithRoles(Constants.MATERIABOT_SERVER.getRoleById(554660182093987869L)).stream().anyMatch(m -> m.getUser().equals(u));
@@ -36,12 +31,11 @@ public class PatreonCommand extends _BaseCommand{
 	private static EmbedBuilder build(String bannerURL, List<String> patrons, String oldest, String mostRecent, int totalPatrons) {
 		EmbedBuilder builder = new EmbedBuilder();
 		builder.setTitle("MateriaBot Patreon");
-		builder.setThumbnail(Main.getClient().getSelfUser().getAvatarUrl());
+		builder.setThumbnail(Constants.getClient().getSelfUser().getAvatarUrl());
 		builder.setColor(new Color(249,104,84));
 		builder.setImage(bannerURL);
 		builder.addField("Link", PATREON_LINK, false);
 		builder.addField("Special Mentions", 
-				//"Most Pledged: " + mostDonated + System.lineSeparator() + 
 				"Oldest Patron: " + oldest + System.lineSeparator() + 
 				"Newest Patron: " + mostRecent + System.lineSeparator(), true);
 		builder.addField("Patron Count", totalPatrons + " Patreons", true);
@@ -82,24 +76,5 @@ public class PatreonCommand extends _BaseCommand{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	@Override
-	public String help(Message message, HelpCommand.HELP_TYPE helpType) {
-		String ret = "";
-		if(HelpCommand.HELP_TYPE.SHORT.equals(helpType)){
-			ret += "Shows info about who created this bot.";
-		}else{
-			ret += "```md" + System.lineSeparator();
-			ret += "Author Command" + System.lineSeparator();
-			ret += "===============" + System.lineSeparator();
-			ret += help(message, HelpCommand.HELP_TYPE.SHORT) + System.lineSeparator();
-			ret += System.lineSeparator();
-			ret += "[*][Usage][*]" + System.lineSeparator();
-			ret += "* " + _Listener.COMMAND_PREFIX + "author" + System.lineSeparator();
-			ret += ">    Pretty obvious, don't you think?" + System.lineSeparator();
-			ret += "```";
-		}
-		return ret;
 	}
 }

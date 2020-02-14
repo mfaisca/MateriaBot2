@@ -1,4 +1,5 @@
 package com.materiabot.commands.general;
+import org.plugface.core.annotations.Plugin;
 import com.materiabot.Utils.Constants;
 import com.materiabot.Utils.MessageUtils;
 import com.materiabot.commands._BaseCommand;
@@ -7,6 +8,7 @@ import com.materiabot.commands._Listener;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
 
+@Plugin(name = "Command.Author")
 public class AuthorCommand extends _BaseCommand{	
 	public AuthorCommand() {
 		super("author");
@@ -32,7 +34,7 @@ public class AuthorCommand extends _BaseCommand{
 	}
 	
 	@Override
-	public String help(final Message event, HelpCommand.HELP_TYPE helpType) {
+	public String help(HelpCommand.HELP_TYPE helpType) {
 		String ret = "";
 		if(HelpCommand.HELP_TYPE.SHORT.equals(helpType)){
 			ret += "Shows info about who created this bot.";
@@ -40,10 +42,10 @@ public class AuthorCommand extends _BaseCommand{
 			ret += "```md" + System.lineSeparator();
 			ret += "Author Command" + System.lineSeparator();
 			ret += "===============" + System.lineSeparator();
-			ret += help(event, HelpCommand.HELP_TYPE.SHORT) + System.lineSeparator();
+			ret += help(HelpCommand.HELP_TYPE.SHORT) + System.lineSeparator();
 			ret += System.lineSeparator();
 			ret += "[*][Usage][*]" + System.lineSeparator();
-			ret += "* " + _Listener.COMMAND_PREFIX + "author" + System.lineSeparator();
+			ret += "* " + _Listener.DEFAULT_PREFIX + "author" + System.lineSeparator();
 			ret += ">    Pretty obvious, don't you think?" + System.lineSeparator();
 			ret += "```";
 		}

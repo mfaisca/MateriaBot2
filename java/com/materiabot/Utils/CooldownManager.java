@@ -1,8 +1,6 @@
 package com.materiabot.Utils;
 import java.util.HashMap;
-
 import com.materiabot.commands.general.PatreonCommand;
-
 import net.dv8tion.jda.api.entities.User;
 
 public class CooldownManager {
@@ -34,7 +32,10 @@ public class CooldownManager {
     		if(cooldown > System.currentTimeMillis())
     			return (int) (cooldown - System.currentTimeMillis());
 		}
-		userCDs.put(type, System.currentTimeMillis() + ((PatreonCommand.isUserPatreon(user) ? type.getPatreonCooldown() : type.getRegularCooldown()) * 1000));
+		userCDs.put(type, System.currentTimeMillis() + ((PatreonCommand.isUserPatreon(user) ? 
+															type.getPatreonCooldown() : 
+															type.getRegularCooldown()
+														) * 1000));
 		return -1;
 	}
 }

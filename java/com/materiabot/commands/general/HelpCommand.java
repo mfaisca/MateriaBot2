@@ -3,12 +3,10 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import org.apache.commons.lang3.text.WordUtils;
-
 import com.materiabot.Utils.BotException;
 import com.materiabot.Utils.MessageUtils;
 import com.materiabot.commands._BaseCommand;
 import com.materiabot.commands._Listener;
-
 import net.dv8tion.jda.api.entities.Message;
 
 @SuppressWarnings("deprecation")
@@ -31,7 +29,7 @@ public class HelpCommand extends _BaseCommand{
 	}
 
 	public HelpCommand() {
-		super("help", "halp", "plz");
+		super("help");
 	}
 
 	@Override
@@ -51,7 +49,7 @@ public class HelpCommand extends _BaseCommand{
 			e.printStackTrace();
 		}
 	}
-	
+
 	private void showAllCommands(final Message event) throws BotException {
 		String str = "";
 		str += "```md" + System.lineSeparator();
@@ -60,12 +58,12 @@ public class HelpCommand extends _BaseCommand{
 		str += System.lineSeparator();
 		for(_BaseCommand command : _Listener.COMMANDS) {
 			str += "* " + WordUtils.capitalize(command.getCommand()) + " Command" + System.lineSeparator();
-			str += ">    " + command.help(event, HELP_TYPE.SHORT) + System.lineSeparator();
+			str += ">    " + command.help(HELP_TYPE.SHORT) + System.lineSeparator();
 		}
 		str += "```";
 		MessageUtils.sendMessage(event.getChannel(), str);
 	}
-	
+
 	private void showAvailableCommands(final Message event) throws BotException {
 		String str = "";
 		str += "```md" + System.lineSeparator();
@@ -73,11 +71,10 @@ public class HelpCommand extends _BaseCommand{
 		str += "===============" + System.lineSeparator();
 		str += System.lineSeparator();
 		for(_BaseCommand command : _Listener.COMMANDS) {
-			if(command.help(event, HELP_TYPE.SHOW) == null) continue;
-			if(command.help(event, HELP_TYPE.SHORT) == null || command.help(event, HELP_TYPE.SHORT).equals("null"))
-				continue;
+			if(command.help(HELP_TYPE.SHOW) == null) continue;
+			if(command.help(HELP_TYPE.SHORT) == null) continue;
 			str += "* " + WordUtils.capitalize(command.getCommand()) + " Command" + System.lineSeparator();
-			str += ">    " + command.help(event, HELP_TYPE.SHORT) + System.lineSeparator();
+			str += ">    " + command.help(HELP_TYPE.SHORT) + System.lineSeparator();
 		}
 		str += "```";
 		MessageUtils.sendMessage(event.getChannel(), str);
@@ -86,14 +83,14 @@ public class HelpCommand extends _BaseCommand{
 	private void showSpecificHelp(final Message event, String command) throws BotException {
 		for(_BaseCommand command2 : _Listener.COMMANDS) 
 			if(command2.getTriggerWords().contains(command)) {
-				if(command2.help(event, HELP_TYPE.LONG) != null && !command2.help(event, HELP_TYPE.LONG).equals("null"))
-					MessageUtils.sendMessage(event.getChannel(), command2.help(event, HELP_TYPE.LONG));
+				if(command2.help(HELP_TYPE.LONG) != null)
+					MessageUtils.sendMessage(event.getChannel(), command2.help(HELP_TYPE.LONG));
 				return;
 			}
 	}
 	
 	@Override
-	public String help(final Message event, HELP_TYPE helpType) {
+	public String help(HELP_TYPE helpType) {
 		String ret = "";
 		if(HELP_TYPE.SHORT.equals(helpType)){
 			ret += "Shows the help information for commands";
@@ -101,7 +98,7 @@ public class HelpCommand extends _BaseCommand{
 			ret += "```md" + System.lineSeparator();
 			ret += "Help Command" + System.lineSeparator();
 			ret += "===============" + System.lineSeparator();
-			ret += help(event, HELP_TYPE.SHORT) + System.lineSeparator();
+			ret += help(HELP_TYPE.SHORT) + System.lineSeparator();
 			ret += System.lineSeparator();
 			ret += "[*][Usage][*]" + System.lineSeparator();
 			ret += ">    Did you really ask for the help for the help command?" + System.lineSeparator();

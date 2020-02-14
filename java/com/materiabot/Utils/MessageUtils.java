@@ -1,6 +1,9 @@
 package com.materiabot.Utils;
+import java.io.File;
+
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Emote;
+import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.entities.User;
@@ -50,6 +53,9 @@ public abstract class MessageUtils {
     public static final Message sendWhisper(final User user, final String message){
     	return sendMessage(user.getJDA().getPrivateChannelById(user.getIdLong()), message);
     }
+    public static final Message sendWhisper(final Member user, final String message){
+    	return sendMessage(user.getJDA().getPrivateChannelById(user.getIdLong()), message);
+    }
     public static final Message sendMessage(final MessageChannel channel, final String message){
     	long time = System.currentTimeMillis();
     	while((System.currentTimeMillis() - time) < 30000)
@@ -64,6 +70,18 @@ public abstract class MessageUtils {
     public static final Message sendImage(final MessageChannel channel, final String imageURL){
     	return sendEmbed(channel, new EmbedBuilder().setImage(imageURL));
     }
+	public static final Message sendFile(final MessageChannel channel, File f) {
+		long time = System.currentTimeMillis();
+		while(true)
+			try{
+				return channel.sendFile(f).complete();
+			} catch(Exception e){ 
+				if(System.currentTimeMillis() - time > 30000)
+					break;
+	    		Constants.sleep(2000);
+			}
+		return null;
+	}
 	public static final Message sendError(MessageChannel channel, String message) {
     	return sendEmbed(channel, message, null); //TODO Add Moogle Sorry Emote Link
 	}

@@ -1,9 +1,7 @@
 package com.materiabot.commands.general;
-import com.materiabot.Main;
 import com.materiabot.Utils.Constants;
 import com.materiabot.Utils.MessageUtils;
 import com.materiabot.commands._BaseCommand;
-
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Activity.ActivityType;
@@ -29,7 +27,7 @@ public class StatusCommand extends _BaseCommand{
 				case "streaming": if(Activity.isValidStreamingUrl(msg[2])) a = Activity.streaming(msg[1], msg[2]); else a = null; break;
 				case "listening": a = Activity.listening(msg[1]); break;
 			}
-			Main.getClient().getPresence().setPresence(OnlineStatus.ONLINE, a == null ? Activity.of(ActivityType.DEFAULT, "Opera Omnia") : a);
+			Constants.getClient().getPresence().setPresence(OnlineStatus.ONLINE, a == null ? Activity.of(ActivityType.DEFAULT, "Opera Omnia") : a);
 			MessageUtils.sendMessage(event.getChannel(), "Updated");
 		} catch(Exception e) {
 			MessageUtils.sendMessage(event.getChannel(), "You fucked up");
@@ -39,10 +37,5 @@ public class StatusCommand extends _BaseCommand{
 	@Override
 	public boolean validatePermission(Message event) {
 		return event.getAuthor().getIdLong() == Constants.QUETZ_ID;
-	}
-	
-	@Override
-	public String help(final Message event, HelpCommand.HELP_TYPE helpType) {
-		return null;
 	}
 }

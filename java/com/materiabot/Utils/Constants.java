@@ -2,18 +2,21 @@ package com.materiabot.Utils;
 import java.util.LinkedList;
 import java.util.Random;
 
-import com.materiabot.Main;
+import com.materiabot.commands._Listener;
 
+import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 
-public abstract class Constants {
-	public static final Guild MATERIABOT_SERVER = Main.getClient().getGuildById(544340710862618624L);
-	public static final long QUETZ_ID = 141599746987917312L;
-	public static final Member QUETZ = Constants.MATERIABOT_SERVER.getMemberById(QUETZ_ID);
-	public static final String DATABASE = "../_files/Database.db";
-	public static final Random RNG = new Random();
+public class Constants {
+	private static JDA client = _Listener.getClient();
+	public static final JDA getClient() { return client; }
 	
+	public static final Guild MATERIABOT_SERVER = getClient().getGuildById(544340710862618624L);
+	public static final long QUETZ_ID = 141599746987917312L;
+	public static final Member QUETZ = MATERIABOT_SERVER.getMemberById(QUETZ_ID);
+	public static final Random RNG = new Random();
+		
 	public static final class Dual<O1, O2>{
 		private O1 value1;
 		private O2 value2;
@@ -33,11 +36,6 @@ public abstract class Constants {
 		} catch (InterruptedException e) {}
 	}
 	
-	public static final boolean isNumber(String str) {
-		for(char c : str.toCharArray())
-			if(!('0' <= c && c <= '9')) return false;
-		return true;
-	}
 	public static final LinkedList<String> splitString(String s, int size) {
 		LinkedList<String> split = new LinkedList<String>();
 		int spaceIndex = s.indexOf(" ");
@@ -71,7 +69,7 @@ public abstract class Constants {
 		return split;
 	}
 
-	public static String replaceLast(String string, String toReplace, String replacement) {
+	public static final String replaceLast(String string, String toReplace, String replacement) {
 	    int pos = string.lastIndexOf(toReplace);
 	    if (pos > -1) {
 	        return string.substring(0, pos)

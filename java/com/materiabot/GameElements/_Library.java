@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.materiabot.GameElements.Datamining.Ability;
 import com.materiabot.GameElements.Datamining.Ailment;
+import com.materiabot.GameElements.Datamining.Passive;
 
 public class _Library {
 	public static final _Library GL = new _Library();
@@ -12,19 +13,20 @@ public class _Library {
 	
 	private _Library() {}
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
+	public List<Unit> UNIT_LIST = new LinkedList<Unit>();
 	public static List<Summon> SUMMON_LIST = new LinkedList<Summon>();
 	
-	public Unit getChar(String c) { return getUnit(c); }
 	public Unit getUnit(String u) {
 		return null;
 	}
 
 	public Ability getSkillById(int id) {
-		// TODO Auto-generated method stub
+		return null;
+	}
+	public Passive getPassiveById(int id) {
 		return null;
 	}
 	public Ailment getAilmentById(int id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	

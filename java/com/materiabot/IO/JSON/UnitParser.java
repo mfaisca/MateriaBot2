@@ -1,7 +1,6 @@
 package com.materiabot.IO.JSON;
 import com.materiabot.GameElements.Unit;
 import com.materiabot.IO.JSON.JSONParser.MyJSONObject;
-import com.materiabot.IO.JSON.Unit.AbilityParser;
 import com.materiabot.IO.JSON.Unit.PassiveParser;
 
 public abstract class UnitParser {	

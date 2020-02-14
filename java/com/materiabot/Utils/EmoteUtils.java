@@ -1,8 +1,5 @@
 package com.materiabot.Utils;
 import java.util.Optional;
-
-import com.materiabot.Main;
-
 import net.dv8tion.jda.api.entities.Emote;
 
 public abstract class EmoteUtils {
@@ -72,7 +69,7 @@ public abstract class EmoteUtils {
 	
 	public static Emote getEmoteClassByName(String name) {
 		String name2 = name.replaceAll(" ", "").replaceAll("'", "").replaceAll("&", "");
-		return Main.getClient().getGuilds().stream()
+		return Constants.getClient().getGuilds().stream()
 				.filter(s -> s.getOwner().getIdLong() == Constants.QUETZ.getIdLong())
 				.flatMap(g -> g.getEmotes().stream())
 				.filter(e -> e.getName().equalsIgnoreCase(name2))
