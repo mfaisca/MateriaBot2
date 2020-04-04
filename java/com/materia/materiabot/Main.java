@@ -8,10 +8,9 @@ public class Main {
 	public static JDA getClient() { return client; }
 	
 	public static void main(String[] args) throws LoginException, InterruptedException {
-		String privateToken = Configs.BOT_TOKEN; //ConfigsDB.getKeyValue(ConfigsDB.OPERAOMNIA_TOKEN_KEY)
+		String privateToken = Configs.BOT_TOKEN;
 		if(privateToken == null) {
-			System.out.println("Bot Token isn't inserted." + System.lineSeparator()
-			 + "Please use any SQLite Browser to manually add your bot's token in the 'bot_configs' table.");
+			System.out.println("Bot Token isn't inserted." + System.lineSeparator());
 			return;
 		}
         client = new JDABuilder(privateToken).build();
